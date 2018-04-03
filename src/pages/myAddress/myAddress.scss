@@ -1,0 +1,46 @@
+page-myAddress{
+    .bg{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .emptycartText{
+        color: darkgray;
+        font-weight: 800;
+        font-size: 17px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .emptyItemsText{
+        color: lightgray;
+        padding-bottom: 10px;
+        
+    }
+    .label-md ,.label-ios{
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 5px;    
+    }
+    .btnStartShopping{
+        text-transform:none;
+        padding-left: 20px;
+        padding-right: 20px;
+        background: darkslateblue;
+        font-weight: 300;
+        width: 95%;
+        margin-left: 10px;
+        margin-right: 10px;
+        white-space: nowrap;
+        font-size: 12px;
+    }
+    
+    .button-md:hover:not(.disable-hover),.button-ios:hover:not(.disable-hover) {
+        background-color: darkslateblue;
+    }
+    .scroll-content{
+        margin-bottom: 0px!important;
+    }
+}

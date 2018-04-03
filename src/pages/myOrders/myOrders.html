@@ -1,0 +1,52 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            My Orders
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="app-background">
+    
+    <!-- <div class="scheduleDateDiv">
+            <ion-label text-center class="scheduleDate">Scheduled For, 12 Jan, 06 AM - 09 AM</ion-label>
+    </div> -->
+    <ion-card *ngFor="let prod of cardArray">
+        <div class="orderDateDiv">
+            <ion-label text-center class="orderDate">Placed on Wed, 10 Jan, 07:39 PM</ion-label>
+        </div>
+        <ion-card-header class="headerTitle" text-center>
+            Delivered By E-Learning
+        </ion-card-header>
+        <hr>
+        <ion-item>
+            <div item-start>
+                <img src="assets/icon/unnamed.png" class="imageClass">
+            </div>
+            <ion-label>
+                <span class="textTile">{{prod.product_title}}</span>
+                <span style="float:right;font-size:12px;">{{prod.price | currency :'&#8377;' }}</span>
+                <p style="padding-top:4px;padding-bottom:2px;">
+                    <span style="float:left;font-size:12px;"> Delivery Charges</span>
+                    <span style="float:right;font-size:12px;" class="deliveryCharges" *ngIf="prod.freeDelevery!=''"> {{prod.delivery_charges | currency :'&#8377;' }}</span>
+                    <span style="float:right;font-size:12px;" class="deliveryCharges" *ngIf="prod.freeDelevery==''"> FREE</span>
+                </p>
+                <p class="orderId">
+                    Order ID: {{prod.orderID}}
+                </p>
+                <span style="margin-bottom:4px;margin-top:4px;">
+                    <ion-icon name="ios-checkmark-circle" class="deleveredColor"></ion-icon> 
+                    <span class="deleveredColor">Delivered</span> 
+                </span>   
+            </ion-label>
+        </ion-item>
+        <hr>
+        <p>
+            <span style="float:left; padding:10px;">Total Amount to be paid</span>
+            <span style="float:right; padding:10px;">{{prod.total_amount | currency :'&#8377;'  }}</span>
+        </p>
+        <div style="padding:10px;">
+            <button ion-button block class="btnProducDetails" tappable (click)="orderDetailsPage()"> Order Details</button>
+        </div>
+    </ion-card>
+</ion-content>

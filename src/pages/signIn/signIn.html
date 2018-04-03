@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="md-list"></ion-icon>
+      </button>
+      <ion-title>
+          SIGN UP - STEP 1/3
+      </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+    <div style="text-align:center;">
+        <img src="assets/icon/unnamed.png" class="app-logo"> 
+    </div>
+    <ion-title text-center class="signintext">Sign In or Register</ion-title>
+      <ion-label text-center>We need your number to get things done</ion-label>
+      <ion-item>
+        <label item-start>+91</label>
+        <div item-content>
+          <ion-input type="number" placeholder="Enter mobile number"></ion-input>
+        </div>
+        <label item-end class="whyText">Why?</label>
+      </ion-item>
+    <button ion-button full (click)="nextPage()">Verify Number</button>
+    <br>
+    <button ion-button full (click)="Dashboard()">SignIn</button>
+  </ion-content>
+  

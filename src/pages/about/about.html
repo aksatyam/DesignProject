@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="md-list"></ion-icon>
+      </button>
+    <ion-title>
+      Book
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="royal" (click)="openCartPage()">
+        <ion-icon name="ios-cart"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="app-background" (ionScroll)="scrollHandler($event)">
+    <!-- <ion-navbar>
+        <ion-item>
+            <ion-item item-start col-4 class="ionItemback">
+                <ion-label>Category</ion-label>
+                <ion-select [(ngModel)]="category" col-12 placeholder="Category">
+                  <ion-option value="0">One</ion-option>
+                  <ion-option value="1">Two</ion-option>
+                  <ion-option value="2">Three</ion-option>
+                  <ion-option value="3">Four</ion-option>
+                  <ion-option value="4">Five</ion-option>
+                </ion-select>
+              </ion-item>
+            <ion-searchbar (ionInput)="getItems($event)" item-end></ion-searchbar>
+        </ion-item>   
+      </ion-navbar> -->
+      <ion-card class="sellCard"  tappable (click)="OpenBookForm()">
+          <ion-item>
+              <ion-icon name="ios-add-circle-outline" item-start class="plusIcon"></ion-icon>
+              <ion-label item-end class="sellText">Sell Your Used Books</ion-label>
+        </ion-item>
+      </ion-card>
+    <ion-card *ngFor="let list of cardArray;let i =index" class="app-background">
+        <ion-card-header>
+          <ion-item>
+            <ion-label item-start class="booksCateoryTitle">
+                First Semester
+            </ion-label>
+            <ion-label item-end>
+              <button ion-button-outline class="seaAllClass" tappable (click)="seeAllItems()">SEE ALL</button>
+            </ion-label>
+          </ion-item>
+        </ion-card-header>
+        <div class="scrollmenu">
+            <ion-card *ngFor="let list of cardArray;let i =index" col-7 style="height:260px;">
+                <div tappable (click)="openItemDetails()">
+                    <!-- <button ion-button-outline class="offClass">{{i+1}} % OFF</button> -->
+                    <img src="assets/icon/unnamed.png" class="imageClass">
+                    <ion-label class="Price">{{ price| currency :'&#8377;'}}</ion-label>
+                    <ion-label class="description">About Product description, quantity, quality, features </ion-label>
+                    <!-- <ion-label class="quantity"> 10 Kg</ion-label> -->
+                </div>
+                <button ion-button block (click)="addToCart()">ADD TO CART</button>
+            </ion-card>
+          </div>
+      </ion-card>
+      
+</ion-content>

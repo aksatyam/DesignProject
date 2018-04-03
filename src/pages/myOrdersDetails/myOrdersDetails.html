@@ -1,0 +1,100 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Order Details
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="app-background">
+    <ion-item class="orderStatus">
+        <ion-label text-center>Yey! Order Successfully Delivered</ion-label>
+    </ion-item>
+    <ion-card>
+        <ion-item>
+            <ion-label item-start class="deliveryText">Delivery On</ion-label>
+            <ion-label item-end text-center class="deliveryDate">Fri, 12 Jan, 08:22 AM</ion-label>
+        </ion-item>
+    </ion-card>
+
+    <ion-card>
+        <div class="summaryText">
+                <ion-label text-center class="paySummeryFnt">PAYMENT METHOD</ion-label>
+        </div>
+        <ion-item class="app-background">
+            <ion-icon name="ios-cash-outline" item-start></ion-icon>
+            <ion-label class="fontSizeCOD">COD (Cash on delivery)</ion-label>
+            <!-- <ion-checkbox color="dark" checked="true"></ion-checkbox> -->
+        </ion-item>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-label text-center class="contentLabel">
+                <span>{{count}} ITEMS</span>
+                <span style="padding-left:4px;padding-right:4px"> - </span>
+                <span>AMOUNT : {{price | currency :'&#8377;' }}</span>
+            </ion-label>
+        </ion-card-header>
+        <!-- <div class="listItem app-background">
+            <ion-list>
+                Ashish
+            </ion-list>
+        </div> -->
+        <ion-item *ngFor="let prod of cardArray" class="app-background borderItems">
+                <div item-start>
+                    <img src="assets/icon/unnamed.png" class="imageClass">
+                </div>
+                <ion-label>
+                    <span class="textTile">{{prod.product_title}}</span>
+                    <span style="float:right;font-size:12px;">{{prod.price | currency :'&#8377;' }}</span>
+                    <p style="padding-top:4px;padding-bottom:2px;">
+                        <span style="float:left;font-size:12px;"> Quantity</span>
+                        <span style="float:right;font-size:12px;" class="deliveryCharges"> {{prod.quantity}}</span>
+                    </p>  
+                </ion-label>
+            </ion-item>
+    </ion-card>
+
+    <ion-card class="app-background">
+            <ion-item>
+                <ion-icon item-start name='card' class="iconColor"></ion-icon>
+                <ion-label class="delivAddressText">Delivery Address</ion-label>
+            </ion-item>
+            <ion-card-content>
+                <ion-label class="addressNickName">Home</ion-label>
+                <p class="cardContentAddress">Mr. Pawan Kumar</p>
+                <p class="cardContentAddress">
+                first floor, mukesh thakran niwas,
+                near thana motors showroom, islampur vllage,
+                </p>
+                <p class="cardContentAddress">
+                Nambarder Market, Sector 38, Guargoan
+                </p>
+            </ion-card-content>
+    </ion-card>
+
+    <ion-card class="app-background">
+            <div class="summaryText">
+                <ion-label text-center class="paySummeryFnt">PAYMENT SUMMARY</ion-label>
+            </div>
+                <div class="paymentContent1">
+                    <ion-label float-left class="textSize">Sub Total</ion-label><ion-label float-right class="amountText textSize">{{price | currency :'&#8377;' }}</ion-label>
+                </div>
+                <br>
+                <div class="paymentContent2">
+                    <ion-label float-left class="textSize">Delivery charges</ion-label>
+                    <ion-label float-right class="freeText textSize">FREE</ion-label>
+                </div>
+                <br>
+                <ion-item class="app-background borderFinal">
+                    <ion-label float-left class="finalAmountText">Final Paid Amount</ion-label>
+                    <ion-label text-right class="finalAmount">{{price | currency :'&#8377;' }}</ion-label>
+                </ion-item>
+                <ion-item class="app-background">
+                    <ion-label float-left class="savingAmountText">Your total Savings</ion-label>
+                    <ion-label text-right class="savingAmount">{{price/6 | currency :'&#8377;' }} (19.25%)</ion-label>
+                </ion-item>
+        </ion-card>
+        <button ion-button full class="btnOrderCancel">Cancel Order</button>
+</ion-content>

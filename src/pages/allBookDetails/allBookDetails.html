@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            {{title}}
+        </ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only color="royal" (click)="openCartPage()">
+              <ion-icon name="ios-cart"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+    <!-- <div class="semesterDiv">
+        <ion-label class="semesterName" text-center>First Semester</ion-label>
+    </div> -->
+</ion-header>
+
+<ion-content class="app-background">
+    <ion-card *ngFor="let i of cardArray">
+        <ion-item>
+            <div item-start>
+                <img src="assets/icon/unnamed.png" class="imageClass">
+            </div>
+            <ion-label>
+                <span class="bookName">{{i.book_name}}</span>
+                <br>
+                <p class="bookQuantity">{{i.quantity}}</p>
+                <span class="priceColor">{{ i.price| currency :'&#8377;'}}</span>
+                <button ion-button block class="btnAddToCart">ADD TO CART</button>
+            </ion-label>
+           
+        </ion-item>
+    </ion-card>
+</ion-content>

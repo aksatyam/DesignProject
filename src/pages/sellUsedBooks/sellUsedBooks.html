@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Sell Your Book
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="app-background">
+    <img src="{{pathForImage(lastImage)}}" style="width: 200px;height:200px" [hidden]="lastImage === null">
+    <h3 [hidden]="lastImage !== null">Please Select Image!</h3>
+</ion-content>
+
+
+<ion-footer>
+    <ion-toolbar color="primary">
+      <ion-buttons>
+        <button ion-button icon-left (click)="presentActionSheet()">
+          <ion-icon name="camera"></ion-icon>Select Image
+        </button>
+        <button ion-button icon-left (click)="uploadImage()" [disabled]="lastImage === null">
+          <ion-icon name="cloud-upload"></ion-icon>Upload
+        </button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-footer>

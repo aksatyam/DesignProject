@@ -1,0 +1,158 @@
+page-about {
+    .header-md::after,.header-ios::after{
+        height: 0px;
+        bottom: 0px;
+    }
+    .item-md,.item-ios{
+        padding-left:0px;
+        background-color: transparent;
+    }
+    .item-md [item-end],.item-ios [item-end] {
+        margin: 0 3px 0 0;
+    }
+    .item-md [item-start],.item-ios [item-start]{
+        margin: 0 3px 0 3px;
+    }
+    .toolbar .searchbar-md {
+        padding-right: 0px;
+        font-size: 10px;
+        color: darkslateblue!important; 
+        min-height: 40px!important;   
+    }
+    .searchbar-md .searchbar-input,.searchbar-ios .searchbar-input{
+        color: darkslateblue!important;
+        font-size: 14px;
+        padding-left: 40px;
+    }
+    .select-md .select-icon .select-icon-inner ,.select-ios .select-icon .select-icon-inner {
+        left:-4px;
+    }
+    
+    .item-md.item-block .item-inner {
+        padding-right: 0px;
+        border-bottom: 0px solid #dedede;
+    }
+    .item-md ion-icon[item-start] + .item-inner,.item-ios ion-icon[item-start] + .item-inner{
+        margin-left: 8px;
+    }
+    .ionItemback{
+        background-color: white;
+        border-radius: 3px;
+    }
+    .select-md,.select-ios{
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 4px;
+        font-size: 13px;
+        color: darkslateblue!important;
+    }
+    .booksCateoryTitle{
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        padding-left: 8px;
+    }
+    .seaAllClass{
+        float: right;
+        padding: 8px;
+        border-radius: 4px;
+        color: darkslateblue!important;
+        font-weight: 400;
+        background: transparent;
+        border: 1px solid darkgray;
+    }
+    .card-header-md,.card-header-ios{
+        padding: 5px 5px 5px 5px;
+    }
+
+    .scrollmenu {
+        background-color: transparent;
+        overflow: auto;
+        white-space: nowrap;
+        min-height: 250px;
+    }
+    
+    .scrollmenu ion-card {
+        display: inline-block;
+        color: black;
+        padding: 4px;
+        text-decoration: none;
+        white-space: normal;
+    }
+
+    .offClass{
+        margin-left: 4px;
+        margin-top: 4px;
+        float: left;
+        padding-left: 6px;
+        padding-right: 6px;  
+        padding-top: 4px;
+        padding-bottom: 4px;      
+        font-size: 12px;
+        border-radius: 4px;
+        color: darkslateblue!important;
+        font-weight: 400;
+        background: transparent;
+        border: 1px solid darkgray;
+    }
+
+    .imageClass{
+        padding:4px 4px 4px 4px;
+        height: 120px;
+        width: 95%;
+    }
+
+    .Price{
+        color: black;
+        padding-left: 4px;
+        font-size: 16px;
+    }
+
+    .description{
+        font-size: 14px;
+        color: darkgray;
+        min-height: 20px;
+        padding-left: 4px;
+        font-weight: 400;
+        line-height: 4.6vw;
+        white-space: normal;
+        padding-top: 10px;
+    }
+
+    .quantity{
+        font-size: 12px;
+        color: darkslateblue!important;
+        padding-left: 5px;
+        font-weight: 500;
+    }
+    .label-md, .label-ios{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .button-md ,.button-ios {
+        text-transform: none;
+        font-size: 12px;
+        height: 25px;
+        background-color: darkslateblue!important;
+        margin-left: 4px;
+        width: 95%;
+        margin-top: 20px;
+    }
+
+    .content-md hr,.content-ios{
+        background-color: darkslateblue!important;
+    }
+
+    .sellText{
+        color: white;
+        font-size:1.8rem;
+    }
+    .sellCard{
+        padding-left:10px;
+        background-color: darkslateblue!important;
+    }
+    .plusIcon{
+        color: white;
+    }
+    
+}

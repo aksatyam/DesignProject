@@ -1,0 +1,55 @@
+page-myOrders{
+    .card-header-md,.card-header-ios {
+        padding:6px 8px 0px 8px!important;
+    }
+    .headerTitle{
+        color: darkgray;
+        font-size: 14px;
+    }
+    .imageClass{
+        height: 60px;
+        width:60px;
+    }
+    .textTile{
+        font-size: 13px;
+        color: black;
+        font-weight: 700;
+        padding-bottom:8px;
+    }
+    .deliveryCharges{
+        color: darkgreen;
+    }
+    .orderId{
+        font-size: 12px;
+    }
+    .deleveredColor{
+        color: darkgreen;
+    }
+    .orderDate{
+        padding:10px;
+        color: darkslateblue;
+        background-color: white;
+        font-size: 1.5rem;
+    }
+    .orderDateDiv{
+        // border-bottom: 0.5px solid lightgray!important;
+        font-size: 1.5rem;
+    }
+    .scheduleDateDiv{
+        border-bottom: 0.5px solid lightgray;
+    }
+    .scheduleDate{
+        font-size: 1.5rem;
+        color: black;
+        padding:10px;
+    
+    }
+    .scroll-content{
+        margin-bottom: 0px!important;
+    }
+    .btnProducDetails{
+        color: white;
+        background-color: darkslateblue!important;
+        text-transform: none;
+    }
+}

@@ -1,0 +1,122 @@
+page-cart{
+    .imageClass{
+        padding:20px 0px 0px 0px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .bg{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .emptycartText{
+        color: darkgray;
+        font-weight: 800;
+        font-size: 15px;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .emptyItemsText{
+        color: lightgray;
+    }
+    .label-md ,.label-ios{
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 5px;    
+    }
+    .btnStartShopping{
+        text-transform:none;
+        padding-left: 15px;
+        padding-right: 15px;
+        background: darkslateblue;
+        font-weight: 300;
+    }
+    
+    .button-md:hover:not(.disable-hover),.button-ios:hover:not(.disable-hover) {
+        background-color: darkslateblue;
+    }
+
+    .cartItems{
+
+    }
+
+    .item-md [item-end] {
+        margin: 4px 0px 0px 0;
+    }
+
+    .itemMdEnd{
+        text-align: right!important;
+        color: darkgray;
+    }
+    .itemDeleveryAmount{
+        text-align: right!important;
+        color: darkslateblue;
+    }
+    .item-md [item-start] {
+        margin: 0px 10px 0px 0px;
+    }
+    .item-md {
+        font-size: 1.2rem;
+        min-height: 10px;
+    }
+    .subTotalList{
+        padding-top: 7px;
+        padding-bottom: 5px;        
+    }
+    .titleCls{
+        color: darkgray;
+    }
+    .itemArrayClass{
+        padding: 6px;
+    }
+    .Image{
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    .image-container{
+        width:90px;
+        height:90px;
+        display: table;
+        position: relative;
+        text-align: center;
+        padding-right: 4px;
+    }
+    .Heading{
+        font-size: 13px;
+        padding-bottom: 3px;
+    }
+    .btnRemove{
+        float:  right;
+        font-size: 25px;
+        color: darkslateblue;
+    }
+    .Date{
+        margin-top: 5px;
+    }
+    .scroll-content {
+        margin-bottom: 90px!important;
+    }
+    .footer-md::before{
+        background-image: none;
+    }
+    .btnCheckout{
+        background:darkslateblue; 
+        width: 100%;
+        text-transform: none;
+    }
+    .textCut{
+    text-decoration: line-through;
+    font-size: 12px;
+    }
+    .mainPrice{
+        font-size: 13px;
+        color: darkslateblue;
+    }
+    .description{
+        padding-bottom: 3px;
+    }
+}

@@ -1,0 +1,149 @@
+page-myOrdersDetails{
+    .pd{
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    .item-md, .item-ios{
+        padding-left: 10px;
+    }
+    .deliveryDate{
+        font-size: 1.3rem;
+        color: darkslateblue;
+        padding: 4px;
+        border:0.5px solid lightgray;
+        border-radius: 4px;
+    }
+    .deliveryText{
+        font-size: 1.5rem;
+        color: darkgray;
+    }
+    .summaryText{
+        color: darkslateblue;
+        background-color: white;
+        padding:8px;
+        //border-bottom: 0.2px solid darkgray;
+    }
+    .paySummeryFnt{
+        font-size: 1.4rem;
+    }
+    .fontSizeCOD{
+        font-size: 1.5rem;
+        color: darkgray;
+    }
+    .checkbox-md .checkbox-icon,.checkbox-ios .checkbox-icon{
+        border-radius: 50%;
+        padding: 5px;
+    }
+    .checkbox-md-dark .checkbox-checked,.checkbox-ios-dark .checkbox-checked {
+        border-color: darkslateblue;
+        background-color: darkslateblue;
+    }
+    .item.item-md .checkbox-md,.item.item-ios .checkbox-ios{
+        margin-right:10px;
+    }
+
+    .paymentContent1{
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 8px;
+        color: darkgray;
+    }
+    .paymentContent2{
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 8px;
+        margin-bottom: 5px;
+        color: darkgray;
+    }
+    .freeText{
+        color: darkgreen;
+    }
+    .amountText{
+        color: darkslateblue;
+    }
+    .item-md,.item-ios {
+        padding-left: 8px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .borderFinal{
+        border-bottom: 0.2px solid darkgray;
+        border-top: 1.5px dashed darkgray;
+    }
+    .finalAmount{
+        font-size: 1.5rem;
+
+    }
+    .finalAmountText{
+        font-size: 1.5rem;
+    }
+    .savingAmount{
+        font-size: 1.5rem;
+        color: darkslateblue
+    }
+    .savingAmountText{
+        font-size: 1.5rem;
+        color: darkslateblue
+    }
+    .textSize{
+        font-size: 1.4rem;
+    }
+    .item-md ion-icon[item-start] + .item-inner,.item-ios ion-icon[item-start] + .item-inner{
+        margin-left: 4px;
+    }
+    .delivAddressText{
+        font-size: 1.5rem;
+        color: darkgray;
+    }
+    .iconColor{
+        color: darkslateblue!important;
+    }
+    .card-content-md,.card-content-ios{
+        padding-left: 4.6rem;
+    }
+    .addressNickName{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    .cardContentAddress{
+        color: darkgray;
+    }
+    .scroll-content{
+        margin-bottom:0px!important;
+    }
+    .card-header-md,.card-header-ios{
+        padding:8px!important;
+        border-bottom: 1.5px dashed darkgray;
+    }
+    .contentLabel{
+        font-size: 1.4rem;
+        color:darkgray;
+    }
+    .listItem{
+        padding: 8px;
+    }
+    .imageClass{
+        height: 60px;
+        width:60px;
+    }
+    .borderItems{
+        border-top: 0.2px solid darkgray;
+    }
+    .orderStatus{
+        background-color: darkgreen;
+        color:white;    
+    }
+    .btnOrderCancel{
+        background-color: darkslateblue;
+        color: white;
+        width: 94.5%;
+        margin-left: 9px;
+        margin-right: 10px;
+    }
+    ion-icon{
+        //color: darkslateblue;
+    }
+    .item-md.item-block .item-inner, .item-ios.item-block .item-inner{
+        border-bottom:0px;
+    }
+}

@@ -1,0 +1,66 @@
+page-signIn{
+    .app-logo{
+        height: 80px;
+    }
+    .signintext{
+        color:black;
+        margin-top: 8%;
+    }
+
+    .toolbar-title-md,.toolbar-title-ios{
+        font-size: 2.2rem;
+        color:black;
+    }
+
+    .button-ios,.button-md { 
+        background-color:lightcoral;
+        border-radius: 3px;
+        color: lightpink;
+        text-align: center;
+        width: 97.5%;
+        margin-left: 5px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-transform: none;
+        font-size: 1.8rem;
+        margin-top: 15px;
+    }
+    .label-md,.label-ios{
+        margin-top: 6px;
+        color: darkgray;
+        font-style: bold;
+    }
+    .whyText{
+        color: darkred;
+    }
+    .item-md,.item-ios{
+        padding-left: 10px; 
+        border-bottom:2px solid lightgray;
+        border-bottom-width: 95%;
+        margin-top: 5%;
+    }
+    .item-md.item-block .item-inner,.item-ios.item-block .item-inner{
+        border-bottom: 1px solid white;
+    }  
+    .item-md.item-input.input-has-focus .item-inner{
+        border-bottom-color: white;
+        box-shadow:inset 0 -1px 0 0 white;
+    }
+
+    .toolbar-background-md,.toolbar-background-ios{
+        background: rgb(29, 29, 59);
+    }
+    .back-button{
+        color: white;
+    }
+    .toolbar-title-md, .toolbar-title-ios{
+        color: white;
+        font-family: sans-serif;
+        text-transform: none;
+        font-size: 1.8rem;
+    }
+    .header-md::after,.header-ios::after{
+        height: 0px;
+    }
+
+}

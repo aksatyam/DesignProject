@@ -1,0 +1,67 @@
+page-bookDetails{
+    .bookTitle{
+        color: black;
+        font-size: 1.8rem;
+        padding-left: 1.7rem;
+    }
+    .button-md ,.button-ios {
+        text-transform: none;
+        font-size: 12px;
+        height: 22px;
+        background-color: darkslateblue!important;
+        margin-left: 4px;
+        width: 80%;
+        margin-top: 5px;
+        float: right;
+    }
+    .Price{
+        color: black;
+        padding-left: 4px;
+        font-size: 1.8rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .label-md, .label-ios{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .item-md.item-block .item-inner,.item-ios.item-block .item-inner {
+        border-bottom-color: white;
+    }
+    .lineWidthRow{
+        min-height: 5px;
+    }
+    .heighLights{
+        color: black;
+        margin-left: 1.5rem;
+        border-bottom: 1px solid darkslateblue;
+        width: 70px;
+        padding-left: 4px;
+        font-size: 1.3rem;
+        padding-bottom: 4px;
+    }
+    .AuthorName{
+        color: darkslateblue;
+    }
+    .Author{
+        color: darkgray;
+        font-weight: bold;
+    }
+    .sellerInfo{
+        background: darkslateblue;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 95%;
+    }
+    .item-md.item-block .item-inner, .item-ios.item-block .item-inner {
+        border-bottom: 0px solid transparent;
+        
+    }
+    .item-md [item-start]{
+        margin:0 0 0 0;
+    }
+    .row {
+        border-bottom: 1px solid lightgray;
+        margin-left:10px;
+        margin-right:10px;        
+    }
+}

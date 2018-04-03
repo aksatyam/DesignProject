@@ -1,0 +1,88 @@
+page-question {
+    .heading-selected {
+        color: #ffffff;
+        border-bottom:2px solid #ffffff;
+      } 
+
+    .question-header {
+        background: color($colors, mainColor);
+        padding-top: 5px;
+        height:24px;
+      }
+
+    .question-heading {
+        width: 50%;
+        float: left;
+        text-align: center;
+        color: white;
+      } 
+
+    .swiper-slide {
+        align-items: flex-start !important;
+      }  
+      
+    .avtar-size{
+       width: 10vw;
+       height:10vw;
+       border-radius: 50%;
+     } 
+     
+    .sub-icon {
+      width: 10vw;
+      height: 10vw;
+      border-radius: 50%;
+      display: table;
+      text-align: center;
+      background-color: darkslateblue;
+    }
+   .icon-aling {
+     display: table-cell;
+     vertical-align: middle;
+     color: white;
+     font-size: 5vw;
+   } 
+  
+   .item-ios[detail-push] .item-inner, button.item-ios:not([detail-none]) .item-inner, a.item-ios:not([detail-none]) .item-inner {
+    background-image: none !important;
+  }
+
+  .arrow {
+    color: darkslateblue;
+    font-size: 5vw;
+  }
+  .ion-content{
+    padding-top:10vw; 
+  }
+
+  ion-fab[bottom] {
+    bottom: 10px;
+ }
+
+ ion-fab[right] {
+  right: 20px;
+ }
+
+.displayfab{
+   height: 0px;
+   width: 0px;
+ }
+
+ .item-md.item-block .item-inner,.item-ios.item-block .item-inner {
+   padding-right: 8px;
+   border-bottom: 0px solid #dedede !important;
+}
+
+.plus-icon-color{
+   color:white;
+}
+.removepad{
+  padding: 0px !important;
+}
+
+.card-content-md,.card-content-ios {
+     text-align: start !important;
+    } 
+.scroll-content{
+    margin-top:72px!important;
+   }
+}

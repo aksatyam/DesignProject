@@ -1,0 +1,38 @@
+page-myAddressesList{
+    .item-md,.item-ios{
+        padding-left:0px;
+        background-color: transparent;
+    }
+    .item-md [item-end],.item-ios [item-end] {
+        margin: 0 3px 0 0;
+    }
+    .item-md [item-start],.item-ios [item-start]{
+        margin: 0 3px 0 3px;
+    }
+    .plusIcon{
+        color: white;
+    }
+    .sellCard{
+        padding-left:10px;
+        background-color: darkslateblue!important;
+    }
+    .sellText{
+        color: white;
+        font-size:1.4rem;
+        white-space: nowrap;
+    }
+    .item-md.item-block .item-inner {
+        padding-right: 0px;
+        border-bottom: 0px solid #dedede;
+    }
+    .card-header-md, .card-header-ios {
+        padding: 8px 8px 8px 16px!important;
+        font-weight: bold;
+    }
+    .cardContentAddress{
+        color: darkgray;
+    }
+    .item-md ion-icon[item-start] + .item-inner,.item-ios ion-icon[item-start] + .item-inner{
+        margin-left: 8px;
+    }
+}

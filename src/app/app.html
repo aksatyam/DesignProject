@@ -1,0 +1,12 @@
+<ion-menu [content]="content">
+    <ion-content>
+        <ion-label text-center>User Profile Info</ion-label>
+        <hr>
+        <ion-list class="menu-list">
+            <ion-item menuClose  class="navlist-item"  *ngFor="let p of pages" tappable (click)="openPage(p)">
+                <ion-label>{{p.title}}</ion-label>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+<ion-nav [root]="rootPage"  #content swipeBackEnabled="false"></ion-nav>

@@ -1,0 +1,53 @@
+
+<ion-header>
+    <ion-navbar>
+        <ion-title>Cart </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="app-background">
+    <div class="bg" *ngIf="isVisible">
+        <img src="assets/icon/emptycart.png" class="imageClass">
+        <ion-label class="emptycartText">No items in your cart</ion-label>
+        <ion-label class="emptyItemsText">Your favourite items are just a click away</ion-label>
+        <button ion-button small class="btnStartShopping" tappable (click)="onClickShooping()">Start Shopping</button>
+    </div>
+    <div class="cartItems" *ngIf="isVisibleItems">
+        <ion-card class="subTotalList">
+            <ion-item no-margin>
+                <ion-label item-satrt class="titleCls">Sub Total</ion-label>
+                <ion-label item-end class="itemMdEnd">{{total_price | currency :'&#8377;'}}</ion-label>
+            </ion-item>
+            <ion-item no-margin>
+                <ion-label item-satrt class="titleCls">Delivery charges</ion-label>
+                <ion-label item-end class="itemDeleveryAmount">{{delevery_price | currency :'&#8377;'}}</ion-label>
+            </ion-item>
+            <hr>
+            <ion-item no-margin>
+                    <ion-label item-satrt class="titleCls">Total Payable Amount</ion-label>
+                    <ion-label item-end class="itemDeleveryAmount">{{total_price+delevery_price | currency :'&#8377;'}}</ion-label>
+            </ion-item>
+        </ion-card>
+
+        <ion-card class="itemArrayClass">
+            <ion-list>
+                <ion-item *ngFor="let item of cardArray" style="border-bottom:1px solid darkgray;">
+                    <div class="image-container" item-start>
+                        <img src="assets/icon/unnamed.png" class="Image">
+                    </div>
+                    <h2 class="Heading" text-wrap>{{item.title}}</h2>
+                    <p class="description" text-wrap>{{item.quantity}}</p>
+                    <label class="Date">
+                        <span class="mainPrice">{{item.price | currency :'&#8377;' }}</span>
+                        <span class="textCut">{{item.maxprice | currency :'&#8377;' }}</span>
+                    </label>
+                    <ion-icon name="ios-trash-outline" class="btnRemove"></ion-icon>
+                </ion-item>
+            </ion-list>
+        </ion-card>
+    </div>
+    
+</ion-content>
+<ion-footer style="padding-left:8px;padding-right:8px;" *ngIf="isVisibleItems">
+    <button ion-button  class="btnCheckout" tappable (click)="openCheckout()">Checkout</button>
+</ion-footer>

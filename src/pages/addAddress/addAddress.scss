@@ -1,0 +1,53 @@
+page-addAddress{
+    .item-md.item-block .item-inner,.item-ios.item-block .item-inner {
+        padding-right: 0px;
+        border-bottom: 0px solid #dedede;
+    }
+    .item-ios .radio-md[item-start] ,.item-md .radio-md[item-start] {
+        margin:11px 10px 10px 0px;
+    }
+    .item-input-has-focus .label-md[floating], .input-has-focus .label-md[floating]{
+        color: darkslateblue;
+        border-bottom-color: darkslateblue;
+    }
+    .item-block .item-md .item-input .item-label-floating .input-has-focus .item-input-has-focus{
+        border-bottom-color: darkslateblue;
+    }
+    .item-label-floating .text-input-md{
+        border-bottom-color: darkslateblue;
+    }
+    .item-md.item-input.item-input-has-focus .item-inner, .item-md.item-input.input-has-focus .item-inner{
+        border-bottom:0.2px solid darkslateblue;
+    }
+    .item-label-floating .text-input-md{
+        color: darkslateblue;
+        font-size: 1.4rem;
+    }
+    .radio-md .radio-checked,.radio-ios .radio-checked{
+        border-color: darkslateblue;
+    }
+    .radio-md .radio-inner,.radio-ios .radio-inner{
+        background-color: darkslateblue;
+    }
+    .item-radio-checked.item-md ion-label{
+        color: darkslateblue
+    }
+    .item-md.item-block .item-inner{
+        //border-bottom:0.2px solid darkslateblue;
+        margin-top: 8px;
+        margin-right: 15px;
+    }
+    .button-ios, .button-md{
+        text-transform: none;
+    }
+    .addressTypeText{
+        padding-top: 10px;
+        padding-left: 16px;
+        color: darkslateblue;
+        font-size: 14px;
+    }    
+    .btnContinue{
+        background-color: darkslateblue;
+        width: 98%;
+    }
+}

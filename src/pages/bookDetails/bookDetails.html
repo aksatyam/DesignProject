@@ -1,0 +1,78 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Book Name</ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only color="royal" (click)="openCartPage()">
+                <ion-icon name="ios-cart"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="app-background">
+    <ion-slides pager style="height:200px" autoplay="3000" loop="true" speed="1000">
+        <ion-slide>
+                <img src="assets/icon/unnamed.png" class="imageClass">
+        </ion-slide>
+        <ion-slide>
+                <img src="assets/icon/unnamed.png" class="imageClass">
+        </ion-slide>
+        <ion-slide>
+                <img src="assets/icon/unnamed.png" class="imageClass">
+        </ion-slide>
+    </ion-slides>
+    <hr>
+    <ion-label class="bookTitle">Book Name, Author</ion-label>
+    <ion-item no-margin class="app-background">
+        <ion-label item-start class="Price">{{price | currency :'&#8377;'}}
+            <span style="text-decoration:line-through;color:lightgray;font-size:1.8rem;">
+                    {{price | currency :'&#8377;'}}
+            </span>
+        </ion-label>
+        <ion-label item-end>
+                <button ion-button default (click)="addToCart()">ADD TO CART</button>
+        </ion-label>
+    </ion-item>
+    <hr style="margin-left:10px;margin-right:10px;">
+    <div class="lineWidthRow">
+
+    </div>
+    <ion-label class="heighLights">Highlights</ion-label>
+    <hr>
+    <ion-row>
+        <ion-col col-3 class="Author">
+            Authur 
+        </ion-col>
+        <ion-col col-9 class="AuthorName">
+            : Ashish Kumar Satyam   
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col col-3 class="Author">
+            Edition 
+        </ion-col>
+        <ion-col col-9 class="AuthorName">
+            : 2018   
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col col-3 class="Author">
+            Publisher 
+        </ion-col>
+        <ion-col col-9 class="AuthorName">
+            : Pearson   
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col col-3 class="Author">
+            Seller 
+        </ion-col>
+        <ion-col col-9 class="AuthorName">
+            : Pawan Sharma   
+        </ion-col>
+    </ion-row>
+    <!-- <ion-item class="app-background sellerInfo">
+            <ion-label item-start style="color:white;">Seller</ion-label>
+            <ion-label item-end style="color:white;">Pawan Sharma</ion-label>
+    </ion-item> -->
+</ion-content>
