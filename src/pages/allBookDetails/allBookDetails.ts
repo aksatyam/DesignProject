@@ -7,7 +7,7 @@ import { CartPage } from '../cart/cart';
     templateUrl: 'allBookDetails.html'
   })
   export class AllBookDetailsPage {
-   public title:any="First Semester";
+    public title:any="First Semester";
     public cardArray:any=[
                           {
                             'book_name':'Object Oriented Programming with C++',

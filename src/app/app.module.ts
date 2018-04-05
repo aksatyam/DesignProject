@@ -33,6 +33,7 @@ import { AddAddressPage } from '../pages/addAddress/addAddress';
 import { CheckoutPage } from '../pages/checkout/checkout';
 import { MyOrdersDetailsPage } from '../pages/myOrdersDetails/myOrdersDetails';
 import { SellUsedBooksPage } from '../pages/sellUsedBooks/sellUsedBooks';
+import { MyListedBooksPage } from '../pages/myListedBooks/myListedBooks';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { SellUsedBooksPage } from '../pages/sellUsedBooks/sellUsedBooks';
     AddAddressPage,
     CheckoutPage,
     MyOrdersDetailsPage,
-    SellUsedBooksPage
+    SellUsedBooksPage,
+    MyListedBooksPage
   ],
   imports: [
     BrowserModule,
@@ -88,7 +90,8 @@ import { SellUsedBooksPage } from '../pages/sellUsedBooks/sellUsedBooks';
     AddAddressPage,
     CheckoutPage,
     MyOrdersDetailsPage,
-    SellUsedBooksPage
+    SellUsedBooksPage,
+    MyListedBooksPage
   ],
   providers: [
     StatusBar,

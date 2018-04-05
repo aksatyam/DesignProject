@@ -5,9 +5,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import {Events} from "ionic-angular/index";
 import { TabsPage } from '../pages/tabs/tabs';
 import { SignInPage } from '../pages/signIn/signIn';
-//import { MyAddressPage } from '../pages/myAddress/myAddress';
 import { MyOrdersPage } from '../pages/myOrders/myOrders';
 import { MyAddressesListPage } from '../pages/myAddressesList/myAddressesList';
+import { MyListedBooksPage } from '../pages/myListedBooks/myListedBooks';
 
 @Component({
   selector: 'app-container',
@@ -39,8 +39,8 @@ export class MyApp {
     [
       {title: 'SignIn', component: SignInPage, index: 0},
       {title: 'My Address', component: MyAddressesListPage, index: 1},
-      {title: 'My Orders', component: MyOrdersPage, index: 2},      
-      
+      {title: 'My Orders', component: MyOrdersPage, index: 2},  
+      {title: 'My Listed Books', component: MyListedBooksPage, index: 3},            
     ]
     this.pages=this.router;
    
