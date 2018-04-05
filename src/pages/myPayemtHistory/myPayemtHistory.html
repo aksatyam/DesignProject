@@ -1,0 +1,52 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            My Payment History
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="app-background">
+        <ion-card *ngFor="let prod of cardArray" style="padding-bottom:8px;">
+                <div class="orderDateDiv">
+                    <ion-label text-center class="orderDate">Placed on Wed, 10 Jan, 07:39 PM</ion-label>
+                </div>
+                <ion-card-header class="headerTitle" text-center>
+                        Order ID: {{prod.orderID}}
+                </ion-card-header>
+                <hr>
+                <ion-item>
+                    <div item-start>
+                        <img src="assets/icon/unnamed.png" class="imageClass">
+                    </div>
+                    <ion-label>
+                        <span class="textTile">{{prod.book_name}}</span>
+                        <p class="inFoParagraph">
+                            <span class="contentTitle"> Selling Price</span>
+                            <span  class="deliveryCharges"> {{prod.selling_price | currency :'&#8377;' }}</span>
+                        </p>
+                        <p class="inFoParagraph">
+                            <span class="contentTitle"> Commisionm Amount</span>
+                            <span class="deliveryCharges"> {{prod.commision_charges | currency :'&#8377;' }}</span>
+                        </p>
+                        <hr>
+                        <p class="inFoParagraph">
+                                <span class="contentTitle">Receivable Amount</span>
+                                <span class="deliveryCharges"> {{prod.receivable_amount | currency :'&#8377;' }}</span>
+                        </p> 
+                    </ion-label>
+                </ion-item>
+                <hr>
+                <div class="inFoParagraph1">
+                    <div class="inFoParagraph">
+                            <span class="contentTitle">Order Status</span>
+                            <span class="deliveryCharges">{{prod.orderStatus}}</span>
+                    </div>
+                    <br>
+                    <div class="inFoParagraph">
+                            <span class="contentTitle">Payment Status</span>
+                            <span class="deliveryCharges"> {{prod.payment_status}}</span>
+                    </div>
+                </div>
+            </ion-card>
+</ion-content>

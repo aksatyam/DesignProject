@@ -1,0 +1,70 @@
+page-myPayemtHistory{
+    .card-header-md,.card-header-ios {
+        padding:6px 8px 0px 8px!important;
+    }
+    .headerTitle{
+        color: darkgray;
+        font-size: 14px;
+    }
+    .imageClass{
+        height: 60px;
+        width:60px;
+    }
+    .textTile{
+        font-size: 1.6rem;
+        color: black;
+        font-weight: 700;
+        margin-bottom:10px;
+    }
+    .deliveryCharges{
+        color: darkgreen;
+        float:right;
+        font-size:1.4rem;
+    }
+    .orderId{
+        font-size: 12px;
+    }
+    .deleveredColor{
+        color: darkgreen;
+    }
+    .orderDate{
+        padding:10px;
+        color: darkslateblue;
+        background-color: white;
+        font-size: 1.5rem;
+    }
+    .orderDateDiv{
+        // border-bottom: 0.5px solid lightgray!important;
+        font-size: 1.5rem;
+    }
+    .scheduleDateDiv{
+        border-bottom: 0.5px solid lightgray;
+    }
+    .scheduleDate{
+        font-size: 1.5rem;
+        color: black;
+        padding:10px;
+    
+    }
+    .scroll-content{
+        margin-bottom: 0px!important;
+    }
+    .btnProducDetails{
+        color: white;
+        background-color: darkslateblue!important;
+        text-transform: none;
+    }
+    .inFoParagraph{
+        padding-top:2px;
+        padding-bottom:2px;        
+    }
+    .inFoParagraph1{
+        padding:2px 8px 4px 8px;
+        margin-bottom: 6px!important;
+    }
+    .contentTitle{
+        float:left;
+        font-size:1.4rem;
+        color: darkgray;
+    }
+}

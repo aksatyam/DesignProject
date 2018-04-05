@@ -34,6 +34,7 @@ import { CheckoutPage } from '../pages/checkout/checkout';
 import { MyOrdersDetailsPage } from '../pages/myOrdersDetails/myOrdersDetails';
 import { SellUsedBooksPage } from '../pages/sellUsedBooks/sellUsedBooks';
 import { MyListedBooksPage } from '../pages/myListedBooks/myListedBooks';
+import { MyPayemtHistoryPage } from '../pages/myPayemtHistory/myPayemtHistory';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { MyListedBooksPage } from '../pages/myListedBooks/myListedBooks';
     CheckoutPage,
     MyOrdersDetailsPage,
     SellUsedBooksPage,
-    MyListedBooksPage
+    MyListedBooksPage,
+    MyPayemtHistoryPage
   ],
   imports: [
     BrowserModule,
@@ -91,7 +93,8 @@ import { MyListedBooksPage } from '../pages/myListedBooks/myListedBooks';
     CheckoutPage,
     MyOrdersDetailsPage,
     SellUsedBooksPage,
-    MyListedBooksPage
+    MyListedBooksPage,
+    MyPayemtHistoryPage
   ],
   providers: [
     StatusBar,
