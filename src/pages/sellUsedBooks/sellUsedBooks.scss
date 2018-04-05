@@ -1,3 +1,63 @@
 page-sellUsedBooks{
-    
+    .frontBookPage{
+        height: 110px;
+        width: 100%;
+    }
+    .rareBookPage{
+        height: 120px;
+        width: 100%;
+    }
+    [col-6]{
+        padding: 0px;
+    }
+    .bookTitles{
+        padding-top: 40px;
+        color: darkslateblue;
+        font-size: 2.5rem;
+    }
+    .bookTitlesText{
+        color: darkslateblue;
+    }
+    .colBackground{
+        background-color: lightgray;
+        height: 120px;
+    }
+    .item-md,.item-ios {
+        //padding: 8px!important;
+        margin-top: 3px!important;
+        padding-left: 8px!important;
+        padding-right: 8px!important;
+        color: darkslateblue;
+        font-size: 1.4rem;
+    }
+
+    .item-input-has-focus .label-md[floating], .input-has-focus .label-md[floating] {
+        color: darkslateblue!important;
+    }
+
+    .item-md.item-input.item-input-has-focus .item-inner, .item-md.item-input.input-has-focus .item-inner{
+        border-bottom-color: darkslateblue!important;
+    }
+    .item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+        border-bottom-color: darkslateblue!important;
+        box-shadow: inset 0 -1px 0 0 darkslateblue;
+    }
+    .item-input-has-value .label-md[floating], .input-has-value .label-md[floating] {
+        color: darkslateblue!important;
+    }
+    .btnColor{
+        background-color: darkslateblue!important;
+    }
+    .footerClass{
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 8px;
+    }
+    .footer-md::before{
+        background-image: none;
+    }
+    .scroll-content {
+        margin-top: 50px !important;
+        margin-bottom: 50px !important;
+    }
 }
