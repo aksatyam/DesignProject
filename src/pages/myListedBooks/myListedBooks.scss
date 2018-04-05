@@ -1,0 +1,50 @@
+page-myListedBooks{
+    .semesterName{
+        color: white;
+        font-size: 16px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    }
+    .semesterDiv{
+        background-color: darkslateblue;
+        padding:4px;
+    }
+    .scroll-content{
+        //margin-top:75px!important;
+        margin-bottom:50px!important;
+    }
+    .imageClass{
+        height: 150px;
+        width:120px;
+    }
+    .item-md [item-left], .item-md [item-right], .item-md [item-start], .item-md [item-end] {
+        margin: 4px 12px 4px 0;
+    }
+    .item-md, .item-ios{
+        padding-left: 8px;
+    }
+    .label-md, .label-ios{
+        font-size: 14px;
+    }
+    .btnAddToCart{
+        background-color: darkslateblue;
+        color: white;
+        float: right;
+        font-size: 10px;
+        height: 25px;
+        margin-top: 10px;
+    }
+    .priceColor{
+        color: darkslateblue;
+    }
+    .bookName{
+        margin-bottom: 6px;
+    }
+    .bookQuantity{
+        padding-bottom: 2px;
+        padding-top: 2px;
+    }
+    .scroll-content{
+        margin-bottom:0px!important;
+    }
+}
