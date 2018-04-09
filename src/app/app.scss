@@ -81,7 +81,7 @@ app-container {
         min-height: 50px!important;
     }
     .scroll-content{
-        margin-top: 50px!important;
+        //margin-top: 50px!important;
         margin-bottom: 40px!important;
     }
     .tabs-md .tab-button,.tabs-ios .tab-button{
@@ -90,7 +90,36 @@ app-container {
     .swiper-pagination-bullet-active{
         background: darkslateblue!important;
     }
-
+    .UserInfo{
+        padding:20px 10px 10px 20px;
+        background-color: darkslateblue;
+    }
+    .IconSize{
+        font-size: 5.0rem;
+        color: white;
+    }
+    .nameTitle{
+        color: white;
+        font-size: 1.4rem;
+    }
+    .emailTitle{
+        color: white;
+        font-size: 1.3rem;
+    }
+    .item-md ion-icon[item-start] + .item-inner{
+        margin-left: 5px;
+    }
+    .menuItems{
+        padding-left: 16px;
+    }
+    .navlist-item {
+        vertical-align: middle;
+        color: lightgray;
+        padding: 0px;
+      }
+      .list-md .item-block .item-inner {
+        border-bottom: 0px solid #dedede!important;
+      } 
 }
     
 
