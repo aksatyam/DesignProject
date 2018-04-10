@@ -1,3 +1,70 @@
 page-contact {
-
+    .SliderImages{
+        height: 40%;
+    }
+    .header-background{
+        background-color: darkslateblue;
+    }
+    .ColorSelected{
+        color: white;
+        font-size: 1.3rem;
+    }
+    .segment-md .segment-button.segment-activated{
+        border-color: white;
+        color: white;
+        text-transform: none;
+    }
+    .segment-ios .segment-button.segment-activated {
+        border-color: white;
+        color: white;
+        border-bottom: 1px;
+        text-transform: none;
+    }
+    .segment-md .segment-button {
+        color:white;
+        text-transform: none;
+    }
+    .segment-ios .segment-button {
+        color:white;
+        background-color: darkslateblue!important;
+        border: none;
+        text-transform: none;
+    }
+    .swiper-slide {
+        align-items: flex-start !important;
+    }
+    .imageClass{
+        text-align: center;
+    }
+    .leftBar{
+        //border-left: 1px solid white;
+    }
+    .imageClass1{
+        //width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .imageDiv{
+        border-bottom: 1px solid darkgray;
+    }
+    .ComanyTitle{
+        padding: 10px;
+        border-bottom: 1px solid darkgray;
+    }
+    .btnCompany{
+        
+    }
+    .CompanyText{
+        font-size: 1.8rem;
+    }
+    .btnInfo{
+        text-transform: none;
+        margin:8px;
+        background-color: darkslateblue;
+    }
+    ion-slides {
+        width: 100%;
+        height: auto;
+        display: flex;
+      }
 }

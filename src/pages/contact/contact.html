@@ -7,8 +7,41 @@
       Trainning
     </ion-title>
   </ion-navbar>
+  <ion-segment [(ngModel)]="tabsTitle" class="header-background" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="1">
+        Trainning Companies
+      </ion-segment-button>
+      <ion-segment-button value="2" class="leftBar">
+        Upcoming Workshops
+      </ion-segment-button>
+  </ion-segment>
 </ion-header>
 
-<ion-content>
-  <ion-label>Trainning Content Page</ion-label>
+<ion-content class="scrollable">
+    <ion-slides #headerSlide (ionSlideDidChange)="headerSlideChanged()">
+        <ion-slide>
+            <ion-slides #contentSlide (ionSlideDidChange)="contentSlideChanged()" class="SliderImages" pager autoplay="3000" loop="true" speed="1000"> 
+                <ion-slide *ngFor="let sl of slideArray" >
+                      <img src="assets/icon/unnamed.png" class="imageClass">
+                </ion-slide>
+            </ion-slides>
+            <!--Trainning Company Lists-->
+            <ion-card *ngFor="let sl of slideArray" >
+              <div class="imageDiv">
+                  <img src="assets/icon/unnamed.png" class="imageClass1">
+              </div>
+              <div class="ComanyTitle">
+                <ion-label text-left class="CompanyText">Satyam Infotech</ion-label>
+              </div>
+              <div class="btnCompany">
+                  <button ion-button small float-left class="btnInfo">Web Development</button>
+                  <button ion-button small float-right class="btnInfo">View Profile</button>
+              </div>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+          <h2>Slide 2</h2>
+        </ion-slide>    
+      </ion-slides>
+
 </ion-content>
