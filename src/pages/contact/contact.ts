@@ -52,6 +52,7 @@ export class ContactPage {
       this.tabsTitle="1";
     }else{
       this.tabsTitle="2";
+      this.headerSlide.slideTo(1);
     }
   }
 

@@ -57,7 +57,13 @@ page-contact {
     .CompanyText{
         font-size: 1.8rem;
     }
-    .btnInfo{
+    .btnInfoTech{
+        text-transform: none;
+        margin:8px;
+        background-color: lightgray;
+        color: darkslateblue;
+    }
+    .btnInfoView{
         text-transform: none;
         margin:8px;
         background-color: darkslateblue;
