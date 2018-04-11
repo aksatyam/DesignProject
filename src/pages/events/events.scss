@@ -1,0 +1,50 @@
+page-events {
+
+    .heading-selected {
+        color: #ffffff;
+        border-bottom:2px solid #ffffff;
+      } 
+    
+    .event-header {
+        background:darkslateblue;
+        padding-top: 10px;
+        height:37px;
+    }
+
+    .event-heading {
+        width: 50%;
+        float: left;
+        text-align: center;
+        color: white;
+    } 
+
+    .scroll-content{
+        margin-top:85px!important;
+    }
+     
+    .swiper-slide {
+        align-items: flex-start !important;
+    } 
+      
+    .card-content-ios,.card-content-md{
+        padding:2vw;
+        text-align: left
+        
+    }  
+
+    .my-padding{
+        padding: 0px;
+    }
+
+    .button-ios,.button-md{
+        height: 10vw;
+        padding: 5px;
+        border-radius: 0px; 
+    }
+    
+    .btn-mycolor{
+        background-color: darkslateblue !important;
+    }
+    
+
+}

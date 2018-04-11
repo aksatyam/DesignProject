@@ -35,7 +35,8 @@ import { MyOrdersDetailsPage } from '../pages/myOrdersDetails/myOrdersDetails';
 import { SellUsedBooksPage } from '../pages/sellUsedBooks/sellUsedBooks';
 import { MyListedBooksPage } from '../pages/myListedBooks/myListedBooks';
 import { MyPayemtHistoryPage } from '../pages/myPayemtHistory/myPayemtHistory';
-
+import { EventsPage } from '../pages/events/events';
+import { IonicImageViewerModule } from 'ionic-img-viewer';
 @NgModule({
   declarations: [
     MyApp,
@@ -62,11 +63,13 @@ import { MyPayemtHistoryPage } from '../pages/myPayemtHistory/myPayemtHistory';
     MyOrdersDetailsPage,
     SellUsedBooksPage,
     MyListedBooksPage,
-    MyPayemtHistoryPage
+    MyPayemtHistoryPage,
+    EventsPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    IonicImageViewerModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -94,7 +97,8 @@ import { MyPayemtHistoryPage } from '../pages/myPayemtHistory/myPayemtHistory';
     MyOrdersDetailsPage,
     SellUsedBooksPage,
     MyListedBooksPage,
-    MyPayemtHistoryPage
+    MyPayemtHistoryPage,
+    EventsPage
   ],
   providers: [
     StatusBar,

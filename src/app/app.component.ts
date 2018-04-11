@@ -10,6 +10,7 @@ import { MyAddressesListPage } from '../pages/myAddressesList/myAddressesList';
 import { MyListedBooksPage } from '../pages/myListedBooks/myListedBooks';
 import { MyPayemtHistoryPage } from '../pages/myPayemtHistory/myPayemtHistory';
 
+
 @Component({
   selector: 'app-container',
   templateUrl: 'app.html'
