@@ -73,4 +73,13 @@ page-contact {
         height: auto;
         display: flex;
       }
+      .card-content-ios,.card-content-md{
+        padding:2vw;
+        text-align: left
+        
+    }
+    .mybtn-color{
+        background-color: darkslateblue;
+        text-transform: none;
+    }
 }
