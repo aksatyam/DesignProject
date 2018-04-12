@@ -1,8 +1,7 @@
 page-addcomment {
 
- 
-    .textarea-style{
-      height:70vw;
+ .textarea-style{
+      height:100%;
       background-color: color($colors, groundcolor) !important;
       border-radius: 2px;
       color:color($colors,lightgraycolor);
@@ -21,8 +20,46 @@ page-addcomment {
     }
 
     .item-md.item-block, .item-ios.item-block ,.item-inner {
-     padding-right: 1vw;
-     border-bottom: none !important;
-   }   
+     padding:0px !important;
 
+     border-bottom: none !important;
+   }
+    
+   .btn-note_type{
+       background-color: #ffffff;
+       text-align: center;
+   }
+
+   .card-md,.card-ios{
+      width: 100%;
+      margin: 0px ;
+   }
+
+   .button-md{
+      background-color: color($colors,mainColor);
+      color:white;
+   }
+
+   .colBackground{
+    background-color: lightgray;
+    height: 40vw;
+  }
+  
+  .bookTitles{
+    padding-top: 10vw;
+    color: darkslateblue;
+  }
+
+  .TitlesText{
+    color: darkslateblue;
+  } 
+  .col{
+      padding: 1vw;
+  }
+
+
+
+    
+   
+  
 }

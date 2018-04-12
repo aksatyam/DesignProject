@@ -6,8 +6,8 @@ page-course {
     background-color: #eeeeee !important;
     color: darkslateblue;
   }
-  .input-wrapper{
-    padding-left: 4vw
+  .coursepaddind{
+    padding-left: 4vw;
   }
 
   .label-md,.label-ios {
@@ -54,6 +54,13 @@ page-course {
 .list-md,.list-ios {
   margin-bottom:7vw !important;
 }
+
+.list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+     border-bottom: 0px solid #c8c7cc !important; 
+}
+
+
+
 
 
   

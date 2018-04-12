@@ -13,12 +13,20 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'addcomment.html',
 })
 export class AddcommentPage {
+  public istext:any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.istext="1"
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AddcommentPage');
+  }
+  setTextmode(){
+  this.istext="1";
+  }
+  setImageMode(){
+  this.istext="0";
   }
 
 }

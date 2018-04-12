@@ -1,0 +1,123 @@
+<!--
+  Generated template for the MystuffPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>My Stuff</ion-title>
+  </ion-navbar>
+  <div class="event-header">
+    <div class="event-heading" style="height:27px;font-weight:bolder;" [ngClass]="{'heading-selected': selectNotes}" tappable
+      (click)="openNotes()"><span class="description-text">Notes</span></div>
+    <div class="event-heading" style="height:27px;font-weight:bolder;" [ngClass]="{'heading-selected': selectQuestion}" tappable
+      (click)="openQuestion()"><span class="description-text">Questions</span></div>
+    <div class="event-heading" style="height:27px;font-weight:bolder;" [ngClass]="{'heading-selected': selectAnswer}" tappable
+      (click)="openAnswer()"><span class="description-text">Answers</span></div>
+  </div>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-slides #requestSlides (ionSlideDidChange)="slideChanged()">
+    <ion-slide disable-scroll="false" class="scrollable">
+
+      <ion-list>
+        <ion-card>
+          <ion-card-content>
+            <div>
+              <p class="common-text">Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
+                Whoa. This is heavy.Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine...
+                out of a DeLorean?! Whoa.
+              </p>
+            </div>
+
+          </ion-card-content>
+          <ion-row style="border-top:2px solid #eeeeee;">
+            <ion-col col-4 class="my-padding">
+
+            </ion-col>
+
+            <ion-col col-5 class="my-padding">
+
+            </ion-col>
+            <ion-col col-3 class="my-padding">
+              <button ion-button class="btn-mycolor small-text" style="width:100%;" (click)="edit()">Edit</button>
+            </ion-col>
+
+          </ion-row>
+        </ion-card>
+      </ion-list>
+
+
+    </ion-slide>
+
+    <ion-slide disable-scroll="false" class="scrollable">
+
+      <ion-list>
+        <ion-card>
+          <ion-card-content>
+            <div>
+              <p class="common-text">Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
+                Whoa. This is heavy.Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine...
+                out of a DeLorean?! Whoa.
+              </p>
+            </div>
+
+          </ion-card-content>
+          <ion-row style="border-top:2px solid #eeeeee;">
+            <ion-col col-4 class="my-padding">
+
+            </ion-col>
+
+            <ion-col col-5 class="my-padding">
+
+            </ion-col>
+            <ion-col col-3 class="my-padding">
+              <button ion-button class="btn-mycolor small-text" style="width:100%;" (click)="edit()">Edit</button>
+            </ion-col>
+
+          </ion-row>
+        </ion-card>
+      </ion-list>
+    </ion-slide>
+
+
+    <ion-slide disable-scroll="false" class="scrollable">
+
+      <ion-list>
+        <ion-card>
+          <ion-card-content>
+            <div>
+              <p class="common-text">Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
+                Whoa. This is heavy.Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine...
+                out of a DeLorean?! Whoa.
+              </p>
+            </div>
+
+          </ion-card-content>
+          <ion-row style="border-top:2px solid #eeeeee;">
+            <ion-col col-4 class="my-padding">
+
+            </ion-col>
+
+            <ion-col col-5 class="my-padding">
+
+            </ion-col>
+            <ion-col col-3 class="my-padding">
+              <button ion-button class="btn-mycolor small-text" style="width:100%;" (click)="edit()">Edit</button>
+            </ion-col>
+
+          </ion-row>
+        </ion-card>
+      </ion-list>
+    </ion-slide>
+  </ion-slides>
+
+
+
+
+</ion-content>

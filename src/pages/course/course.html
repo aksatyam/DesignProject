@@ -10,7 +10,7 @@
     <button ion-button menuToggle>
       <ion-icon name="md-list"></ion-icon>
     </button>
-    <ion-title>Course</ion-title>
+    <ion-title>MCA</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -19,13 +19,14 @@
   
   <ion-list>
       <ion-list-header>
-      <ion-label style="color:darkslateblue;font-style:bold;" class="heading-text">First Semester</ion-label>
+        <ion-icon name="md-bookmark" item-left style="color:darkslateblue;"></ion-icon>
+       <ion-label style="color:darkslateblue;font-weight:bolder;" class="heading-text">First Semester</ion-label>
       </ion-list-header>
       <button ion-item (click)="next()">
         <div class="sub-icon small-text"  style="font-weight:bold;" item-start>
          <span> CAP302</span>
         </div>
-        <ion-label class="course-card-heading description-text">Operating System</ion-label>
+        <ion-label class="course-card-heading coursepaddind description-text">Operating System</ion-label>
         <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
       </button>
 
@@ -34,7 +35,7 @@
         <div class="sub-icon small-text"  style="font-weight:bold;" item-start>
          <span> CAP302</span>
         </div>
-        <ion-label class="course-card-heading description-text"> System Software</ion-label>
+        <ion-label class="course-card-heading coursepaddind description-text"> System Software</ion-label>
         <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
       </button>
 
@@ -43,7 +44,7 @@
         <div class="sub-icon small-text"  style="font-weight:bold;" item-start>
          <span> CAP302</span>
         </div>
-        <ion-label class="course-card-heading description-text">Java</ion-label>
+        <ion-label class="course-card-heading coursepaddind description-text">Java</ion-label>
         <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
       </button>
 
@@ -51,7 +52,7 @@
         <div class="sub-icon small-text"  style="font-weight:bold;" item-start>
          <span> CAP302</span>
         </div>
-        <ion-label class="course-card-heading description-text">Search Engine Optimization</ion-label>
+        <ion-label class="course-card-heading coursepaddind description-text">Search Engine Optimization</ion-label>
         <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
       </button>
 
@@ -59,7 +60,7 @@
         <div class="sub-icon small-text"  style="font-weight:bold;" item-start>
          <span> CAP302</span>
         </div>
-        <label class="course-card-heading description-text">Automation Theory</label>
+        <label class="course-card-heading coursepaddind description-text">Automation Theory</label>
         <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
       </button>
 
@@ -67,15 +68,15 @@
         <div class="sub-icon small-text"  style="font-weight:bold;" item-start>
          <span> CAP302</span>
         </div>
-        <label class="course-card-heading description-text">Finational Management</label>
+        <label class="course-card-heading coursepaddind description-text">Finational Management</label>
         <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
       </button>
 
-      <button ion-item style="background-color:#eeeeee;">
+      <button ion-item>
         <ion-row>
         <ion-col col-4></ion-col>
-        <ion-col col-4><span class="card-see-all description-text " style="text-align: center"> See All    <ion-icon name="ios-arrow-down-outline"></ion-icon> </span></ion-col>
-        <ion-col col-4></ion-col>
+        <ion-col col-4><span class="card-see-all" style="text-align: center;font-size:4.5vw;">Browse All</span></ion-col>
+        <ion-col col-4> <ion-icon name="ios-arrow-forward-outline"  class="arrow" style="float:right;"></ion-icon> </ion-col>
         </ion-row>
       
       </button>
@@ -83,22 +84,23 @@
 
     <ion-list>
       <ion-list-header>
-              <ion-label style="color:darkslateblue;font-style:bold;" class="heading-text">Second Semester</ion-label>
+       <ion-icon name="md-bookmark" item-left style="color:darkslateblue"></ion-icon>
+       <ion-label style="color:darkslateblue;font-weight:bolder;" class="heading-text">Second Semester</ion-label>
       </ion-list-header>
       <button ion-item (click)="next()">
-        <div class="sub-icon small-text"  style="font-weight:bold;" item-start>
-         <span> CAP302</span>
-        </div>
-        <ion-label class="course-card-heading description-text">Android</ion-label>
-        <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
-      </button>
+          <div class="sub-icon small-text"  style="font-weight:bold;" item-start>
+           <span> CAP302</span>
+          </div>
+          <ion-label class="course-card-heading coursepaddind description-text"> Android</ion-label>
+          <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
+        </button>
 
 
      <button ion-item (click)="next()">
         <div class="sub-icon small-text"  style="font-weight:bold;" item-start>
          <span> CAP302</span>
         </div>
-        <ion-label class="course-card-heading description-text"> Ionic</ion-label>
+        <ion-label class="course-card-heading coursepaddind description-text"> Ionic</ion-label>
         <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
       </button>
 
@@ -106,7 +108,7 @@
         <div class="sub-icon small-text"  style="font-weight:bold;" item-start>
          <span> CAP302</span>
         </div>
-        <ion-label class="course-card-heading description-text">Quatitative Aptitude</ion-label>
+        <ion-label class="course-card-heading coursepaddind description-text">Quatitative Aptitude</ion-label>
         <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
       </button>
 
@@ -114,7 +116,7 @@
         <div class="sub-icon small-text"  style="font-weight:bold;" item-start>
          <span> CAP302</span>
         </div>
-        <ion-label class="course-card-heading description-text">Resoning Ability</ion-label>
+        <ion-label class="course-card-heading coursepaddind description-text">Resoning Ability</ion-label>
         <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
       </button>
 
@@ -122,7 +124,7 @@
         <div class="sub-icon small-text"  style="font-weight:bold;" item-start>
          <span> CAP302</span>
         </div>
-        <label class="course-card-heading description-text">Graphics and Design</label>
+        <label class="course-card-heading coursepaddind description-text">Graphics and Design</label>
         <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
       </button>
 
@@ -130,15 +132,15 @@
         <div class="sub-icon small-text"  style="font-weight:bold;" item-start>
          <span> CAP302</span>
         </div>
-        <label class="course-card-heading description-text">Database</label>
+        <label class="course-card-heading coursepaddind description-text">Database</label>
         <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
       </button>
 
-      <button ion-item style="background-color:#eeeeee;">
+      <button ion-item >
         <ion-row>
         <ion-col col-4></ion-col>
-        <ion-col col-4><span class="card-see-all description-text " style="text-align: center"> See All    <ion-icon name="ios-arrow-down-outline"></ion-icon> </span></ion-col>
-        <ion-col col-4></ion-col>
+         <ion-col col-4><span class="card-see-all" style="text-align: center;font-size:4.5vw;">Browse All</span></ion-col>
+        <ion-col col-4> <ion-icon name="ios-arrow-forward-outline"  class="arrow" style="float:right;"></ion-icon> </ion-col>
         </ion-row>
       
       </button>

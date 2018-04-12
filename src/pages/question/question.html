@@ -7,11 +7,13 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Questions List</ion-title>
+    <ion-title>Operating System</ion-title>
   </ion-navbar>
   <div class="question-header">
-    <div class="question-heading" [ngClass]="{'heading-selected': selectTopic}" tappable (click)="openTopicList()"><span class="small-text">Topic List</span></div>
-    <div class="question-heading" [ngClass]="{'heading-selected': selectQuestionBank}" tappable (click)="openQuestionBank()"><span class="small-text">Question Bank</span></div>
+    <div class="question-heading" style="height:27px;font-weight:bolder;" [ngClass]="{'heading-selected': selectTopic}" tappable
+      (click)="openTopicList()"><span class="description-text">Topic List</span></div>
+    <div class="question-heading" style="height:27px;font-weight:bolder;" [ngClass]="{'heading-selected': selectQuestionBank}"
+      tappable (click)="openQuestionBank()"><span class="description-text">Question Bank</span></div>
   </div>
 </ion-header>
 <ion-content>
@@ -19,82 +21,25 @@
   <ion-slides #requestSlides (ionSlideDidChange)="slideChanged()">
     <ion-slide disable-scroll="false" class="scrollable">
       <ion-list>
+        <ion-list-header>
+        <ion-icon name="ios-book" item-left style="color:darkslateblue"></ion-icon>
+        <ion-label style="color:darkslateblue;font-weight:bolder;" class="heading-text">Unit First</ion-label>
+        </ion-list-header>
         <button ion-item (click)="comment()">
-                <div class="sub-icon" item-start>
-                  <div class="icon-aling">
-                    <span class="heading-text">1</span>
-                  </div>
-                </div>
-                <ion-label class="course-card-heading description-text"> Overview </ion-label>
-                <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
-              </button>
-
-        <button ion-item>
-                  <div class="sub-icon" item-start>
-                    <div class="icon-aling">
-                        <span class="heading-text">2</span>
-                    </div>
-                  </div>
-                  <ion-label class="course-card-heading description-text">Introduction</ion-label>
-                  <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
-                </button>
-
-        <button ion-item>
-                    <div class="sub-icon" item-start>
-                      <div class="icon-aling">
-                          <span class="heading-text">3</span>
-                      </div>
-                    </div>
-                    <ion-label class="course-card-heading description-text"> Types of OS </ion-label>
-                    <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
-                  </button>
-
-        <button ion-item>
-                      <div class="sub-icon" item-start>
-                        <div class="icon-aling">
-                            <span class="heading-text">4</span>
-                        </div>
-                      </div>
-                      <ion-label class="course-card-heading description-text"> Services </ion-label>
-                      <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
-                    </button>
-
-
-
-        <button ion-item>
-                        <div class="sub-icon" item-start>
-                          <div class="icon-aling">
-                              <span class="heading-text">5</span>
-                          </div>
-                        </div>
-                        <ion-label class="course-card-heading description-text"> Properties </ion-label>
-                        <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
-                      </button>
-
-        <button ion-item>
-                          <div class="sub-icon" item-start>
-                            <div class="icon-aling">
-                                <span class="heading-text">6</span>
-                            </div>
-                          </div>
-                          <ion-label class="course-card-heading description-text"> Processes </ion-label>
-                          <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
-                        </button>
-
-        <button ion-item>
                             <div class="sub-icon" item-start>
                               <div class="icon-aling">
-                                  <span class="heading-text">7</span>
+                                  <span class="heading-text">1</span>
                               </div>
                             </div>
                             <ion-label class="course-card-heading description-text"> Process Sheduling </ion-label>
                             <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
                           </button>
 
+
         <button ion-item>
                               <div class="sub-icon" item-start>
                                 <div class="icon-aling">
-                                    <span class="heading-text">8</span>
+                                    <span class="heading-text">2</span>
                                 </div>
                               </div>
                               <ion-label class="course-card-heading description-text"> Sheduling Algorithm</ion-label>
@@ -104,7 +49,7 @@
         <button ion-item>
                                 <div class="sub-icon" item-start>
                                   <div class="icon-aling">
-                                      <span class="heading-text">9</span>
+                                      <span class="heading-text">3</span>
                                   </div>
                                 </div>
                                 <ion-label class="course-card-heading description-text"> Multi Threading </ion-label>
@@ -115,7 +60,7 @@
         <button ion-item>
                                   <div class="sub-icon" item-start>
                                     <div class="icon-aling">
-                                        <span class="heading-text">10</span>
+                                        <span class="heading-text">4</span>
                                     </div>
                                   </div>
                                   <ion-label class="course-card-heading description-text"> Memory Management </ion-label>
@@ -124,28 +69,93 @@
 
 
         <button ion-item>
-                                    <div class="sub-icon" item-start>
-                                      <div class="icon-aling">
-                                          <span class="heading-text">11</span>
+                                      <div class="sub-icon" item-start>
+                                        <div class="icon-aling">
+                                            <span class="heading-text">8</span>
+                                        </div>
                                       </div>
+                                      <ion-label class="course-card-heading description-text">Registers And Memory Units </ion-label>
+                                      <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
+                                    </button>
+
+        <button ion-item>
+        <ion-row>
+        <ion-col col-4></ion-col>
+        <ion-col col-4><span class="card-see-all" style="text-align: center;font-size:4.5vw;">Browse All</span></ion-col>
+        <ion-col col-4> <ion-icon name="ios-arrow-forward-outline"  class="arrow" style="float:right;"></ion-icon> </ion-col>
+        </ion-row>
+      
+      </button>
+
+      </ion-list>
+    <ion-list>
+        <ion-list-header>
+          <ion-icon name="ios-book" item-left style="color:darkslateblue"></ion-icon>
+          <ion-label style="color:darkslateblue;font-weight:bolder;" class="heading-text">Unit Second</ion-label>
+        </ion-list-header>
+        <button ion-item (click)="comment()">
+                            <div class="sub-icon" item-start>
+                              <div class="icon-aling">
+                                  <span class="heading-text">1</span>
+                              </div>
+                            </div>
+                            <ion-label class="course-card-heading description-text"> Process Sheduling </ion-label>
+                            <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
+                          </button>
+
+
+       
+        <button ion-item>
+                                  <div class="sub-icon" item-start>
+                                    <div class="icon-aling">
+                                        <span class="heading-text">2</span>
                                     </div>
-                                    <ion-label class="course-card-heading description-text"> Process Sheduling </ion-label>
-                                    <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
-                                  </button>
+                                  </div>
+                                  <ion-label class="course-card-heading description-text"> Memory Management </ion-label>
+                                  <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
+                                </button>
+
+
 
 
         <button ion-item>
                                       <div class="sub-icon" item-start>
                                         <div class="icon-aling">
-                                            <span class="heading-text">12</span>
+                                            <span class="heading-text">3</span>
                                         </div>
                                       </div>
                                       <ion-label class="course-card-heading description-text"> Virtual Memory </ion-label>
                                       <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
                                     </button>
 
+        <button ion-item>
+                                      <div class="sub-icon" item-start>
+                                        <div class="icon-aling">
+                                            <span class="heading-text">4</span>
+                                        </div>
+                                      </div>
+                                      <ion-label class="course-card-heading description-text"> Stack And Queue </ion-label>
+                                      <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
+                                    </button> 
 
+        <button ion-item>
+                                      <div class="sub-icon" item-start>
+                                        <div class="icon-aling">
+                                            <span class="heading-text">5</span>
+                                        </div>
+                                      </div>
+                                      <ion-label class="course-card-heading description-text">Registers And Memory Units </ion-label>
+                                      <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
+                                    </button>
 
+        <button ion-item>
+        <ion-row>
+        <ion-col col-4></ion-col>
+        <ion-col col-4><span class="card-see-all" style="text-align: center;font-size:4.5vw;">Browse All</span></ion-col>
+        <ion-col col-4> <ion-icon name="ios-arrow-forward-outline"  class="arrow" style="float:right;"></ion-icon> </ion-col>
+        </ion-row>
+      
+      </button>
 
       </ion-list>
 
@@ -155,183 +165,171 @@
 
       <ion-list>
         <ion-card>
-          <ion-card-content>
-            <p class="common-text">Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
-              Whoa. This is heavy.</p>
+          <ion-card-content (click)="readcontent()">
+            <ion-row>
+              <ion-col col-2>
+                <div class="sub-icon">
+                  <div class="icon-aling">
+                    <span class="heading-text" style="color:#4CAF50;">Q</span>
+                  </div>
+                </div>
+              </ion-col>
+              <ion-col col-10>
+                <div class="divcontent">
+                  <p class="common-text">Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+                    DeLorean?! Whoa. This is heavy.Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you
+                    built a time machine... out of a DeLorean?! Whoa.
+                  </p>
+                </div>
+              </ion-col>
+            </ion-row>
+
           </ion-card-content>
           <ion-row style="border-top:2px solid #eeeeee;">
-            <ion-col col-2>
-              <ion-avatar>
-                <img class="avtar-size" src="assets/imgs/vishal.JPG">
-              </ion-avatar>
+            <ion-col col-4 >
+              <button ion-button icon-left clear small >
+                <ion-icon class="user-icon" name="ios-contact"></ion-icon>
+              <div class="small-text">Vishal</div>
+                  </button>
             </ion-col>
-            <ion-col col-2>
-              <button ion-button icon-left clear small style="padding-left:0px !important;">
-                       <ion-note class="small-text">11h ago</ion-note>
-                           </button>
-            </ion-col>
-            <ion-col col-3>
+            <ion-col col-4>
               <button ion-button icon-left clear small>
-                             <ion-icon name="thumbs-up"></ion-icon>
-                             <div class="small-text">12 Likes</div>
-                           </button>
+                    <ion-icon name="md-text"></ion-icon>
+                    <div class="small-text">2 Answer</div>
+                  </button>
             </ion-col>
-            <ion-col col-5>
-              <button ion-button icon-left clear small>
-                         <ion-icon name="text"></ion-icon>
-                         <div class="small-text">4 Report</div>
-                       </button>
+            <ion-col col-4>
+              <button ion-button icon-left clear small (click)="showRadio()"> 
+                <ion-icon name="ios-create"></ion-icon>
+                <div class="small-text">Report</div>
+              </button>
             </ion-col>
           </ion-row>
         </ion-card>
 
         <ion-card>
           <ion-card-content>
-            <p class="common-text">Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
-              Whoa. This is heavy.</p>
+            <ion-row>
+              <ion-col col-2>
+                <div class="sub-icon">
+                  <div class="icon-aling">
+                    <span class="heading-text" style="color:#4CAF50;">Q</span>
+                  </div>
+                </div>
+              </ion-col>
+              <ion-col col-10>
+                <div class="divcontent">
+                  <p class="common-text">Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+                    DeLorean?! Whoa. This is heavy.Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you
+                    built a time machine... out of a DeLorean?! Whoa.
+                  </p>
+                </div>
+              </ion-col>
+            </ion-row>
+
           </ion-card-content>
           <ion-row style="border-top:2px solid #eeeeee;">
-            <ion-col col-2>
-              <ion-avatar>
-                <img class="avtar-size" src="assets/imgs/vishal.JPG">
-              </ion-avatar>
+            <ion-col col-4 >
+              <button ion-button icon-left clear small >
+                <ion-icon class="user-icon" name="ios-contact"></ion-icon>
+              <div class="small-text">Vishal</div>
+                  </button>
             </ion-col>
-            <ion-col col-2>
-              <button ion-button icon-left clear small style="padding-left:0px !important;">
-                       <ion-note class="small-text">11h ago</ion-note>
-                           </button>
-            </ion-col>
-            <ion-col col-3>
+            <ion-col col-4>
               <button ion-button icon-left clear small>
-                             <ion-icon name="thumbs-up"></ion-icon>
-                             <div class="small-text">12 Likes</div>
-                           </button>
+                    <ion-icon name="md-text"></ion-icon>
+                    <div class="small-text">2 Answer</div>
+                  </button>
             </ion-col>
-            <ion-col col-5>
-              <button ion-button icon-left clear small>
-                         <ion-icon name="text"></ion-icon>
-                         <div class="small-text">4 Report</div>
-                       </button>
+            <ion-col col-4>
+              <button ion-button icon-left clear small (click)="showRadio()"> 
+                <ion-icon name="ios-create"></ion-icon>
+                <div class="small-text">Report</div>
+              </button>
             </ion-col>
           </ion-row>
         </ion-card>
+
 
         <ion-card>
           <ion-card-content>
-            <p class="common-text">Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
-              Whoa. This is heavy.</p>
+            <ion-row>
+              <ion-col col-2>
+                <div class="sub-icon">
+                  <div class="icon-aling">
+                    <span class="heading-text" style="color:#4CAF50;">Q</span>
+                  </div>
+                </div>
+              </ion-col>
+              <ion-col col-10>
+                <div class="divcontent">
+                  <p class="common-text">Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+                    DeLorean?! Whoa. This is heavy.Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you
+                    built a time machine... out of a DeLorean?! Whoa.
+                  </p>
+                </div>
+              </ion-col>
+            </ion-row>
+
           </ion-card-content>
           <ion-row style="border-top:2px solid #eeeeee;">
-            <ion-col col-2>
-              <ion-avatar>
-                <img class="avtar-size" src="assets/imgs/vishal.JPG">
-              </ion-avatar>
+            <ion-col col-4 >
+              <button ion-button icon-left clear small >
+                <ion-icon class="user-icon" name="ios-contact"></ion-icon>
+              <div class="small-text">Vishal</div>
+                  </button>
             </ion-col>
-            <ion-col col-2>
-              <button ion-button icon-left clear small style="padding-left:0px !important;">
-                       <ion-note class="small-text">11h ago</ion-note>
-                           </button>
-            </ion-col>
-            <ion-col col-3>
+            <ion-col col-4>
               <button ion-button icon-left clear small>
-                             <ion-icon name="thumbs-up"></ion-icon>
-                             <div class="small-text">12 Likes</div>
-                           </button>
+                    <ion-icon name="md-text"></ion-icon>
+                    <div class="small-text">2 Answer</div>
+                  </button>
             </ion-col>
-            <ion-col col-5>
-              <button ion-button icon-left clear small>
-                         <ion-icon name="text"></ion-icon>
-                         <div class="small-text">4 Report</div>
-                       </button>
+            <ion-col col-4>
+              <button ion-button icon-left clear small (click)="showRadio()"> 
+                <ion-icon name="ios-create"></ion-icon>
+                <div class="small-text">Report</div>
+              </button>
             </ion-col>
           </ion-row>
         </ion-card>
 
         <ion-card>
-          <ion-card-content class="removepad">
-            <img src="assets/imgs/questioncard.jpg" />
-          </ion-card-content>
-          <ion-row style="border-top:2px solid #eeeeee;">
-            <ion-col col-2>
-              <ion-avatar>
-                <img class="avtar-size" src="assets/imgs/vishal.JPG">
-              </ion-avatar>
-            </ion-col>
-            <ion-col col-2>
-              <button ion-button icon-left clear small style="padding-left:0px !important;">
-                       <ion-note class="small-text">11h ago</ion-note>
-                           </button>
-            </ion-col>
-            <ion-col col-3>
-              <button ion-button icon-left clear small>
-                             <ion-icon name="thumbs-up"></ion-icon>
-                             <div class="small-text">12 Likes</div>
-                           </button>
-            </ion-col>
-            <ion-col col-5>
-              <button ion-button icon-left clear small>
-                         <ion-icon name="text"></ion-icon>
-                         <div class="small-text">4 Report</div>
-                       </button>
-            </ion-col>
-          </ion-row>
-        </ion-card>
+          <ion-card-content class="removepad" (click)="readcontentimg()">
+            <ion-row>
+              <ion-col col-2>
+                <div class="sub-icon">
+                  <div class="icon-aling">
+                    <span class="heading-text" style="color:#4CAF50;">Q</span>
+                  </div>
+                </div>
+              </ion-col>
+              <ion-col col-10>
+                <div class="divcontent">
+                  <img src="assets/imgs/questioncard.jpg" style="max-height:none;" />
 
-        <ion-card>
-          <ion-card-content class="removepad">
-            <img src="assets/imgs/questioncard.jpg" class="crop" />
+                </div>
+              </ion-col>
+            </ion-row>
           </ion-card-content>
           <ion-row style="border-top:2px solid #eeeeee;">
-            <ion-col col-2>
-              <ion-avatar>
-                <img class="avtar-size" src="assets/imgs/vishal.JPG">
-              </ion-avatar>
+            <ion-col col-4 >
+              <button ion-button icon-left clear small >
+                <ion-icon class="user-icon" name="ios-contact"></ion-icon>
+              <div class="small-text">Vishal</div>
+                  </button>
             </ion-col>
-            <ion-col col-2>
-              <button ion-button icon-left clear small style="padding-left:0px !important;">
-                        <ion-note class="small-text">11h ago</ion-note>
-                            </button>
-            </ion-col>
-            <ion-col col-3>
+            <ion-col col-4>
               <button ion-button icon-left clear small>
-                              <ion-icon name="thumbs-up"></ion-icon>
-                              <div class="small-text">12 Likes</div>
-                            </button>
+                    <ion-icon name="md-text"></ion-icon>
+                    <div class="small-text">2 Answer</div>
+                  </button>
             </ion-col>
-            <ion-col col-5>
-              <button ion-button icon-left clear small>
-                          <ion-icon name="text"></ion-icon>
-                          <div class="small-text">4 Report</div>
-                        </button>
-            </ion-col>
-          </ion-row>
-        </ion-card>
-        <ion-card>
-          <ion-card-content class="removepad">
-            <img src="assets/imgs/questioncard.jpg" />
-          </ion-card-content>
-          <ion-row style="border-top:2px solid #eeeeee;">
-            <ion-col col-2>
-              <ion-avatar>
-                <img class="avtar-size" src="assets/imgs/vishal.JPG">
-              </ion-avatar>
-            </ion-col>
-            <ion-col col-2>
-              <button ion-button icon-left clear small style="padding-left:0px !important;">
-                          <ion-note class="small-text">11h ago</ion-note>
-                              </button>
-            </ion-col>
-            <ion-col col-3>
-              <button ion-button icon-left clear small>
-                                <ion-icon name="thumbs-up"></ion-icon>
-                                <div class="small-text">12 Likes</div>
-                              </button>
-            </ion-col>
-            <ion-col col-5>
-              <button ion-button icon-left clear small>
-                            <ion-icon name="text"></ion-icon>
-                            <div class="small-text">4 Report</div>
-                          </button>
+            <ion-col col-4>
+              <button ion-button icon-left clear small (click)="showRadio()"> 
+                <ion-icon name="ios-create"></ion-icon>
+                <div class="small-text">Report</div>
+              </button>
             </ion-col>
           </ion-row>
         </ion-card>
@@ -342,11 +340,7 @@
       <!-- fab button   -->
     </ion-slide>
   </ion-slides>
-  <ion-fab bottom right>
-    <button ion-fab (click)="addques()">
-              <ion-icon name="ios-undo-outline"class="reply-icon-color"></ion-icon>
-            </button>
-    <br>
+  <ion-fab bottom right *ngIf="slideindex==1">
     <button ion-fab (click)="addques()">
             <ion-icon name="md-add"class="plus-icon-color"></ion-icon>
           </button>

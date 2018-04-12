@@ -1,8 +1,9 @@
 import {Component,ViewChild} from '@angular/core';
-import {NavController, NavParams} from 'ionic-angular';
-import { AddquestionPage } from '../addquestion/addquestion'
+import {NavController, NavParams,AlertController} from 'ionic-angular';
 import {AnswerPage} from "../answer/answer";
+import {AddcommentPage} from "../addcomment/addcomment";
 import { Slides } from 'ionic-angular';
+import { ContentreadPage} from "../contentread/contentread";
 
 /**
  * Generated class for the QuestionPage page.
@@ -19,8 +20,14 @@ export class QuestionPage {
   @ViewChild('requestSlides') slides:Slides;
   public selectTopic:boolean=true;
   public selectQuestionBank:boolean=false;
+  public slideindex:any;
+  public testRadioOpen:boolean=true;
+  public testRadioResult:any;
+  public isimg:any;
+  public isnotes:any;
+  public isfab:any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
@@ -47,22 +54,72 @@ export class QuestionPage {
     if(currentIndex==1){
       this.selectTopic=false;
       this.selectQuestionBank=true;  
-      console.log(JSON.stringify(currentIndex));
+     
+      this.slideindex = currentIndex;
     }else if(currentIndex==0){
       this.selectTopic=true;
       this.selectQuestionBank=false;
-      console.log(JSON.stringify(currentIndex));
+
+      this.slideindex = currentIndex;
     }
 
   }
 
   addques(){
-    this.navCtrl.push(AddquestionPage);
+    this.navCtrl.push(AddcommentPage);
   }
   comment(){
    this.navCtrl.push(AnswerPage);
  }
 
- 
+  readcontent(){
+    this.isimg="1";
+    this.isnotes="0";
+    this.isfab="1";
+    this.navCtrl.push(ContentreadPage,{'isimage':this.isimg,'isnotes':this.isnotes,'isfab':this.isfab});
+  }
+   readcontentimg(){
+    this.isimg="0";
+    this.isnotes="0";
+    this.isfab="1";
+    this.navCtrl.push(ContentreadPage,{'isimage':this.isimg,'isnotes':this.isnotes,'isfab':this.isfab});
+  }
+
+  showRadio() {
+    let alert = this.alertCtrl.create({
+            title: 'Report this post',
+            cssClass: 'my-alert'
+          });
+    alert.addInput({
+      type: 'radio',
+      label: 'Abusive Content',
+      value: 'Abusive Content',
+      checked: true
+    });
+
+     alert.addInput({
+      type: 'radio',
+      label: 'Out OF Syllabus',
+      value: 'Out OF Syllabus',
+      checked: false
+    });
+
+    alert.addInput({
+      type: 'radio',
+      label: 'Grammatical Mistakes',
+      value: 'Grammatical Mistakes',
+      checked: false
+    });
+
+    alert.addButton('Cancel');
+    alert.addButton({
+      text: 'Submit',
+      handler: data => {
+        this.testRadioOpen = false;
+        this.testRadioResult = data;
+      }
+    });
+    alert.present();
+  }
 
 }

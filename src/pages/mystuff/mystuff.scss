@@ -1,4 +1,4 @@
-page-events {
+page-mystuff {
 
     .heading-selected {
         color: #ffffff;
@@ -12,14 +12,11 @@ page-events {
     }
 
     .event-heading {
-        width: 50%;
+        width: 33.3%;
         float: left;
         text-align: center;
         color: white;
     } 
-    .mybtn-color{
-        background-color: darkslateblue;
-    }
 
     .scroll-content{
         margin-top:85px!important;
@@ -44,24 +41,8 @@ page-events {
         padding: 5px; 
     }
     
-    
-
-   .divcontent{
-       height: 30vw;
-       width: 100%;
-       overflow-y:hidden;
+    .btn-mycolor{
+        background-color: darkslateblue !important;
     }
-   
-   .card-content-md,.card-content-ios{
-      padding: 2vw !important;
-    }
-
-//    .swiper-slide img {
-//     width: auto; */
-//     max-width: 100%;
-//     height: auto;
-//     max-height: 100%;
-// }
-    
 
 }

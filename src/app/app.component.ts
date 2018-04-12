@@ -9,6 +9,7 @@ import { MyOrdersPage } from '../pages/myOrders/myOrders';
 import { MyAddressesListPage } from '../pages/myAddressesList/myAddressesList';
 import { MyListedBooksPage } from '../pages/myListedBooks/myListedBooks';
 import { MyPayemtHistoryPage } from '../pages/myPayemtHistory/myPayemtHistory';
+import { MystuffPage } from '../pages/mystuff/mystuff';
 
 
 @Component({
@@ -43,7 +44,8 @@ export class MyApp {
       {title: 'My Address', component: MyAddressesListPage, index: 1},
       {title: 'My Orders', component: MyOrdersPage, index: 2},  
       {title: 'My Listed Books', component: MyListedBooksPage, index: 3},     
-      {title: 'My Payment History', component: MyPayemtHistoryPage, index: 4},                  
+      {title: 'My Payment History', component: MyPayemtHistoryPage, index: 4},    
+      {title: 'My Stuff', component: MystuffPage, index: 5},                  
     ]
     this.pages=this.router;
    

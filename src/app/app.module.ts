@@ -37,6 +37,10 @@ import { MyListedBooksPage } from '../pages/myListedBooks/myListedBooks';
 import { MyPayemtHistoryPage } from '../pages/myPayemtHistory/myPayemtHistory';
 import { EventsPage } from '../pages/events/events';
 import { IonicImageViewerModule } from 'ionic-img-viewer';
+import { MystuffPage } from '../pages/mystuff/mystuff';
+import { InvitePage } from '../pages/invite/invite';
+import { ContentreadPage } from '../pages/contentread/contentread';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -64,7 +68,10 @@ import { IonicImageViewerModule } from 'ionic-img-viewer';
     SellUsedBooksPage,
     MyListedBooksPage,
     MyPayemtHistoryPage,
-    EventsPage
+    EventsPage,
+    MystuffPage,
+    InvitePage,
+    ContentreadPage
   ],
   imports: [
     BrowserModule,
@@ -98,7 +105,10 @@ import { IonicImageViewerModule } from 'ionic-img-viewer';
     SellUsedBooksPage,
     MyListedBooksPage,
     MyPayemtHistoryPage,
-    EventsPage
+    EventsPage,
+    MystuffPage,
+    InvitePage,
+    ContentreadPage
   ],
   providers: [
     StatusBar,

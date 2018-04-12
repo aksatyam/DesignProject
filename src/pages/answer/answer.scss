@@ -15,4 +15,25 @@ page-answer {
      color:white;
 }
 
+.divcontent{
+    height: 25vw;
+    width: 100%;
+    overflow-y:hidden;
+  }
+
+.col-6{
+  text-align: center;
+  }
+
+.card-content-md,.card-content-ios{
+    padding: 2vw !important;
+}
+.col {
+    padding: 0px !important; 
+}
+// .button-clear-md,.button-clear-ios{
+//   padding: 0px;
+// }
+
+
 }

@@ -5,10 +5,10 @@ page-question {
       } 
 
     .question-header {
-        background: color($colors, mainColor);
-        padding-top: 5px;
-        height:24px;
-      }
+        background:darkslateblue;
+        padding-top: 10px;
+        height:37px;
+    }
 
     .question-heading {
         width: 50%;
@@ -41,10 +41,12 @@ page-question {
      color: white;
      font-size: 5vw;
    } 
+
   
-   .item-ios[detail-push] .item-inner, button.item-ios:not([detail-none]) .item-inner, a.item-ios:not([detail-none]) .item-inner {
+  .item-ios[detail-push] .item-inner, button.item-ios:not([detail-none]) .item-inner, a.item-ios:not([detail-none]) .item-inner {
     background-image: none !important;
   }
+
 
   .arrow {
     color: darkslateblue;
@@ -56,7 +58,7 @@ page-question {
 
   ion-fab[bottom] {
     bottom: 10px;
- }
+  }
 
  ion-fab[right] {
   right: 20px;
@@ -69,7 +71,7 @@ page-question {
 
  .item-md.item-block .item-inner,.item-ios.item-block .item-inner {
    padding-right: 8px;
-   border-bottom: 0px solid #dedede !important;
+   border-bottom: 1px solid #eeeeee !important;
 }
 
 .plus-icon-color{
@@ -83,6 +85,58 @@ page-question {
      text-align: start !important;
     } 
 .scroll-content{
-    margin-top:72px!important;
+    margin-top:85px!important;
    }
+
+ion-label{
+  text-align: left;
+}
+
+.button-clear-md,.button-clear-ios{
+  padding: 0px;
+}
+
+.item-inner{
+  padding-left: 15px !important;
+}
+.divcontent{
+  height: 25vw;
+  width: 100%;
+  overflow-y:hidden;
+}
+.card-content-md,.card-content-ios{
+    padding: 5px !important;
+}
+
+ion-list-header{
+    white-space: normal;
+    font-weight: bold;
+    background-color: #eeeeee !important;
+    color: darkslateblue;
+  }
+
+.card-see-all {
+    color: darkslateblue;
+    font-weight: bold;
+  }
+  .col {
+    padding: 0px ; 
+
+  }
+
+  .user-icon {
+    font-size: 7vw !important;
+    color: darkslateblue !important;
+   }
+
+   ion-avatar, ion-thumbnail {
+    line-height: 3;
+    padding: 1vw;
+  }
+
+  .item-md ion-icon[item-left] + .item-inner, .item-md ion-icon[item-left] + .item-input, .item-md ion-icon[item-start] + .item-inner, .item-md ion-icon[item-start] + .item-input {
+    margin-left: 0px;
+}
+
+
 }
