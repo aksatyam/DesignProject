@@ -1,0 +1,70 @@
+<!--
+  Generated template for the EventdetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar style="background-color:transparent;">
+    <ion-title></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="app-background">
+  <div class="divcontent">
+    <img src="assets/imgs/questioncard.jpg" />
+  </div>
+  <ion-card>
+    <ion-card-content>
+      <ion-card-title class="description-text" style="padding:1vw 3vw 1vw 3vw;">
+        <b>RainBow Resorts</b>
+      </ion-card-title>
+      <ion-item>
+        <ion-icon name="ios-pin-outline" item-start></ion-icon>
+
+        <h3 class="course-card-heading common-text" style="color:darkslateblue;white-space:normal;"><b>Lovely professional University </b></h3>
+        <p class="common-text" style="padding-top:1vw;white-space:normal;"> Jalandhar - delhi G.T. road Phagwara,</p>
+      </ion-item>
+     
+        <ion-item>
+          <ion-icon name="ios-calendar-outline" item-start></ion-icon>
+
+          <h3 class="course-card-heading common-text" style="color:darkslateblue;white-space:normal;"><b>27 April 2018</b></h3>
+          <p class="common-text" style="padding-top:1vw;white-space:normal;">&#8377;<span>250</span></p>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="ios-clock-outline" item-start></ion-icon>
+          <h3 class="course-card-heading common-text" style="color:darkslateblue;white-space:normal;"><b>Register By</b></h3>
+          <p class="common-text" style="padding-top:1vw;white-space:normal;"> 29 April 2018</p>
+          <button ion-button item-end style="padding: 4vw;" class="mybtn-color description-text"> Register Now</button>
+        </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <div style="padding:3vw;">
+      <span class="category-span common-text">
+          <b>Entertainment</b>
+        </span>
+  </div>
+ 
+  <div style="padding:4vw;" class="common-text">
+
+    <ion-label><b>Synopsis</b></ion-label> 
+    <ion-label style="padding-top:2vw;"> What I need is to put icon to the far end of the row, but when I load the page, the icon is only to the right of the content, not float to the right of the whole row.
+             I followed ionic doc, but I can not find out their source code for the demo, for example. What I need is to put icon to the far end of the row, but when I load the page, the icon is only to the right of the content, not float to the right of the whole row.
+             I followed ionic doc, but I can not find out their source code for the demo, for example: here: 
+    </ion-label>
+    <br>
+    <ion-card class="term-card">
+    <ion-item *ngFor="let d of diseases; let i=index" text-wrap (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}">
+        <h3 class="commom-text">
+            <ion-icon color="success" item-start [name]="isGroupShown(i) ? 'md-remove' : 'md-add'"></ion-icon>
+          <b>{{d.title}}</b>
+        </h3>
+        <div *ngIf="isGroupShown(i)" style="padding-top:2vw; padding-bottom:5vw;" class="commom-text">{{d.description}}</div>
+      </ion-item>
+    </ion-card>  
+  </div>
+</ion-content>

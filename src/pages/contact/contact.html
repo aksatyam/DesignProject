@@ -22,11 +22,11 @@
         <ion-slide>
             <ion-slides #contentSlide (ionSlideDidChange)="contentSlideChanged()" class="SliderImages" pager autoplay="3000" loop="true" speed="1000"> 
                 <ion-slide *ngFor="let sl of slideArray" >
-                      <img src="assets/icon/unnamed.png" class="imageClass">
+                      <img src="assets/imgs/questioncard.jpg" class="imageClass">
                 </ion-slide>
             </ion-slides>
             <ion-card *ngFor="let sl of slideArray">
-              <img src="assets/icon/unnamed.png" style="height:40vw;width:100%;"/>
+              <img src="assets/imgs/questioncard.jpg" style="height:40vw;width:100%;"/>
               <ion-card-content>
                 <ion-card-title class="description-text" style="padding:1vw 3vw 1vw 3vw;">
                  <b>RainBow Resorts</b>
@@ -38,9 +38,8 @@
                    <p  class="common-text" style="padding-top:1vw;white-space:normal;"> 16 Milestone, Attari border road, Amritsar..</p>
                    </ion-item>
                   <ion-item>
-                      <ion-icon name="ios-book-outline" item-start></ion-icon>
-                   <h3 class="course-card-heading common-text" style="color:darkslateblue;white-space:normal;">
-                     <b>Web Development</b>
+                   <h3 class="course-card-heading common-text" style="color:darkslateblue;white-space:normal;padding:2vw;">
+                     <b class="category-span">Web Development</b>
                   </h3>
                   <button ion-button item-end style="padding: 4vw;" class="mybtn-color"> View Courses</button>
                   </ion-item>
@@ -63,11 +62,11 @@
         <ion-slide>
           <ion-slides #contentSlide (ionSlideDidChange)="contentSlideChanged()" class="SliderImages" pager autoplay="3000" loop="true" speed="1000"> 
             <ion-slide *ngFor="let sl of slideArray" >
-                  <img src="assets/icon/unnamed.png" class="imageClass">
+                  <img src="assets/imgs/questioncard.jpg" class="imageClass">
             </ion-slide>
         </ion-slides>
         <ion-card *ngFor="let sl of slideArray">
-            <img src="assets/icon/unnamed.png" style="height:40vw;width:100%;"/>
+            <img src="assets/imgs/questioncard.jpg" style="height:40vw;width:100%;"/>
             <ion-card-content>
               <ion-card-title class="description-text" style="padding:1vw 3vw 1vw 3vw;">
                <b>RainBow Resorts</b>
@@ -79,9 +78,8 @@
                  <p  class="common-text" style="padding-top:1vw;white-space:normal;"> 16 Milestone, Attari border road, Amritsar..</p>
                  </ion-item>
                 <ion-item>
-                    <ion-icon name="ios-book-outline" item-start></ion-icon>
-                 <h3 class="course-card-heading common-text" style="color:darkslateblue;white-space:normal;">
-                   <b>Web Development</b>
+                 <h3 class="course-card-heading common-text" style="color:darkslateblue;white-space:normal;padding:2vw;">
+                   <b><span class="category-span">Web Development</span></b>
                 </h3>
                 <button ion-button item-end style="padding: 4vw;" class="mybtn-color"> View Courses</button>
                 </ion-item>

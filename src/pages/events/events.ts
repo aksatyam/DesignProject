@@ -1,6 +1,7 @@
 import { Component,ViewChild} from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { Slides } from 'ionic-angular';
+import { EventdetailPage } from '../eventdetail/eventdetail'
 
 @Component({
   selector: 'page-events',
@@ -48,6 +49,10 @@ export class EventsPage {
     this.selectOutCampus=true;
 
     this.slides.slideTo(1);
+  }
+
+  register(){
+    this.navCtrl.push(EventdetailPage);
   }
 
 }

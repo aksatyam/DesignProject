@@ -40,6 +40,7 @@ import { IonicImageViewerModule } from 'ionic-img-viewer';
 import { MystuffPage } from '../pages/mystuff/mystuff';
 import { InvitePage } from '../pages/invite/invite';
 import { ContentreadPage } from '../pages/contentread/contentread';
+import { EventdetailPage } from '../pages/eventdetail/eventdetail';
 
 @NgModule({
   declarations: [
@@ -71,7 +72,8 @@ import { ContentreadPage } from '../pages/contentread/contentread';
     EventsPage,
     MystuffPage,
     InvitePage,
-    ContentreadPage
+    ContentreadPage,
+    EventdetailPage
   ],
   imports: [
     BrowserModule,
@@ -108,7 +110,8 @@ import { ContentreadPage } from '../pages/contentread/contentread';
     EventsPage,
     MystuffPage,
     InvitePage,
-    ContentreadPage
+    ContentreadPage,
+    EventdetailPage
   ],
   providers: [
     StatusBar,

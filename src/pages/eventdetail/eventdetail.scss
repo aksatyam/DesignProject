@@ -1,0 +1,37 @@
+page-eventdetail {
+
+
+    .divcontent{
+        height: 45vw;
+        width: 100%;
+        overflow-y:hidden;
+    }
+
+    .mybtn-color{
+        background-color: darkslateblue;
+     }
+
+     .toolbar-background-md,.toolbar-background-ios{
+        background: transparent !important;
+    } 
+
+    .scroll-content{
+        margin-top: 0px !important
+    }
+
+    .header-ios,.toolbar-ios:last-child .toolbar-background-ios, .header-md,.toolbar-md:last-child .toolbar-background-md {
+         border-width: 0px !important;
+    }
+
+    .category-span{
+        border:1px solid gray;
+        border-radius: 5px;
+        padding: 1vw;
+    }
+
+    .term-card{
+        margin: 0px !important;
+        width:100% !important
+    }
+
+}

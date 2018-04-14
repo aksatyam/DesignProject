@@ -16,7 +16,7 @@
 </ion-header>
 
 
-<ion-content>
+<ion-content class="app-background">
   <ion-slides #requestSlides (ionSlideDidChange)="slideChanged()">
     <ion-slide disable-scroll="false" class="scrollable">
 
@@ -38,7 +38,7 @@
                       <ion-icon name="ios-calendar-outline" item-start></ion-icon>
                    <h3 class="course-card-heading common-text" style="color:darkslateblue;white-space:normal;"><b>27 April 2018</b></h3>
                    <p  class="common-text" style="padding-top:1vw;white-space:normal;">&#8377;<span>350</span></p>
-                  <button ion-button item-end style="padding: 4vw;" class="mybtn-color"> Register</button>
+                   <button ion-button item-end style="padding: 4vw;" class="mybtn-color small-text" (click)="register()"> View</button>
                   </ion-item>
               </ion-card-content>
             </ion-card>
@@ -64,7 +64,7 @@
                   <ion-icon name="ios-calendar-outline" item-start></ion-icon>
                <h3 class="course-card-heading common-text" style="color:darkslateblue;white-space:normal;"><b>27 April 2018</b></h3>
                <p  class="common-text" style="padding-top:1vw;white-space:normal;">&#8377;<span>350</span></p>
-              <button ion-button item-end style="padding: 4vw;" class="mybtn-color"> Register</button>
+              <button ion-button item-end style="padding: 4vw;" class="mybtn-color small-text" (click)="register()"> View</button>
               </ion-item>
           </ion-card-content>
         </ion-card>
