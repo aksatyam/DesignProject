@@ -1,6 +1,5 @@
 page-eventdetail {
 
-
     .divcontent{
         height: 45vw;
         width: 100%;
@@ -11,27 +10,28 @@ page-eventdetail {
         background-color: darkslateblue;
      }
 
-     .toolbar-background-md,.toolbar-background-ios{
-        background: transparent !important;
-    } 
-
-    .scroll-content{
-        margin-top: 0px !important
-    }
-
-    .header-ios,.toolbar-ios:last-child .toolbar-background-ios, .header-md,.toolbar-md:last-child .toolbar-background-md {
-         border-width: 0px !important;
-    }
-
-    .category-span{
+     .category-span{
         border:1px solid gray;
         border-radius: 5px;
         padding: 1vw;
     }
 
     .term-card{
-        margin: 0px !important;
-        width:100% !important
+        width:100% !important;
+    }
+
+    .button-md,.button-ios{
+      text-transform: capitalize;
+    }
+
+    .card-ios,.card-md {
+         margin: 0px !important; 
+         border-radius: 0px !important; 
+         width:auto !important; 
+    }
+    
+    .scroll-content {
+    margin-bottom: 55px !important;
     }
 
 }

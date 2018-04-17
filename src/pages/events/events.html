@@ -17,6 +17,15 @@
 
 
 <ion-content class="app-background">
+  <div class="filter-style">
+   <ion-row>
+     <ion-col col-6  style="border-right: 1px solid #dedede;"> 
+       <ion-icon name="ios-options-outline" class="icon-size"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;<span class="description-text" style="color:#909090;"><b>Tranning Type</b></span>
+     </ion-col>
+     <ion-col col-6>
+        <ion-icon name="ios-pin" class="icon-size"></ion-icon> &nbsp;&nbsp;&nbsp;<span class="description-text" style="color:#909090;"><b>Location</b></span></ion-col>
+   </ion-row>
+  </div>
   <ion-slides #requestSlides (ionSlideDidChange)="slideChanged()">
     <ion-slide disable-scroll="false" class="scrollable">
 
@@ -38,7 +47,7 @@
                       <ion-icon name="ios-calendar-outline" item-start></ion-icon>
                    <h3 class="course-card-heading common-text" style="color:darkslateblue;white-space:normal;"><b>27 April 2018</b></h3>
                    <p  class="common-text" style="padding-top:1vw;white-space:normal;">&#8377;<span>350</span></p>
-                   <button ion-button item-end style="padding: 4vw;" class="mybtn-color small-text" (click)="register()"> View</button>
+                  <button ion-button item-end style="padding: 4vw;" class="mybtn-color discription-text" (click)="register()"> View Detail</button>
                   </ion-item>
               </ion-card-content>
             </ion-card>
@@ -64,7 +73,7 @@
                   <ion-icon name="ios-calendar-outline" item-start></ion-icon>
                <h3 class="course-card-heading common-text" style="color:darkslateblue;white-space:normal;"><b>27 April 2018</b></h3>
                <p  class="common-text" style="padding-top:1vw;white-space:normal;">&#8377;<span>350</span></p>
-              <button ion-button item-end style="padding: 4vw;" class="mybtn-color small-text" (click)="register()"> View</button>
+              <button ion-button item-end style="padding: 4vw;" class="mybtn-color discription-text" (click)="register()">View Detail</button>
               </ion-item>
           </ion-card-content>
         </ion-card>

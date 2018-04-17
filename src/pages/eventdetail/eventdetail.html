@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar style="background-color:transparent;">
-    <ion-title></ion-title>
+    <ion-title>Event Details</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -39,7 +39,7 @@
           <ion-icon name="ios-clock-outline" item-start></ion-icon>
           <h3 class="course-card-heading common-text" style="color:darkslateblue;white-space:normal;"><b>Register By</b></h3>
           <p class="common-text" style="padding-top:1vw;white-space:normal;"> 29 April 2018</p>
-          <button ion-button item-end style="padding: 4vw;" class="mybtn-color description-text"> Register Now</button>
+          <button ion-button item-end style="padding: 4vw;" class="mybtn-color small-text">Register Now</button>
         </ion-item>
     </ion-card-content>
   </ion-card>
@@ -52,19 +52,20 @@
   <div style="padding:4vw;" class="common-text">
 
     <ion-label><b>Synopsis</b></ion-label> 
-    <ion-label style="padding-top:2vw;"> What I need is to put icon to the far end of the row, but when I load the page, the icon is only to the right of the content, not float to the right of the whole row.
+    <ion-label style="white-space:normal;"> What I need is to put icon to the far end of the row, but when I load the page, the icon is only to the right of the content, not float to the right of the whole row.
              I followed ionic doc, but I can not find out their source code for the demo, for example. What I need is to put icon to the far end of the row, but when I load the page, the icon is only to the right of the content, not float to the right of the whole row.
              I followed ionic doc, but I can not find out their source code for the demo, for example: here: 
     </ion-label>
-    <br>
-    <ion-card class="term-card">
+    
+  </div>
+
+ <ion-card class="term-card">
     <ion-item *ngFor="let d of diseases; let i=index" text-wrap (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}">
-        <h3 class="commom-text">
-            <ion-icon color="success" item-start [name]="isGroupShown(i) ? 'md-remove' : 'md-add'"></ion-icon>
+        <h3 class="commom-text" style="color:darkslateblue;">
+            <ion-icon  item-start [name]="isGroupShown(i) ? 'md-remove' : 'md-add'"></ion-icon>
           <b>{{d.title}}</b>
         </h3>
-        <div *ngIf="isGroupShown(i)" style="padding-top:2vw; padding-bottom:5vw;" class="commom-text">{{d.description}}</div>
+        <div *ngIf="isGroupShown(i)"  class="common-text" style="padding-top:2vw; padding-bottom:5vw;">{{d.description}}</div>
       </ion-item>
-    </ion-card>  
-  </div>
+    </ion-card> 
 </ion-content>

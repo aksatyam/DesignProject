@@ -1,14 +1,17 @@
 page-events {
+    .app-background{
+        background-color: #eeeeee;
+    }
 
     .heading-selected {
         color: #ffffff;
         border-bottom:2px solid #ffffff;
-      } 
+    } 
     
     .event-header {
         background:darkslateblue;
-        padding-top: 10px;
-        height:37px;
+        padding-top: 15px;
+        height:42px;
     }
 
     .event-heading {
@@ -17,12 +20,13 @@ page-events {
         text-align: center;
         color: white;
     } 
+    
     .mybtn-color{
         background-color: darkslateblue;
     }
 
     .scroll-content{
-        margin-top:85px!important;
+        margin-top:90px!important;
     }
      
     .swiper-slide {
@@ -42,11 +46,10 @@ page-events {
     .button-ios,.button-md{
         height: 10vw;
         padding: 5px; 
+        background-color: darkslateblue !important; 
     }
-    
-    
 
-   .divcontent{
+    .divcontent{
        height: 30vw;
        width: 100%;
        overflow-y:hidden;
@@ -56,8 +59,32 @@ page-events {
       padding: 2vw !important;
     }
 
+    .card-md,.card-ios{
+      width: calc(100% - 10px) !important;
+      margin: 5px !important;
+    }
 
+    .button-md,.button-ios{
+      text-transform: capitalize;
+    }
+
+    .filter-style{
+        height:12vw;
+        text-align: center;
+    }
+
+    .icon-size{
+       font-size: 6vw;
+       color:darkslateblue;
+       background-color: #ffffff;
+    }
+    
+    .row{
+        background-color: #ffffff;
+        padding: 1vw; 
+    }
 
 
 
 }
+
