@@ -1,65 +1,65 @@
 page-addcomment {
 
- .textarea-style{
+  .textarea-style{
       height:100%;
       background-color: color($colors, groundcolor) !important;
       border-radius: 2px;
       color:color($colors,lightgraycolor);
       padding: 10px; 
     }
-    ion-textarea{
-        border-bottom: none !important;
+  ion-textarea{
+      border-bottom: none !important;
     }
-     .button-ios,.button-md{
+  .button-ios,.button-md{
       background-color: color($colors,mainColor);
       color:white;
     }
 
-    .item-md,.item-ios{
-        padding: 2vw !important;
+  .item-md,.item-ios{
+       padding: 2vw !important;
     }
 
-    .item-md.item-block, .item-ios.item-block ,.item-inner {
-     padding:0px !important;
-
-     border-bottom: none !important;
+  .item-md.item-block, .item-ios.item-block ,.item-inner {
+       padding:0px !important;
+       border-bottom: none !important;
    }
     
-   .btn-note_type{
+  .btn-note_type{
        background-color: #ffffff;
        text-align: center;
    }
 
-   .card-md,.card-ios{
+  .card-md,.card-ios{
       width: 100%;
       margin: 0px ;
    }
 
-   .button-md{
+  .button-md{
       background-color: color($colors,mainColor);
       color:white;
    }
 
-   .colBackground{
-    background-color: lightgray;
-    height: 40vw;
-  }
+  .colBackground{
+     background-color: lightgray;
+     height: 40vw;
+   }
   
   .bookTitles{
-    padding-top: 10vw;
-    color: darkslateblue;
+     padding-top: 10vw;
+     color: darkslateblue;
   }
 
   .TitlesText{
-    color: darkslateblue;
+     color: darkslateblue;
   } 
+  
   .col{
-      padding: 1vw;
+     padding: 1vw;
   }
 
+  .button-md,.button-ios{
+     width:100%;
+  }
 
-
-    
-   
-  
+ 
 }

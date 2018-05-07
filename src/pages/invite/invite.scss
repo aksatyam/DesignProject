@@ -42,6 +42,12 @@ page-invite {
 
  .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
      border-bottom: 0px solid #c8c7cc !important; 
-}
+ }
+
+ .item-md,.item-ios {
+    border-bottom: 1px solid #eeeeee;
+  }
+
+
 
 }

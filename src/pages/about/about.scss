@@ -64,6 +64,10 @@ page-about {
     .card-header-md,.card-header-ios{
         padding: 5px 5px 5px 5px;
     }
+    .card-md,.card-ios{
+       width: calc(100% - 10px) !important;
+       margin: 5px !important;
+    }
 
     .scrollmenu {
         background-color: transparent;

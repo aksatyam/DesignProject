@@ -1,8 +1,4 @@
 page-events {
-    .app-background{
-        background-color: #eeeeee;
-    }
-
     .heading-selected {
         color: #ffffff;
         border-bottom:2px solid #ffffff;
@@ -10,8 +6,8 @@ page-events {
     
     .event-header {
         background:darkslateblue;
-        padding-top: 15px;
-        height:42px;
+        padding-top: 13px;
+        height:40px;
     }
 
     .event-heading {
@@ -25,10 +21,7 @@ page-events {
         background-color: darkslateblue;
     }
 
-    .scroll-content{
-        margin-top:90px!important;
-    }
-     
+    
     .swiper-slide {
         align-items: flex-start !important;
     } 
@@ -36,7 +29,6 @@ page-events {
     .card-content-ios,.card-content-md{
         padding:2vw;
         text-align: left
-        
     }  
 
     .my-padding{
@@ -56,20 +48,19 @@ page-events {
     }
    
    .card-content-md,.card-content-ios{
-      padding: 2vw !important;
+       padding: 2vw !important;
     }
 
     .card-md,.card-ios{
-      width: calc(100% - 10px) !important;
-      margin: 5px !important;
+       width: calc(100% - 10px) !important;
+       margin: 5px !important;
     }
 
     .button-md,.button-ios{
-      text-transform: capitalize;
+        text-transform: capitalize;
     }
 
     .filter-style{
-        height:12vw;
         text-align: center;
     }
 
@@ -83,8 +74,5 @@ page-events {
         background-color: #ffffff;
         padding: 1vw; 
     }
-
-
-
 }
 

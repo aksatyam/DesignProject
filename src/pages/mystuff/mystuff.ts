@@ -47,8 +47,7 @@ export class MystuffPage {
 
   }
 
-
-   openNotes(){
+  openNotes(){
       this.selectNotes=true;
       this.selectQuestion=false;
       this.selectAnswer=false; 

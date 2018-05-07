@@ -1,6 +1,7 @@
 import { Component} from '@angular/core';
 import { NavController, NavParams} from 'ionic-angular';
 import { QuestionPage} from '../question/question';
+import { NotificationPage} from '../notification/notification';
 
 /**
  * Generated class for the CoursePage page.
@@ -24,6 +25,10 @@ export class CoursePage {
 
   next() {
     this.navCtrl.push(QuestionPage);
+  }
+
+  notification(){
+    this.navCtrl.push(NotificationPage);
   }
 
 }

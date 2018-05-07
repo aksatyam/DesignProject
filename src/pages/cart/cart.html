@@ -16,16 +16,16 @@
         <ion-card class="subTotalList">
             <ion-item no-margin>
                 <ion-label item-satrt class="titleCls">Sub Total</ion-label>
-                <ion-label item-end class="itemMdEnd">{{total_price | currency :'&#8377;'}}</ion-label>
-            </ion-item>
+                <ion-label item-end class="itemMdEnd"><b>{{total_price | currency :'&#8377;'}}</b></ion-label>
+            </ion-item><br>
             <ion-item no-margin>
                 <ion-label item-satrt class="titleCls">Delivery charges</ion-label>
-                <ion-label item-end class="itemDeleveryAmount">{{delevery_price | currency :'&#8377;'}}</ion-label>
+                <ion-label item-end class="itemDeleveryAmount"><b>{{delevery_price | currency :'&#8377;'}}</b></ion-label>
             </ion-item>
             <hr>
             <ion-item no-margin>
-                    <ion-label item-satrt class="titleCls">Total Payable Amount</ion-label>
-                    <ion-label item-end class="itemDeleveryAmount">{{total_price+delevery_price | currency :'&#8377;'}}</ion-label>
+                    <ion-label item-satrt class="titleCls"><b>Total Payable Amount</b></ion-label>
+                    <ion-label item-end class="itemDeleveryAmount"><b>{{total_price+delevery_price | currency :'&#8377;'}}</b></ion-label>
             </ion-item>
         </ion-card>
 
@@ -38,8 +38,8 @@
                     <h2 class="Heading" text-wrap>{{item.title}}</h2>
                     <p class="description" text-wrap>{{item.quantity}}</p>
                     <label class="Date">
-                        <span class="mainPrice">{{item.price | currency :'&#8377;' }}</span>
-                        <span class="textCut">{{item.maxprice | currency :'&#8377;' }}</span>
+                        <span class="mainPrice">{{item.price | currency :'&#8377;' }}</span> &nbsp;&nbsp;
+                        <span class="textCut" style="color:lightgray;">{{item.maxprice | currency :'&#8377;' }}</span>
                     </label>
                     <ion-icon name="ios-trash-outline" class="btnRemove"></ion-icon>
                 </ion-item>

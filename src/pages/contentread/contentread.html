@@ -42,7 +42,7 @@
 
   <ion-list *ngIf="isnotesdata==0">
 
-    <ion-card>
+    <ion-card (click)="readcomment()">
       <ion-card-content>
         <ion-row>
           <ion-col col-2>
@@ -85,7 +85,7 @@
       </ion-row>
     </ion-card>
 
-      <ion-card>
+      <ion-card (click)="readcomment()">
         <ion-card-content>
           <ion-row>
             <ion-col col-2>

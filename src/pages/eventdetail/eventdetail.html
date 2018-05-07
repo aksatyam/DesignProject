@@ -13,7 +13,7 @@
 </ion-header>
 
 
-<ion-content class="app-background">
+<ion-content class="app-background" style="padding-bottom:55px !important;">
   <div class="divcontent">
     <img src="assets/imgs/questioncard.jpg" />
   </div>
@@ -28,44 +28,79 @@
         <h3 class="course-card-heading common-text" style="color:darkslateblue;white-space:normal;"><b>Lovely professional University </b></h3>
         <p class="common-text" style="padding-top:1vw;white-space:normal;"> Jalandhar - delhi G.T. road Phagwara,</p>
       </ion-item>
-     
-        <ion-item>
-          <ion-icon name="ios-calendar-outline" item-start></ion-icon>
 
-          <h3 class="course-card-heading common-text" style="color:darkslateblue;white-space:normal;"><b>27 April 2018</b></h3>
-          <p class="common-text" style="padding-top:1vw;white-space:normal;">&#8377;<span>250</span></p>
-        </ion-item>
-        <ion-item>
-          <ion-icon name="ios-clock-outline" item-start></ion-icon>
-          <h3 class="course-card-heading common-text" style="color:darkslateblue;white-space:normal;"><b>Register By</b></h3>
-          <p class="common-text" style="padding-top:1vw;white-space:normal;"> 29 April 2018</p>
-          <button ion-button item-end style="padding: 4vw;" class="mybtn-color small-text">Register Now</button>
-        </ion-item>
-    </ion-card-content>
-  </ion-card>
-  <div style="padding:3vw;">
-      <span class="category-span common-text">
+      <ion-item>
+        <ion-icon name="ios-calendar-outline" item-start></ion-icon>
+
+        <h3 class="course-card-heading common-text" style="color:darkslateblue;white-space:normal;"><b>27 April 2018</b></h3>
+        <p class="common-text" style="padding-top:1vw;white-space:normal;">&#8377;<span>250</span></p>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="ios-clock-outline" item-start></ion-icon>
+        <h3 class="course-card-heading common-text" style="color:darkslateblue;white-space:normal;"><b>Register By</b></h3>
+        <p class="common-text" style="padding-top:1vw;white-space:normal;"> 29 April 2018</p>
+        <button ion-button item-end style="padding: 4vw;" class="mybtn-color description-text">Register Now</button>
+      </ion-item>
+
+      <div style="padding:3vw;">
+        <span class="category-span small-text">
           <b>Entertainment</b>
         </span>
-  </div>
- 
-  <div style="padding:4vw;" class="common-text">
+      </div>
 
-    <ion-label><b>Synopsis</b></ion-label> 
-    <ion-label style="white-space:normal;"> What I need is to put icon to the far end of the row, but when I load the page, the icon is only to the right of the content, not float to the right of the whole row.
-             I followed ionic doc, but I can not find out their source code for the demo, for example. What I need is to put icon to the far end of the row, but when I load the page, the icon is only to the right of the content, not float to the right of the whole row.
-             I followed ionic doc, but I can not find out their source code for the demo, for example: here: 
-    </ion-label>
-    
+      <div style="padding:4vw;" class="common-text">
+
+        <ion-label><b>Synopsis</b></ion-label>
+        <ion-label style="padding-top:2vw;"> What I need is to put icon to the far end of the row, but when I load the page, the icon is only to the right of
+          the content, not float to the right of the whole row. I followed ionic doc, but I can not find out their source
+          code for the demo, for example. What I need is to put icon to the far end of the row, but when I load the page,
+          the icon is only to the right of the content, not float to the right of the whole row. I followed ionic doc, but
+          I can not find out their source code for the demo, for example: here:
+        </ion-label>
+
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <br>
+  <div style="background-color:white;width:100%;padding:2vw;">
+    <ion-label class="description-text" style="margin:2vw;"><span style="padding-left:5vw;"><b>Artist</b></span></ion-label>
+     <ion-scroll scrollX>
+      <div class="scroll-item">
+        <ion-card style="border-radius:5px;">
+          <img src="assets/imgs/questioncard.jpg" />
+        </ion-card>
+        <ion-label style="white-space: normal;text-align:center;">Mr Vishal Sharma</ion-label>
+      </div>
+      <div class="scroll-item">
+        <ion-card style="border-radius:5px;">
+          <img src="assets/imgs/questioncard.jpg" />
+        </ion-card>
+        <ion-label style="white-space: normal;text-align:center;">Mr Vishal Sharma</ion-label>
+      </div>
+      
+       <div class="scroll-item">
+        <ion-card style="border-radius:5px;">
+          <img src="assets/imgs/questioncard.jpg" />
+        </ion-card>
+        <ion-label style="white-space: normal;text-align:center;">Mr Vishal Sharma</ion-label>
   </div>
 
- <ion-card class="term-card">
+  <div class="scroll-item">
+    <ion-card style="border-radius:5px;">
+      <img src="assets/imgs/questioncard.jpg" />
+    </ion-card>
+    <ion-label style="white-space: normal;text-align:center;">Mr Vishal Sharma</ion-label>
+  </div>
+  </ion-scroll>
+  </div>
+
+  <ion-card class="term-card" style="margin-bottom:40px;">
     <ion-item *ngFor="let d of diseases; let i=index" text-wrap (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}">
-        <h3 class="commom-text" style="color:darkslateblue;">
-            <ion-icon  item-start [name]="isGroupShown(i) ? 'md-remove' : 'md-add'"></ion-icon>
-          <b>{{d.title}}</b>
-        </h3>
-        <div *ngIf="isGroupShown(i)"  class="common-text" style="padding-top:2vw; padding-bottom:5vw;">{{d.description}}</div>
-      </ion-item>
-    </ion-card> 
+      <h3 class="commom-text" style="color:darkslateblue;">
+        <ion-icon item-start [name]="isGroupShown(i) ? 'md-remove' : 'md-add'"></ion-icon>
+        <b>{{d.title}}</b>
+      </h3>
+      <div *ngIf="isGroupShown(i)" class="common-text" style="padding-top:2vw; padding-bottom:5vw;">{{d.description}}</div>
+    </ion-item>
+  </ion-card>
 </ion-content>

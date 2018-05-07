@@ -1,5 +1,5 @@
 page-eventdetail {
-
+    
     .divcontent{
         height: 45vw;
         width: 100%;
@@ -12,8 +12,9 @@ page-eventdetail {
 
      .category-span{
         border:1px solid gray;
+        color:gray;
         border-radius: 5px;
-        padding: 1vw;
+        padding: 2vw;
     }
 
     .term-card{
@@ -21,17 +22,28 @@ page-eventdetail {
     }
 
     .button-md,.button-ios{
-      text-transform: capitalize;
+       text-transform: capitalize;
     }
 
-    .card-ios,.card-md {
-         margin: 0px !important; 
-         border-radius: 0px !important; 
-         width:auto !important; 
+    .card-md,.card-ios{
+       width: calc(100% - 10px) !important;
+       margin: 5px !important;
     }
     
-    .scroll-content {
-    margin-bottom: 55px !important;
+   
+    ion-scroll[scrollX] {
+      white-space: nowrap;
+      height: 40vw !important;
+    .scroll-item {
+      display: inline-block;
+      width:45%;
     }
+   }
 
+   // .scroll-content{
+    //     //margin-top: 50px!important;
+    //     margin-bottom: 40px!important;
+    // }
+
+  
 }

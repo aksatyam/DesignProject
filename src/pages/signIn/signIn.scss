@@ -1,11 +1,29 @@
 page-signIn{
-    .app-logo{
-        height: 80px;
-    }
+   
     .signintext{
         color:black;
-        margin-top: 8%;
     }
+
+    .logoStyle{
+       text-align:center;  
+       background-color:white;
+       margin-bottom:3vw;
+    }
+
+    .HeaderBackground{
+        height: 28vw;
+        width: 100%;
+        background-color:darkslateblue;
+    } 
+    .logo{
+       position: relative;
+       bottom: 0px;
+       width: 28vw;
+       height: 28vw;
+       margin-top: -50px;
+       background:rgb(47, 164, 231);
+       border-radius: 50%;
+   }
 
     .toolbar-title-md,.toolbar-title-ios{
         font-size: 2.2rem;
@@ -13,16 +31,15 @@ page-signIn{
     }
 
     .button-ios,.button-md { 
-        background-color:lightcoral;
+        background-color:darkslateblue;
         border-radius: 3px;
-        color: lightpink;
+        color: white;
         text-align: center;
         width: 97.5%;
         margin-left: 5px;
         padding-top: 20px;
         padding-bottom: 20px;
         text-transform: none;
-        font-size: 1.8rem;
         margin-top: 15px;
     }
     .label-md,.label-ios{
@@ -35,7 +52,7 @@ page-signIn{
     }
     .item-md,.item-ios{
         padding-left: 10px; 
-        border-bottom:2px solid lightgray;
+        border-bottom:1px solid lightgray;
         border-bottom-width: 95%;
         margin-top: 5%;
     }
@@ -45,10 +62,6 @@ page-signIn{
     .item-md.item-input.input-has-focus .item-inner{
         border-bottom-color: white;
         box-shadow:inset 0 -1px 0 0 white;
-    }
-
-    .toolbar-background-md,.toolbar-background-ios{
-        background: rgb(29, 29, 59);
     }
     .back-button{
         color: white;
@@ -62,5 +75,9 @@ page-signIn{
     .header-md::after,.header-ios::after{
         height: 0px;
     }
+
+    .button-md:hover:not(.disable-hover) {
+        background-color: darkslateblue;
+       }
 
 }

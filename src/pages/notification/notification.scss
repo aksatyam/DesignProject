@@ -1,0 +1,38 @@
+page-notification {
+
+     .sub-icon {
+      width: 12vw;
+      height: 12vw;
+      border-radius: 5px;
+      display: table;
+      text-align: center;
+      background-color: darkslateblue;
+    }
+   .icon-aling {
+     display: table-cell;
+     vertical-align: middle;
+     color: white;
+     font-size: 4vw;
+   } 
+
+    .item-ios[detail-push] .item-inner, button.item-ios:not([detail-none]) .item-inner, a.item-ios:not([detail-none]) .item-inner {
+    background-image: none !important;
+  }
+
+  ion-list-header{
+    white-space: normal;
+    font-weight: bold;
+    background-color: #eeeeee !important;
+    color: darkslateblue;
+    height:5vw;
+  }
+
+  .list-ios,.list-ios {
+     margin: -1px 0 12px; 
+   }
+
+   .item-md,.item-ios{
+     border-bottom: 1px solid #eeeeee;
+
+   }
+}

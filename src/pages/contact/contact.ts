@@ -1,5 +1,7 @@
 import { Component,ViewChild } from '@angular/core';
 import { NavController,Slides } from 'ionic-angular';
+import { FilterlayoutPage } from '../filterlayout/filterlayout'
+import { CompanydetailPage } from '../companydetail/companydetail'
 
 @Component({
   selector: 'page-contact',
@@ -67,5 +69,14 @@ export class ContactPage {
     }else{
       this.headerSlide.slideTo(1);
     }
+  }
+
+   
+  filterclick(title){
+    this.navCtrl.push(FilterlayoutPage,{'title':title});
+  }
+
+  viewcourse(){
+    this.navCtrl.push(CompanydetailPage);
   }
 }

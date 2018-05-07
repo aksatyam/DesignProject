@@ -7,24 +7,19 @@ page-myOrdersDetails{
         padding-left: 10px;
     }
     .deliveryDate{
-        font-size: 1.3rem;
         color: darkslateblue;
         padding: 4px;
         border:0.5px solid lightgray;
         border-radius: 4px;
     }
     .deliveryText{
-        font-size: 1.5rem;
         color: darkgray;
     }
     .summaryText{
         color: darkslateblue;
         background-color: white;
-        padding:8px;
+        padding:3vw;
         //border-bottom: 0.2px solid darkgray;
-    }
-    .paySummeryFnt{
-        font-size: 1.4rem;
     }
     .fontSizeCOD{
         font-size: 1.5rem;
@@ -85,14 +80,10 @@ page-myOrdersDetails{
         font-size: 1.5rem;
         color: darkslateblue
     }
-    .textSize{
-        font-size: 1.4rem;
-    }
     .item-md ion-icon[item-start] + .item-inner,.item-ios ion-icon[item-start] + .item-inner{
         margin-left: 4px;
     }
     .delivAddressText{
-        font-size: 1.5rem;
         color: darkgray;
     }
     .iconColor{
@@ -123,22 +114,21 @@ page-myOrdersDetails{
         padding: 8px;
     }
     .imageClass{
-        height: 60px;
-        width:60px;
+        height:15vw;
+        width:15vw;
+        margin-right: 4vw;
     }
     .borderItems{
         border-top: 0.2px solid darkgray;
     }
     .orderStatus{
-        background-color: darkgreen;
-        color:white;    
+        background-color: #eeeeee;
+        color:darkslateblue;
+        font-weight: bold;
     }
     .btnOrderCancel{
         background-color: darkslateblue;
-        color: white;
-        width: 94.5%;
-        margin-left: 9px;
-        margin-right: 10px;
+        height:12vw; 
     }
     ion-icon{
         //color: darkslateblue;
@@ -146,4 +136,26 @@ page-myOrdersDetails{
     .item-md.item-block .item-inner, .item-ios.item-block .item-inner{
         border-bottom:0px;
     }
+
+    .header-color{
+        background-color: #eeeeee;
+    }
+
+    .card-md,.card-ios{
+        width: calc(100% - 10px) !important;
+        margin: 5px !important;
+     }
+
+     .scroll-content{
+        margin-bottom: 15vw !important;
+    }
+
+    .card-content-ios,.card-content-md {
+     padding-left: 3vw !important
+   }
+
+   .icon-size{
+      font-size: 8vw;
+      text-align: center;
+   }
 }

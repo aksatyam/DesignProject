@@ -2,33 +2,23 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the AddcommentPage page.
+ * Generated class for the CompanydetailPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
 
 @Component({
-  selector: 'page-addcomment',
-  templateUrl: 'addcomment.html',
+  selector: 'page-companydetail',
+  templateUrl: 'companydetail.html',
 })
-export class AddcommentPage {
-  public istext:any;
+export class CompanydetailPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.istext="1"
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AddcommentPage');
+    console.log('ionViewDidLoad CompanydetailPage');
   }
-  setTextmode(){
-  this.istext="1";
-  }
-  setImageMode(){
-  this.istext="0";
-  }
-
- 
 
 }

@@ -3,6 +3,7 @@ import { NavController, NavParams,AlertController,Slides  } from 'ionic-angular'
 import { AddcommentPage} from "../addcomment/addcomment";
 import { InvitePage} from "../invite/invite";
 import { ImageViewerController } from "ionic-img-viewer";
+import { ReadcommentsPage } from '../readcomments/readcomments'
 
 
 
@@ -89,6 +90,10 @@ export class ContentreadPage {
       }
     });
     alert.present();
+  }
+
+  readcomment(){
+    this.navCtrl.push(ReadcommentsPage);
   }
 
 

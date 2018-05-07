@@ -1,10 +1,17 @@
 page-contact {
+
+    .app-background{
+        background-color: #eeeeee;
+    }
+    
     .SliderImages{
         height: 50vw;
     }
+    
     .header-background{
         background-color: darkslateblue;
     }
+    
     .ColorSelected{
         color: white;
         font-size: 1.3rem;
@@ -14,93 +21,119 @@ page-contact {
         color: white;
         text-transform: none;
     }
+    
     .segment-ios .segment-button.segment-activated {
         border-color: white;
         color: white;
-        border-bottom: 1px;
+        border-bottom: 2px;
         text-transform: none;
     }
+    
     .segment-md .segment-button {
         color:white;
         text-transform: none;
     }
+    
     .segment-ios .segment-button {
         color:white;
         background-color: darkslateblue!important;
         border: none;
         text-transform: none;
     }
+    
     .swiper-slide {
         align-items: flex-start !important;
     }
+    
     .imageClass{
         text-align: center;
     }
+    
     .leftBar{
         //border-left: 1px solid white;
     }
+    
     .imageClass1{
         //width: 100%;
         display: block;
         margin: 0 auto;
     }
+    
     .imageDiv{
         border-bottom: 1px solid darkgray;
     }
+    
     .ComanyTitle{
         padding: 10px;
         border-bottom: 1px solid darkgray;
     }
+    
     .CompanyText{
         font-size: 1.8rem;
     }
+    
     .btnInfoTech{
         text-transform: none;
         margin:8px;
         background-color: lightgray;
         color: darkslateblue;
     }
+    
     .btnInfoView{
         text-transform: none;
         margin:8px;
         background-color: darkslateblue;
     }
+    
     ion-slides {
         width: 100%;
         height: auto;
         display: flex;
       }
-      .card-content-ios,.card-content-md{
+    
+    .card-content-ios,.card-content-md{
         padding:2vw;
         text-align: left
         
     }
+    
     .mybtn-color{
         background-color: darkslateblue;
         text-transform: none;
     }
 
     .category-span{
-        border:1px solid gray;
+        border:0.5px solid gray;
         border-radius: 5px;
-        padding: 1vw;
+        padding: 1.6vw;
     }
 
     .filter-style{
-        height:12vw;
+        margin-top:2.4vw; 
         text-align: center;
     }
 
     .icon-size{
-        font-size: 6vw;
-        color:darkslateblue;
-        background-color: #ffffff;
-     }
-     
+       font-size: 6vw;
+       color:darkslateblue;
+       background-color: #ffffff;
+    }
+    
     .row{
-         background-color: #ffffff;
-         padding: 1vw; 
- 
-     }
+        background-color: #ffffff;
+        padding: 1vw; 
+
+    }
+
+    .card-md,.card-ios{
+      width: calc(100% - 10px) !important;
+      margin: 5px !important;
+    }
+    
+    .scroll-content{
+        margin-top:80px!important;
+    }
+
+    
 
 }

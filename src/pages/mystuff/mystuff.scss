@@ -35,14 +35,22 @@ page-mystuff {
     .my-padding{
         padding: 0px;
     }
-
-    .button-ios,.button-md{
-        height: 10vw;
-        padding: 5px; 
-    }
     
     .btn-mycolor{
         background-color: darkslateblue !important;
     }
+
+    .button-clear-ios,.button-clear-md {
+        padding: 0vw;
+    }
+
+    .col {
+       padding: 0px !important; 
+    }
+
+    .card-md,.card-ios{
+        width: calc(100% - 10px) !important;
+        margin: 5px !important;
+     }
 
 }

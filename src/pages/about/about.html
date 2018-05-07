@@ -1,21 +1,24 @@
 <ion-header>
   <ion-navbar>
-      <button ion-button menuToggle>
+    <button ion-button menuToggle>
           <ion-icon name="md-list"></ion-icon>
       </button>
     <ion-title>
       Book
     </ion-title>
     <ion-buttons end>
-      <button ion-button icon-only color="royal" (click)="openCartPage()">
+      <button ion-button icon-only color="royal" (click)="openCartPage()" style="padding-right:4vw;">
         <ion-icon name="ios-cart"></ion-icon>
+      </button>
+      <button ion-button icon-only color="royal">
+        <ion-icon name="md-notifications"></ion-icon>
       </button>
     </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content class="app-background" (ionScroll)="scrollHandler($event)" scrollable>
-    <!-- <ion-navbar>
+  <!-- <ion-navbar>
         <ion-item>
             <ion-item item-start col-4 class="ionItemback">
                 <ion-label>Category</ion-label>
@@ -30,35 +33,40 @@
             <ion-searchbar (ionInput)="getItems($event)" item-end></ion-searchbar>
         </ion-item>   
       </ion-navbar> -->
-      <ion-card class="sellCard"  tappable (click)="OpenBookForm()">
-          <ion-item>
-              <ion-icon name="ios-add-circle-outline" item-start class="plusIcon"></ion-icon>
-              <ion-label item-end class="sellText">Sell Your Used Books</ion-label>
-        </ion-item>
+  <ion-card class="sellCard" tappable (click)="OpenBookForm()">
+    <ion-item>
+      <ion-icon name="ios-add-circle-outline" item-start class="plusIcon"></ion-icon>
+      <ion-label item-end class="sellText">Sell Your Used Books</ion-label>
+    </ion-item>
+  </ion-card>
+  <ion-card *ngFor="let list of cardArray;let i =index">
+    <ion-card-header>
+      <ion-item>
+        <ion-label item-start class="booksCateoryTitle">
+          First Semester
+        </ion-label>
+        <ion-label item-end>
+          <button ion-button-outline class="seaAllClass" tappable (click)="seeAllItems()">SEE ALL</button>
+        </ion-label>
+      </ion-item>
+    </ion-card-header>
+    <div class="scrollmenu">
+      <ion-card *ngFor="let list of cardArray;let i =index" col-6 style="height:260px;">
+        <div tappable (click)="openItemDetails()">
+          <!-- <button ion-button-outline class="offClass">{{i+1}} % OFF</button> -->
+          <img src="assets/icon/unnamed.png" class="imageClass">
+          <ion-label class="Price description-text">{{ price| currency :'&#8377;'}} &nbsp;&nbsp;
+            <span style="text-decoration:line-through;color:lightgray;">
+                    {{price | currency :'&#8377;'}}
+            </span>
+          </ion-label>
+
+          <ion-label class="description description-text">About Product description, quantity, quality, features </ion-label>
+          <!-- <ion-label class="quantity"> 10 Kg</ion-label> -->
+        </div>
+        <button ion-button block (click)="addToCart()" class="small-text" style="height:8vw;">ADD TO CART</button>
       </ion-card>
-    <ion-card *ngFor="let list of cardArray;let i =index" class="app-background">
-        <ion-card-header>
-          <ion-item>
-            <ion-label item-start class="booksCateoryTitle">
-                First Semester
-            </ion-label>
-            <ion-label item-end>
-              <button ion-button-outline class="seaAllClass" tappable (click)="seeAllItems()">SEE ALL</button>
-            </ion-label>
-          </ion-item>
-        </ion-card-header>
-        <div class="scrollmenu">
-            <ion-card *ngFor="let list of cardArray;let i =index" col-7 style="height:260px;">
-                <div tappable (click)="openItemDetails()">
-                    <!-- <button ion-button-outline class="offClass">{{i+1}} % OFF</button> -->
-                    <img src="assets/icon/unnamed.png" class="imageClass">
-                    <ion-label class="Price">{{ price| currency :'&#8377;'}}</ion-label>
-                    <ion-label class="description">About Product description, quantity, quality, features </ion-label>
-                    <!-- <ion-label class="quantity"> 10 Kg</ion-label> -->
-                </div>
-                <button ion-button block (click)="addToCart()">ADD TO CART</button>
-            </ion-card>
-          </div>
-      </ion-card>
-      
+    </div>
+  </ion-card>
+
 </ion-content>

@@ -119,4 +119,9 @@ page-cart{
     .description{
         padding-bottom: 3px;
     }
+
+    .card-md,.card-ios{
+        width: calc(100% - 10px) !important;
+        margin: 5px !important;
+     }
 }

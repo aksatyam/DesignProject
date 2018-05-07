@@ -52,4 +52,9 @@ page-myOrders{
         background-color: darkslateblue!important;
         text-transform: none;
     }
+
+    .card-md,.card-ios{
+        width: calc(100% - 10px) !important;
+        margin: 5px !important;
+     }
 }

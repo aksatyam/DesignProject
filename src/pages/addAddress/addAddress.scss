@@ -50,4 +50,13 @@ page-addAddress{
         background-color: darkslateblue;
         width: 98%;
     }
+
+    [col-12]{
+     padding: 2px;
+   }
+   
+   .card-md,.card-ios{
+    width: calc(100% - 10px) !important;
+    margin: 5px !important;
+  }
 }

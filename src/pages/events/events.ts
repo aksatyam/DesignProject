@@ -2,6 +2,7 @@ import { Component,ViewChild} from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { Slides } from 'ionic-angular';
 import { EventdetailPage } from '../eventdetail/eventdetail'
+import { FilterlayoutPage } from '../filterlayout/filterlayout'
 
 @Component({
   selector: 'page-events',
@@ -53,6 +54,10 @@ export class EventsPage {
 
   register(){
     this.navCtrl.push(EventdetailPage);
+  }
+
+  filterclick(title){
+    this.navCtrl.push(FilterlayoutPage,{'title':title});
   }
 
 }

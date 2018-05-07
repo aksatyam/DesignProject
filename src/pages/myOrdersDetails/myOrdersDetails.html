@@ -8,29 +8,35 @@
 
 <ion-content class="app-background">
     <ion-item class="orderStatus">
-        <ion-label text-center>Yey! Order Successfully Delivered</ion-label>
+        <ion-label text-center class="description-text">
+            <ion-icon  text-center item-start name="ios-checkmark-circle" class="iconColor icon-size"></ion-icon>Your Order : Delivered</ion-label>
     </ion-item>
+
+    <ion-card>
+        <ion-item class="header-color">
+            <ion-icon item-start name="md-card" class="iconColor icon-size"></ion-icon>
+            <ion-label class="delivAddressText description-text"><b>Delivery Address</b></ion-label>
+        </ion-item>
+        <ion-card-content>
+            <ion-label class="addressNickName common-text">Home</ion-label>
+            <p class="cardContentAddress common-text">Mr. Pawan Kumar</p>
+            <p class="cardContentAddress common-text">
+                first floor, mukesh thakran niwas, near thana motors showroom, islampur vllage,
+            </p>
+            <p class="cardContentAddress common-text">
+                Nambarder Market, Sector 38, Guargoan
+            </p>
+        </ion-card-content>
+    </ion-card>
     <ion-card>
         <ion-item>
-            <ion-label item-start class="deliveryText">Delivery On</ion-label>
-            <ion-label item-end text-center class="deliveryDate">Fri, 12 Jan, 08:22 AM</ion-label>
+            <ion-label item-start class="deliveryText description-text"><b>Delivery On</b></ion-label>
+            <ion-label item-end text-center class="deliveryDate common-text">Fri, 12 Jan, 08:22 AM</ion-label>
         </ion-item>
     </ion-card>
-
-    <ion-card>
-        <div class="summaryText">
-                <ion-label text-center class="paySummeryFnt">PAYMENT METHOD</ion-label>
-        </div>
-        <ion-item class="app-background">
-            <ion-icon name="ios-cash-outline" item-start></ion-icon>
-            <ion-label class="fontSizeCOD">COD (Cash on delivery)</ion-label>
-            <!-- <ion-checkbox color="dark" checked="true"></ion-checkbox> -->
-        </ion-item>
-    </ion-card>
-
     <ion-card>
         <ion-card-header>
-            <ion-label text-center class="contentLabel">
+            <ion-label text-center class="contentLabel description-text">
                 <span>{{count}} ITEMS</span>
                 <span style="padding-left:4px;padding-right:4px"> - </span>
                 <span>AMOUNT : {{price | currency :'&#8377;' }}</span>
@@ -41,60 +47,56 @@
                 Ashish
             </ion-list>
         </div> -->
-        <ion-item *ngFor="let prod of cardArray" class="app-background borderItems">
-                <div item-start>
-                    <img src="assets/icon/unnamed.png" class="imageClass">
-                </div>
-                <ion-label>
-                    <span class="textTile">{{prod.product_title}}</span>
-                    <span style="float:right;font-size:12px;">{{prod.price | currency :'&#8377;' }}</span>
-                    <p style="padding-top:4px;padding-bottom:2px;">
-                        <span style="float:left;font-size:12px;"> Quantity</span>
-                        <span style="float:right;font-size:12px;" class="deliveryCharges"> {{prod.quantity}}</span>
-                    </p>  
-                </ion-label>
-            </ion-item>
-    </ion-card>
-
-    <ion-card class="app-background">
-            <ion-item>
-                <ion-icon item-start name='card' class="iconColor"></ion-icon>
-                <ion-label class="delivAddressText">Delivery Address</ion-label>
-            </ion-item>
-            <ion-card-content>
-                <ion-label class="addressNickName">Home</ion-label>
-                <p class="cardContentAddress">Mr. Pawan Kumar</p>
-                <p class="cardContentAddress">
-                first floor, mukesh thakran niwas,
-                near thana motors showroom, islampur vllage,
-                </p>
-                <p class="cardContentAddress">
-                Nambarder Market, Sector 38, Guargoan
-                </p>
-            </ion-card-content>
-    </ion-card>
-
-    <ion-card class="app-background">
-            <div class="summaryText">
-                <ion-label text-center class="paySummeryFnt">PAYMENT SUMMARY</ion-label>
+        <ion-item *ngFor="let prod of cardArray" class=" borderItems">
+            <div item-start>
+                <img src="assets/icon/unnamed.png" class="imageClass">
             </div>
-                <div class="paymentContent1">
-                    <ion-label float-left class="textSize">Sub Total</ion-label><ion-label float-right class="amountText textSize">{{price | currency :'&#8377;' }}</ion-label>
-                </div>
-                <br>
-                <div class="paymentContent2">
-                    <ion-label float-left class="textSize">Delivery charges</ion-label>
-                    <ion-label float-right class="freeText textSize">FREE</ion-label>
-                </div>
-                <br>
-                <ion-item class="app-background borderFinal">
-                    <ion-label float-left class="finalAmountText">Final Paid Amount</ion-label>
-                    <ion-label text-right class="finalAmount">{{price | currency :'&#8377;' }}</ion-label>
-                </ion-item>
-                <ion-item class="app-background">
-                    <ion-label float-left class="savingAmountText">Your total Savings</ion-label>
-                    <ion-label text-right class="savingAmount">{{price/6 | currency :'&#8377;' }} (19.25%)</ion-label>
-                </ion-item>
-        </ion-card>
-        <button ion-button full class="btnOrderCancel">Cancel Order</button>
+            <ion-label class="common-text">
+                <span class="textTile">{{prod.product_title}}</span>
+                <span style="float:right;font-size:12px;">{{prod.price | currency :'&#8377;' }}</span>
+                <p style="padding-top:4px;padding-bottom:2px;">
+                    <span class="common-text" style="float:left;"> Quantity</span>
+                    <span class="common-text" style="float:right;"> {{prod.quantity}}</span>
+                </p>
+            </ion-label>
+        </ion-item>
+    </ion-card>
+
+    <ion-card>
+        <div class="summaryText header-color">
+            <ion-label text-center class="description-text">PAYMENT SUMMARY</ion-label>
+        </div>
+        <div class="paymentContent1">
+            <ion-label float-left class="common-text">Sub Total</ion-label>
+            <ion-label float-right class="amountText common-text">{{price | currency :'&#8377;' }}</ion-label>
+        </div>
+        <br>  
+        <div class="paymentContent2">
+            <ion-label float-left class="common-text">Delivery charges</ion-label>
+            <ion-label float-right class="freeText common-text">FREE</ion-label>
+        </div>
+        <br>
+        <ion-item class="borderFinal">
+            <ion-label float-left class="finalAmountText common-text"> <b>Final Paid Amount</b></ion-label>
+            <ion-label text-right class="finalAmount common-text"><b>{{price | currency :'&#8377;' }}</b></ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-label float-left class="savingAmountText common-text"> <b>Your total Savings</b></ion-label>
+            <ion-label text-right class="savingAmount common-text"><b>{{price/6 | currency :'&#8377;' }} (19.25%)</b></ion-label>
+        </ion-item>
+    </ion-card>
+
+    <ion-card>
+        <div class="summaryText">
+            <ion-label text-center class="paySummeryFnt description-text">PAYMENT METHOD</ion-label>
+        </div>
+        <ion-item>
+            <ion-icon name="ios-cash-outline" item-start class="icon-size"></ion-icon>
+            <ion-label class="fontSizeCOD common-text">COD (Cash on delivery)</ion-label>
+            <!-- <ion-checkbox color="dark" checked="true"></ion-checkbox> -->
+        </ion-item>
+    </ion-card>
 </ion-content>
+<ion-footer>
+    <button ion-button block class="btnOrderCancel"><span class="description-text">Cancel Order</span></button>
+</ion-footer>
