@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { RegisterPage } from '../register/register'
 
 /**
  * Generated class for the Step1Page page.
@@ -20,6 +21,10 @@ export class Step1Page {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Step1Page');
+  }
+
+  nextpage(){
+    this.navCtrl.push(RegisterPage);
   }
 
 }

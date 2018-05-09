@@ -13,6 +13,10 @@ page-myListedBooks{
         //margin-top:75px!important;
         margin-bottom:50px!important;
     }
+    .card-md,.card-ios{
+       width: calc(100% - 10px) !important;
+       margin: 5px !important;
+    }
     .imageClass{
         height: 150px;
         width:120px;

@@ -7,12 +7,78 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>SIGN UP - STEP 3/4</ion-title>
+    <ion-title> Sign Up - Step 3/4</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content>
+  <div class="HeaderBackground"></div>
+  <div class="logoStyle">
+    <img src="assets/icon/unnamed.png" class="logo">
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <div>
+          <ion-item>
+            <ion-label floating>
+              <span>Full Name</span>
+            </ion-label>
+            <ion-input type="text" name="fullname"></ion-input>
+          </ion-item>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-12>
+        <div>
+          <ion-item>
+            <ion-label floating>
+              <span>Registration Number</span>
+            </ion-label>
+            <ion-input type="text" name="regno"></ion-input>
+          </ion-item>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-12>
+        <ion-item>
+          <ion-label>University</ion-label>
+          <ion-select class="description-text select-box ion-select" name="ComplainType">
+            <ion-option value="C">Lovely Profession University</ion-option>
+            <ion-option value="S"> Chandighar University</ion-option>
+            <ion-option value="R">Jammu University</ion-option>
+            <ion-option value="E">PTU University</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <ion-item>
+          <ion-label>College</ion-label>
+          <ion-select class="description-text select-box ion-select" name="discipline">
+            <ion-option value="C">Commputer Application</ion-option>
+            <ion-option value="S">School Of Bussiness</ion-option>
+            <ion-option value="R">School Of Arts</ion-option>
+            <ion-option value="E">School Of Science</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <br>
+    <ion-row>
+      <ion-col>
+         <button class="btn" type="submit" ion-button block class="description-text" (click)="nextpage()">
+              Next
+            </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>

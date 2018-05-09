@@ -26,6 +26,10 @@ page-allBookDetails{
     .label-md, .label-ios{
         font-size: 14px;
     }
+    .card-md,.card-ios{
+       width: calc(100% - 10px) !important;
+       margin: 5px !important;
+    }
     .btnAddToCart{
         background-color: darkslateblue;
         color: white;

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { RegisterPage } from '../register/register'
+import { Step1Page } from '../step1/step1'
 
 @Component({
   selector: 'page-Step2',
@@ -13,7 +13,7 @@ export class Step2Page {
   }
 
   next(){
-    this.navCtrl.push(RegisterPage);
+    this.navCtrl.push(Step1Page);
   }
 
 }

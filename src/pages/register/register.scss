@@ -14,11 +14,11 @@ page-register {
        margin-top: -50px;
        background:rgb(47, 164, 231);
        border-radius: 50%;
-   }
+    }
   
     .header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
      background-image: none !important;   
-}
+    }
    
    .logoStyle{
     text-align:center;  
@@ -56,7 +56,7 @@ page-register {
       background-color: darkslateblue;
       height:10vw;
       color:white;
-   }
+    }
 
     .card-md,.card-ios{
        width: calc(100% - 10px) !important;
@@ -68,12 +68,12 @@ page-register {
     }
 
     .button-md:hover:not(.disable-hover) {
-      background-color: darkslateblue;
+      background-color: darkslateblue !important;
      }
 
-   [col-12]{
+    [col-12]{
      padding: 2px;
-   }  
+    }  
 
 
 }

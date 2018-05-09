@@ -107,6 +107,8 @@ page-cart{
         background:darkslateblue; 
         width: 100%;
         text-transform: none;
+        height:10vw;
+        color:white;
     }
     .textCut{
     text-decoration: line-through;
@@ -124,4 +126,5 @@ page-cart{
         width: calc(100% - 10px) !important;
         margin: 5px !important;
      }
+
 }

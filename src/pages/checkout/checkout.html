@@ -7,34 +7,35 @@
 </ion-header>
 
 <ion-content class="app-background">
-    <ion-card class="app-background">
+    <ion-card>
         <div class="summaryText">
-            <ion-label text-center class="paySummeryFnt">PAYMENT SUMMARY</ion-label>
+            <ion-label class="description-text"> <ion-icon item-start name='card' class="iconColor"></ion-icon>&nbsp;&nbsp;&nbsp; Payment Summary</ion-label>
         </div>
             <div class="paymentContent1">
-                <ion-label float-left class="textSize">Sub Total</ion-label><ion-label float-right class="amountText textSize">{{price | currency :'&#8377;' }}</ion-label>
+                <ion-label float-left class="common-text">Sub Total</ion-label><ion-label float-right class="amountText common-text">{{price | currency :'&#8377;' }}</ion-label>
             </div>
             <br>
             <div class="paymentContent2">
-                <ion-label float-left class="textSize">Delivery charges</ion-label>
-                <ion-label float-right class="freeText textSize">FREE</ion-label>
+                <ion-label float-left class="common-text">Delivery charges</ion-label>
+                <ion-label float-right class="freeText common-text">FREE</ion-label>
             </div>
             <br>
-            <ion-item class="app-background borderFinal">
-                <ion-label float-left class="finalAmountText">Final Paid Amount</ion-label>
-                <ion-label text-right class="finalAmount">{{price | currency :'&#8377;' }}</ion-label>
+            <ion-item class="borderFinal">
+                <ion-label float-left class="common-text"><b>Final Paid Amount</b></ion-label>
+                <ion-label text-right class="common-text"><b>{{price | currency :'&#8377;' }}</b></ion-label>
             </ion-item>
-            <ion-item class="app-background">
-                <ion-label float-left class="savingAmountText">Your total Savings</ion-label>
-                <ion-label text-right class="savingAmount">{{price/6 | currency :'&#8377;' }} (19.25%)</ion-label>
+            <ion-item >
+                <ion-label float-left class="savingAmountText common-text">Your total Savings</ion-label>
+                <ion-label text-right class="savingAmount heading-text">{{price/6 | currency :'&#8377;' }} (19.25%)</ion-label>
             </ion-item>
     </ion-card>
 
-    <ion-card class="app-background">
-        <ion-item>
-            <ion-icon item-start name='card' class="iconColor"></ion-icon>
-            <ion-label class="delivAddressText">Delivery Address</ion-label>
-        </ion-item>
+    <ion-card>
+        <div class="summaryText">
+            
+            <ion-label class="delivAddressText description-text">  <ion-icon item-start name='card' class="iconColor"></ion-icon>&nbsp;&nbsp;&nbsp; Delivery Address</ion-label>
+        </div>
+        
         <ion-card-content>
             <ion-label class="addressNickName">Home</ion-label>
             <p class="cardContentAddress">Mr. Pawan Kumar</p>
@@ -50,10 +51,10 @@
 
     <ion-card>
         <div class="summaryText">
-            <ion-label text-center class="paySummeryFnt">PAYMENT METHOD</ion-label>
+            <ion-label class="description-text"> <ion-icon item-start name='card' class="iconColor"></ion-icon>&nbsp;&nbsp;&nbsp; Payment Method</ion-label>
         </div>
-        <ion-item class="app-background">
-            <ion-label class="fontSizeCOD">COD</ion-label>
+        <ion-item>
+            <ion-label class="delivAddressText description-text">COD (Cash on Delivery)</ion-label>
             <ion-checkbox color="dark" checked="true" style="border-radius:50%;"></ion-checkbox>
         </ion-item>
     </ion-card>
