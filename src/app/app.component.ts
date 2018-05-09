@@ -4,13 +4,11 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {Events} from "ionic-angular/index";
 import { TabsPage } from '../pages/tabs/tabs';
-import { SignInPage } from '../pages/signIn/signIn';
 import { MyOrdersPage } from '../pages/myOrders/myOrders';
 import { MyAddressesListPage } from '../pages/myAddressesList/myAddressesList';
 import { MyListedBooksPage } from '../pages/myListedBooks/myListedBooks';
 import { MyPayemtHistoryPage } from '../pages/myPayemtHistory/myPayemtHistory';
 import { MystuffPage } from '../pages/mystuff/mystuff';
-import { RegisterPage } from '../pages/register/register';
 import { InvitePage } from '../pages/invite/invite';
 
 
