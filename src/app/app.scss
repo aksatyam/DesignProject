@@ -34,6 +34,13 @@ app-container {
 .very-small-text{
     font-size: 2vw !important;
 }
+.menu-list {
+    margin-bottom: 0px !important;
+}
+
+.toolbar-title-md,.toolbar-title-ios{
+    font-size: 5vw !important;
+  }
     .tabs-md .tab-button[aria-selected=true] ,.tabs-ios .tab-button[aria-selected=true] {
         color:darkslateblue;
     }
@@ -54,7 +61,8 @@ app-container {
         font-size: 13px;
     }
     .app-background{
-        background-color: #f8fdff;
+       background-color: #f8fdff;
+        //background-color: #eeeeee;
     }
     .scrollable {
         overflow-y: scroll;
@@ -69,6 +77,30 @@ app-container {
         color: color($colors, mainColor);
         padding: 5vw;
     } 
+    
+    .btn-logout{
+        background-color: darkslateblue;
+        color: white;
+        text-align: center;
+        width: 100%;
+        height: 10vw;
+        padding: 3vw;
+    }
+
+    .btn-contribute{
+        padding:2vw;
+        background-color:#eeeeee;
+        color:darkslateblue; 
+        margin-right: 5vw;
+        font-size: 4vw;
+        vertical-align: center;
+        float:right;
+        margin-top:4vw !important;
+    }
+
+    .button-md:hover:not(.disable-hover) {
+        background-color: darkslateblue;
+      }
 
     .fab-md,.fab-ios{
         background-color: color($colors, mainColor) !important;
@@ -81,10 +113,10 @@ app-container {
     .toolbar-md,.toolbar-ios{
         min-height: 50px!important;
     }
-    .scroll-content{
-        //margin-top: 50px!important;
-        margin-bottom: 40px!important;
-    }
+    // .scroll-content{
+    //     //margin-top: 50px!important;
+    //     margin-bottom: 40px!important;
+    // }
     .tabs-md .tab-button,.tabs-ios .tab-button{
         min-height: 5.0rem!important;
     }
@@ -92,20 +124,18 @@ app-container {
         background: darkslateblue!important;
     }
     .UserInfo{
-        padding:20px 10px 10px 20px;
+        padding:10px 10px 10px 20px;
         background-color: darkslateblue;
     }
     .IconSize{
-        font-size: 5.0rem;
-        color: white;
+        font-size:15vw;
+        color: white;    
+    }
+    .menu-icon{
+        font-size:8vw ;
     }
     .nameTitle{
         color: white;
-        font-size: 1.4rem;
-    }
-    .emailTitle{
-        color: white;
-        font-size: 1.3rem;
     }
     .item-md ion-icon[item-start] + .item-inner{
         margin-left: 5px;
@@ -118,9 +148,12 @@ app-container {
         color: lightgray;
         padding: 0px;
       }
-      .list-md .item-block .item-inner {
+    .list-md .item-block .item-inner {
         border-bottom: 0px solid #dedede!important;
       } 
+    .menu-list{
+        margin-bottom: 5px;
+    }
 }
     
 

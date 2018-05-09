@@ -43,7 +43,6 @@ import { RegisterPage } from '../pages/register/register';
 import { NotificationPage } from '../pages/notification/notification';
 import { ReadcommentsPage } from '../pages/readcomments/readcomments';
 import { ProfilePage } from '../pages/profile/profile';
-import { AddquestionPage } from '../pages/addquestion/addquestion';
 import { Step1Page } from '../pages/step1/step1';
 
 @NgModule({
@@ -83,7 +82,6 @@ import { Step1Page } from '../pages/step1/step1';
     NotificationPage,
     ReadcommentsPage,
     ProfilePage,
-    AddquestionPage,
     Step1Page
 
   ],
@@ -129,7 +127,6 @@ import { Step1Page } from '../pages/step1/step1';
     NotificationPage,
     ReadcommentsPage,
     ProfilePage,
-    AddquestionPage,
     Step1Page
   ],
   providers: [
