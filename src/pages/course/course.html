@@ -27,7 +27,7 @@
         <ion-icon name="md-bookmark" item-left class="icon-size"></ion-icon>
        <ion-label style="color:darkslateblue;font-weight:bolder;" class="heading-text">First Semester</ion-label>
       </ion-list-header>
-      <button ion-item (click)="next()">
+       <button ion-item (click)="next()">
         <div class="sub-icon small-text"  style="font-weight:bold;" item-start>
          <span> CAP302</span>
         </div>
@@ -84,9 +84,15 @@
         <ion-col col-4> <ion-icon name="ios-arrow-forward-outline"  class="arrow" style="float:right;padding-right:2vw;"></ion-icon> </ion-col>
         </ion-row>
       
-      </button>
-    </ion-list>
+      </button> 
 
+      <!-- <div style="text-align:center;color:gray;margin-top:10px;" *ngIf=" data=='' || data==undefined">
+            <br>
+            <ion-icon ios="ios-alert" md="md-alert"></ion-icon>
+            <h6> No Topics Found Please Share Your Instruction Plan (Syllabus)</h6>
+            <button ion-button style="background-color:darkslateblue;text-transform: capitalize;" (click)="contribute()">Contribute Here</button>
+        </div> -->
+    </ion-list>
     <ion-list>
       <ion-list-header>
        <ion-icon name="md-bookmark" item-left class="icon-size"></ion-icon>

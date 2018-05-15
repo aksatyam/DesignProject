@@ -1,0 +1,42 @@
+page-workshop-detail {
+    .divcontent{
+        height: 45vw;
+        width: 100%;
+        overflow-y:hidden;
+    }
+
+    .mybtn-color{
+        background-color: darkslateblue;
+     }
+
+     .category-span{
+        border:1px solid gray;
+        color:gray;
+        border-radius: 5px;
+        padding: 2vw;
+    }
+
+    .term-card{
+        width:100% !important;
+    }
+
+    .button-md,.button-ios{
+       text-transform: capitalize;
+    }
+
+    .card-md,.card-ios{
+       width: calc(100% - 10px) !important;
+       margin: 5px !important;
+    }
+    
+
+    ion-scroll[scrollX] {
+      white-space: nowrap;
+      height: 40vw !important;
+    .scroll-item {
+      display: inline-block;
+      width:45%;
+    }
+   }
+
+}

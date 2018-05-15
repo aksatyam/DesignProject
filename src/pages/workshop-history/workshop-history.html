@@ -1,0 +1,45 @@
+<!--
+  Generated template for the WorkshopHistoryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Workshops History</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <ion-list>
+        <ion-card>
+          <img src="assets/imgs/questioncard.jpg" style="height:40vw;width:100%;" />
+          <ion-card-content>
+            <ion-card-title class="description-text" style="padding:1vw 3vw 1vw 3vw;">
+              <b>RainBow Resorts</b>
+            </ion-card-title>
+            <ion-item>
+              <ion-icon name="ios-pin-outline" item-start></ion-icon>
+
+              <h3 class="course-card-heading common-text" style="color:darkslateblue;white-space:normal;"><b>Rainbow Resorts Water park : Amritsar</b></h3>
+              <p class="common-text" style="padding-top:1vw;white-space:normal;"> 16 Milestone, Attari border road, Amritsar..</p>
+            </ion-item>
+            <ion-item>
+              <ion-icon name="ios-calendar-outline" item-start></ion-icon>
+              <h3 class="course-card-heading common-text" style="color:darkslateblue;white-space:normal;"><b>27 April 2018</b></h3>
+              <p class="common-text" style="padding-top:1vw;white-space:normal;">&#8377;<span>350</span></p>
+              <button ion-button item-end style="padding: 4vw;" class="mybtn-color discription-text" (click)="register()"> Dregister</button>
+            </ion-item>
+          </ion-card-content>
+        </ion-card>
+        <div style="text-align:center;color:gray;margin-top:10px;" *ngIf=" data=='' || data==undefined">
+        <br>
+        <ion-icon ios="ios-alert" md="md-alert"></ion-icon>
+        <h3> No Record Found</h3>
+      </div>
+        </ion-list>
+
+</ion-content>

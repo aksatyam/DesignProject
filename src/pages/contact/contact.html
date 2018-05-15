@@ -26,16 +26,16 @@
       <div class="filter-style">
         <ion-row>
           <ion-col col-6 style="border-right: 1px solid #dedede;" (click)="filterclick('Tranning Type')">
-            <div style="text-aling:center;"> 
-             <ion-icon name="md-options" class="icon-size"></ion-icon>&nbsp;&nbsp;&nbsp;<span class="description-text" style="color:#909090;"><b>Tranning Type</b></span>
+            <div style="text-aling:center;">
+              <ion-icon name="md-options" class="icon-size"></ion-icon>&nbsp;&nbsp;&nbsp;<span class="description-text" style="color:#909090;"><b>Tranning Type</b></span>
             </div>
           </ion-col>
           <ion-col col-6 (click)="filterclick('Location')">
-            <div style="text-aling:center;"> 
-            <ion-icon name="md-locate" class="icon-size"></ion-icon> &nbsp;&nbsp;<span class="description-text" style="color:#909090;"><b>Location</b></span>
+            <div style="text-aling:center;">
+              <ion-icon name="md-locate" class="icon-size"></ion-icon> &nbsp;&nbsp;<span class="description-text" style="color:#909090;"><b>Location</b></span>
             </div>
           </ion-col>
-          </ion-row>
+        </ion-row>
       </div>
       <ion-card *ngFor="let sl of slideArray">
         <img src="assets/imgs/questioncard.jpg" style="height:40vw;width:100%;" />
@@ -53,27 +53,33 @@
             <h3 class="course-card-heading common-text" style="color:darkslateblue;white-space:normal;padding:2vw;">
               <b class="category-span">Web Development</b>
             </h3>
-            
+
             <button ion-button item-end style="padding: 4vw;" class="mybtn-color" (click)="viewcourse()"> View Courses</button>
           </ion-item>
         </ion-card-content>
       </ion-card>
 
+      <div style="text-align:center;color:gray;margin-top:10px;" *ngIf=" data=='' || data==undefined">
+        <br>
+        <ion-icon ios="ios-alert" md="md-alert"></ion-icon>
+        <h3> No Record Found</h3>
+      </div>
+
     </ion-slide>
     <ion-slide>
-       <div class="filter-style">
+      <div class="filter-style">
         <ion-row>
           <ion-col col-6 style="border-right: 1px solid #dedede;">
-            <div style="text-aling:center;"> 
-             <ion-icon name="md-options" class="icon-size"></ion-icon>&nbsp;&nbsp;&nbsp;<span class="description-text" style="color:#909090;"><b>Tranning Type</b></span>
+            <div style="text-aling:center;">
+              <ion-icon name="md-options" class="icon-size"></ion-icon>&nbsp;&nbsp;&nbsp;<span class="description-text" style="color:#909090;"><b>Tranning Type</b></span>
             </div>
           </ion-col>
           <ion-col col-6>
-            <div style="text-aling:center;"> 
-            <ion-icon name="md-locate" class="icon-size"></ion-icon> &nbsp;&nbsp;<span class="description-text" style="color:#909090;"><b>Location</b></span>
+            <div style="text-aling:center;">
+              <ion-icon name="md-locate" class="icon-size"></ion-icon> &nbsp;&nbsp;<span class="description-text" style="color:#909090;"><b>Location</b></span>
             </div>
           </ion-col>
-          </ion-row>
+        </ion-row>
       </div>
       <ion-card *ngFor="let sl of slideArray">
         <img src="assets/imgs/questioncard.jpg" style="height:40vw;width:100%;" />
@@ -91,10 +97,16 @@
             <h3 class="course-card-heading common-text" style="color:darkslateblue;white-space:normal;padding:2vw;">
               <b><span class="category-span">Web Development</span></b>
             </h3>
-            <button ion-button item-end style="padding: 4vw;" class="mybtn-color"> View Courses</button>
+            <button ion-button item-end style="padding: 4vw;" class="mybtn-color" (click)="workshopdetail()"> View Detail</button>
           </ion-item>
         </ion-card-content>
       </ion-card>
+
+      <div style="text-align:center;color:gray;margin-top:10px;" *ngIf=" data=='' || data==undefined">
+        <br>
+        <ion-icon ios="ios-alert" md="md-alert"></ion-icon>
+        <h3> No Record Found</h3>
+      </div>
     </ion-slide>
   </ion-slides>
 

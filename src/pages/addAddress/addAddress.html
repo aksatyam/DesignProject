@@ -6,112 +6,106 @@
     </ion-navbar>
 </ion-header>
 
-<ion-content class="app-background">
-    <ion-card>
-        <ion-grid>
-            <ion-row radio-group>
-                <ion-item col-4>
-                    <ion-label>Mr.</ion-label>
-                    <ion-radio checked="true" value="Mr." item-start></ion-radio>
-                </ion-item>
+<ion-content>
 
-                <ion-item col-4>
-                    <ion-label>Mrs</ion-label>
-                    <ion-radio value="Mrs." item-start></ion-radio>
-                </ion-item>
-
-                <ion-item col-4>
-                    <ion-label>Miss</ion-label>
-                    <ion-radio value="Miss." item-start></ion-radio>
-                </ion-item>
-
-            </ion-row>
-
-            <ion-row>
-                <ion-col col-12>
-                    <div>
-                        <ion-item>
-                            <ion-label floating>
-                                <span>Name</span>
-                            </ion-label>
-                            <ion-input type="text" name="name"></ion-input>
-                        </ion-item>
-                        <hr>
-                    </div>
-                </ion-col>
-            </ion-row>
-
-
-            <ion-row>
-                <ion-col col-12>
-                    <div>
-                        <ion-item>
-                            <ion-label floating>
-                                <span>Mobile Number</span>
-                            </ion-label>
-                            <ion-input type="number" name="contact"></ion-input>
-                        </ion-item>
-                        <hr>
-                    </div>
-                </ion-col>
-            </ion-row>
-
-            <ion-row>
-                <ion-col col-12>
-                    <div>
-                        <ion-item>
-                            <ion-label floating>
-                                <span>Hostel Name / Building Name</span>
-                            </ion-label>
-                            <ion-input type="text" name="name"></ion-input>
-                        </ion-item>
-                        <hr>
-                    </div>
-                </ion-col>
-            </ion-row>
-
-            <ion-row>
-                <ion-col col-12>
-                    <div>
-                        <ion-item>
-                            <ion-label floating>
-                                <span>Room Number / Cabin Number</span>
-                            </ion-label>
-                            <ion-input type="text" name="name"></ion-input>
-                        </ion-item>
-                        <hr>
-                    </div>
-                </ion-col>
-            </ion-row>
-            <ion-label class="addressTypeText app-background">NickName of your address</ion-label>
-            <ion-item class="app-background" style="padding-bottom:2vw;" > 
-                <button ion-button default (click)="addEvent(1)" [ngStyle]="{'background-color': buttonColor1,'color':textColor1}">Home</button>
-                <button ion-button default (click)="addEvent(2)" [ngStyle]="{'background-color': buttonColor2,'color':textColor2}">Office</button>
-                <button ion-button default (click)="addEvent(3)" [ngStyle]="{'background-color': buttonColor3,'color':textColor3}">Others</button>            
+    <ion-grid>
+        <ion-row radio-group>
+            <ion-item col-4>
+                <ion-label>Mr.</ion-label>
+                <ion-radio checked="true" value="Mr." item-start></ion-radio>
             </ion-item>
 
-            <ion-row  *ngIf="othersStatus">
-                <ion-col col-12>
-                    <div>
-                        <ion-item>
-                            <ion-label floating>
-                                <span>Enter your own label</span>
-                            </ion-label>
-                            <ion-input type="text" name="name"></ion-input>
-                        </ion-item>
-                        <hr>
-                    </div>
-                </ion-col>
-            </ion-row>
-           <br>
+            <ion-item col-4>
+                <ion-label>Mrs</ion-label>
+                <ion-radio value="Mrs." item-start></ion-radio>
+            </ion-item>
+
+            <ion-item col-4>
+                <ion-label>Miss</ion-label>
+                <ion-radio value="Miss." item-start></ion-radio>
+            </ion-item>
+
+        </ion-row>
 
             <ion-row>
-                <ion-col>
-                    <button class="btn" type="submit" ion-button block class="btnContinue">
+            <ion-col col-12>
+                <div>
+                    <ion-item>
+                        <ion-label floating>
+                            <span>Name</span>
+                        </ion-label>
+                        <ion-input type="text" name="name"></ion-input>
+                    </ion-item>
+                </div>
+            </ion-col>
+        </ion-row>
+
+
+        <ion-row>
+            <ion-col col-12>
+                <div>
+                    <ion-item>
+                        <ion-label floating>
+                            <span>Mobile Number</span>
+                        </ion-label>
+                        <ion-input type="number" name="contact"></ion-input>
+                    </ion-item>
+                </div>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col col-12>
+                <div>
+                    <ion-item>
+                        <ion-label floating>
+                            <span>Hostel Name / Building Name</span>
+                        </ion-label>
+                        <ion-input type="text" name="name"></ion-input>
+                    </ion-item>
+                </div>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col col-12>
+                <div>
+                    <ion-item>
+                        <ion-label floating>
+                            <span>Room Number / Cabin Number</span>
+                        </ion-label>
+                        <ion-input type="text" name="name"></ion-input>
+                    </ion-item>
+                </div>
+            </ion-col>
+        </ion-row>
+        <ion-label class="addressTypeText">NickName of your address</ion-label>
+        <ion-item style="padding-bottom:2vw;">
+            <button ion-button default (click)="addEvent(1)" [ngStyle]="{'background-color': buttonColor1,'color':textColor1}">Home</button>
+            <button ion-button default (click)="addEvent(2)" [ngStyle]="{'background-color': buttonColor2,'color':textColor2}">Office</button>
+            <button ion-button default (click)="addEvent(3)" [ngStyle]="{'background-color': buttonColor3,'color':textColor3}">Others</button>
+        </ion-item>
+
+        <ion-row *ngIf="othersStatus">
+            <ion-col col-12>
+                <div>
+                    <ion-item>
+                        <ion-label floating>
+                            <span>Enter your own label</span>
+                        </ion-label>
+                        <ion-input type="text" name="name"></ion-input>
+                    </ion-item>
+                </div>
+            </ion-col>
+        </ion-row>
+        <br>
+
+        <ion-row>
+            <ion-col>
+                <button class="btn" type="submit" ion-button block class="btnContinue">
                           Continue
                         </button>
-                </ion-col>
-            </ion-row>
-        </ion-grid>
-    </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>

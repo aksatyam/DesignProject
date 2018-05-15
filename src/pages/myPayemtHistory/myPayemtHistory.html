@@ -7,46 +7,53 @@
 </ion-header>
 
 <ion-content class="app-background">
+    <ion-list>
         <ion-card *ngFor="let prod of cardArray" style="padding-bottom:8px;">
-                <div class="orderDateDiv">
-                    <ion-label text-center class="orderDate">Placed on Wed, 10 Jan, 07:39 PM</ion-label>
+            <div class="orderDateDiv">
+                <ion-label text-center class="orderDate">Placed on Wed, 10 Jan, 07:39 PM</ion-label>
+            </div>
+            <ion-card-header class="headerTitle" text-center>
+                Order ID: {{prod.orderID}}
+            </ion-card-header>
+            <hr>
+            <ion-item>
+                <div item-start>
+                    <img src="assets/icon/unnamed.png" class="imageClass">
                 </div>
-                <ion-card-header class="headerTitle" text-center>
-                        Order ID: {{prod.orderID}}
-                </ion-card-header>
-                <hr>
-                <ion-item>
-                    <div item-start>
-                        <img src="assets/icon/unnamed.png" class="imageClass">
-                    </div>
-                    <ion-label>
-                        <span class="textTile">{{prod.book_name}}</span>
-                        <p class="inFoParagraph">
-                            <span class="contentTitle"> Selling Price</span>
-                            <span  class="deliveryCharges"> {{prod.selling_price | currency :'&#8377;' }}</span>
-                        </p>
-                        <p class="inFoParagraph">
-                            <span class="contentTitle"> Commision Amount</span>
-                            <span class="deliveryCharges"> {{prod.commision_charges | currency :'&#8377;' }}</span>
-                        </p>
-                        <hr>
-                        <p class="inFoParagraph">
-                                <span class="contentTitle">Receivable Amount</span>
-                                <span class="deliveryCharges"> {{prod.receivable_amount | currency :'&#8377;' }}</span>
-                        </p> 
-                    </ion-label>
-                </ion-item>
-                <hr>
-                <div class="inFoParagraph1">
-                    <div class="inFoParagraph">
-                            <span class="contentTitle">Order Status</span>
-                            <span class="deliveryCharges">{{prod.orderStatus}}</span>
-                    </div>
-                    <br>
-                    <div class="inFoParagraph">
-                            <span class="contentTitle">Payment Status</span>
-                            <span class="deliveryCharges"> {{prod.payment_status}}</span>
-                    </div>
+                <ion-label>
+                    <span class="textTile">{{prod.book_name}}</span>
+                    <p class="inFoParagraph">
+                        <span class="contentTitle"> Selling Price</span>
+                        <span class="deliveryCharges"> {{prod.selling_price | currency :'&#8377;' }}</span>
+                    </p>
+                    <p class="inFoParagraph">
+                        <span class="contentTitle"> Commision Amount</span>
+                        <span class="deliveryCharges"> {{prod.commision_charges | currency :'&#8377;' }}</span>
+                    </p>
+                    <hr>
+                    <p class="inFoParagraph">
+                        <span class="contentTitle">Receivable Amount</span>
+                        <span class="deliveryCharges"> {{prod.receivable_amount | currency :'&#8377;' }}</span>
+                    </p>
+                </ion-label>
+            </ion-item>
+            <hr>
+            <div class="inFoParagraph1">
+                <div class="inFoParagraph">
+                    <span class="contentTitle">Order Status</span>
+                    <span class="deliveryCharges">{{prod.orderStatus}}</span>
                 </div>
-            </ion-card>
+                <br>
+                <div class="inFoParagraph">
+                    <span class="contentTitle">Payment Status</span>
+                    <span class="deliveryCharges"> {{prod.payment_status}}</span>
+                </div>
+            </div>
+        </ion-card>
+        <div style="text-align:center;color:gray;margin-top:10px;" *ngIf=" data=='' || data==undefined">
+            <br>
+            <ion-icon ios="ios-alert" md="md-alert"></ion-icon>
+            <h3> No Record Found</h3>
+        </div>
+    </ion-list>
 </ion-content>

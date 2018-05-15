@@ -4,6 +4,7 @@ import { BookDetailsPage } from '../bookDetails/bookDetails';
 import { CartPage } from '../cart/cart';
 import { AllBookDetailsPage } from '../allBookDetails/allBookDetails';
 import { SellUsedBooksPage } from '../sellUsedBooks/sellUsedBooks';
+import { NotificationPage } from '../notification/notification';
 
 @Component({
   selector: 'page-about',
@@ -50,5 +51,9 @@ export class AboutPage {
 
   OpenBookForm(){
     this.navCtrl.push(SellUsedBooksPage);
+  }
+
+   notification(){
+    this.navCtrl.push(NotificationPage);
   }
 }

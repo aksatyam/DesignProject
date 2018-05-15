@@ -18,12 +18,12 @@
                 <ion-label item-satrt class="titleCls">Sub Total</ion-label>
                 <ion-label item-end class="itemMdEnd"><b>{{total_price | currency :'&#8377;'}}</b></ion-label>
             </ion-item><br>
-            <ion-item no-margin>
+            <ion-item>
                 <ion-label item-satrt class="titleCls">Delivery charges</ion-label>
                 <ion-label item-end class="itemDeleveryAmount"><b>{{delevery_price | currency :'&#8377;'}}</b></ion-label>
             </ion-item>
-            <hr>
-            <ion-item no-margin>
+            <br>
+            <ion-item>
                     <ion-label item-satrt class="titleCls"><b>Total Payable Amount</b></ion-label>
                     <ion-label item-end class="itemDeleveryAmount"><b>{{total_price+delevery_price | currency :'&#8377;'}}</b></ion-label>
             </ion-item>

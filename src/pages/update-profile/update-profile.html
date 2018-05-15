@@ -1,0 +1,98 @@
+<!--
+  Generated template for the UpdateProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Update Profile</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="royal">
+        <ion-icon name="md-notifications"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <div class="centre-align">
+    <img src="assets/imgs/vishal.JPG" class="image-icon">
+    <!-- <img *ngIf="user[0].Picture==''" src="assets/icon/LPULogo.png"  class="image-icon">--><br>
+    <span>
+          <span class="user-name description-text">Vishal Sharma</span>
+    <br>
+    <span class=" description-text user-degree">MCA[Laterial Entry]</span>
+    <br>
+    <span class=" description-text user-degree">Lovely Professional University</span>
+    </span>
+  </div>
+
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <div>
+          <ion-item>
+            <ion-label floating>
+              <span>Contact Number</span>
+            </ion-label>
+            <ion-input type="tel" name="contact" max="10"></ion-input>
+          </ion-item>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <div class="content-header">
+          <label class=" description-text upper-text">College</label>
+          <ion-select placeholder="Select" class="description-text select-box ion-select" name="ComplainType">
+            <ion-option value="C">LPU</ion-option>
+            <ion-option value="S">PTU</ion-option>
+            <ion-option value="R">JNDU</ion-option>
+            <ion-option value="E">DAV</ion-option>
+          </ion-select>
+        </div>
+        <hr>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <div class="content-header">
+          <label class=" description-text upper-text">Course</label>
+          <ion-select placeholder="Select" class="description-text select-box ion-select" name="ComplainType">
+            <ion-option value="C">MCA</ion-option>
+            <ion-option value="S">BTech</ion-option>
+            <ion-option value="R">BCA</ion-option>
+            <ion-option value="E">MBA</ion-option>
+          </ion-select>
+        </div>
+        <hr>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <div class="content-header">
+          <label class=" description-text upper-text">Semester</label>
+          <ion-select placeholder="Select" class="description-text select-box ion-select" name="ComplainType">
+            <ion-option value="C">First</ion-option>
+            <ion-option value="S">Second</ion-option>
+            <ion-option value="R">Third</ion-option>
+            <ion-option value="E">Fourth</ion-option>
+          </ion-select>
+        </div>
+        <hr>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button class="btn" type="submit" ion-button block class="description-text">
+                        Update
+                      </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

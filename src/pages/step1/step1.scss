@@ -20,7 +20,7 @@ page-step1 {
        margin-top: -50px;
        background:rgb(47, 164, 231);
        border-radius: 50%;
-   }
+    }
 
     .content-header{
       padding-top:8px;
@@ -54,7 +54,7 @@ page-step1 {
       background-color: darkslateblue;
       height:10vw;
       color:white;
-   }
+    }
 
    .button-md,.button-ios{
       background-color: darkslateblue
@@ -62,12 +62,10 @@ page-step1 {
 
     .button-md:hover:not(.disable-hover),.button-ios:hover:not(.disable-hover) {
       background-color: darkslateblue !important;
-     }
-
+    }
 
     .select-md {
-    
-    padding: 5px !important;
-} 
-
+      padding: 5px !important;
+     } 
+   
 }

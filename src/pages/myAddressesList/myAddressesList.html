@@ -7,27 +7,33 @@
 </ion-header>
 
 <ion-content class="app-background">
+
     <ion-card class="sellCard" tappable (click)="openAddressForm()">
         <ion-item>
             <ion-icon name="ios-add-circle-outline" item-start class="plusIcon"></ion-icon>
-            <ion-label item-end class="sellText"><span style="font-weight:bold;">Add a new Address</span> in Gurgaon Bus Stand, Sector - 18</ion-label>
+            <ion-label item-end class="sellText"><span style="font-weight:bold;">Add a new Address</span></ion-label>
         </ion-item>
     </ion-card>
+    <ion-list>
+         <ion-card>
+            <ion-card-header>
+                Home
+            </ion-card-header>
+            <ion-card-content class="cardContentAddress">
+                <p class="cardContentAddress">Mr. Pawan Kumar</p>
+                <p class="cardContentAddress">
+                    first floor, mukesh thakran niwas, near thana motors showroom, islampur vllage,
+                </p>
+                <p class="cardContentAddress">
+                    Nambarder Market, Sector 38, Guargoan
+                </p>
+            </ion-card-content>
 
-    <ion-card>
-        <ion-card-header>
-            Home
-        </ion-card-header>
-        <ion-card-content class="cardContentAddress">
-            <p class="cardContentAddress">Mr. Pawan Kumar</p>
-            <p class="cardContentAddress">
-            first floor, mukesh thakran niwas,
-            near thana motors showroom, islampur vllage,
-            </p>
-            <p class="cardContentAddress">
-            Nambarder Market, Sector 38, Guargoan
-            </p>
-        </ion-card-content>
-       
-    </ion-card>
+        </ion-card> 
+        <div style="text-align:center;color:gray;margin-top:10px;" *ngIf=" data=='' || data==undefined">
+            <br>
+            <ion-icon ios="ios-alert" md="md-alert"></ion-icon>
+            <h3> No Address Found</h3>
+        </div>
+    </ion-list>
 </ion-content>

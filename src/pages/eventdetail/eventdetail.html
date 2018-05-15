@@ -39,7 +39,7 @@
         <ion-icon name="ios-clock-outline" item-start></ion-icon>
         <h3 class="course-card-heading common-text" style="color:darkslateblue;white-space:normal;"><b>Register By</b></h3>
         <p class="common-text" style="padding-top:1vw;white-space:normal;"> 29 April 2018</p>
-        <button ion-button item-end style="padding: 4vw;" class="mybtn-color description-text">Register Now</button>
+        <button ion-button item-end style="padding: 4vw;" class="mybtn-color description-text" (click)="registernow()">Register Now</button>
       </ion-item>
 
       <div style="padding:3vw;">
@@ -64,7 +64,7 @@
   <br>
   <div style="background-color:white;width:100%;padding:2vw;">
     <ion-label class="description-text" style="margin:2vw;"><span style="padding-left:5vw;"><b>Artist</b></span></ion-label>
-     <ion-scroll scrollX>
+    <ion-scroll scrollX>
       <div class="scroll-item">
         <ion-card style="border-radius:5px;">
           <img src="assets/imgs/questioncard.jpg" />
@@ -77,21 +77,21 @@
         </ion-card>
         <ion-label style="white-space: normal;text-align:center;">Mr Vishal Sharma</ion-label>
       </div>
-      
-       <div class="scroll-item">
-        <ion-card style="border-radius:5px;">
-          <img src="assets/imgs/questioncard.jpg" />
-        </ion-card>
-        <ion-label style="white-space: normal;text-align:center;">Mr Vishal Sharma</ion-label>
-  </div>
 
-  <div class="scroll-item">
-    <ion-card style="border-radius:5px;">
-      <img src="assets/imgs/questioncard.jpg" />
-    </ion-card>
-    <ion-label style="white-space: normal;text-align:center;">Mr Vishal Sharma</ion-label>
-  </div>
-  </ion-scroll>
+      <div class="scroll-item">
+        <ion-card style="border-radius:5px;">
+          <img src="assets/imgs/questioncard.jpg" />
+        </ion-card>
+        <ion-label style="white-space: normal;text-align:center;">Mr Vishal Sharma</ion-label>
+      </div>
+
+      <div class="scroll-item">
+        <ion-card style="border-radius:5px;">
+          <img src="assets/imgs/questioncard.jpg" />
+        </ion-card>
+        <ion-label style="white-space: normal;text-align:center;">Mr Vishal Sharma</ion-label>
+      </div>
+    </ion-scroll>
   </div>
 
   <ion-card class="term-card" style="margin-bottom:40px;">
@@ -103,4 +103,5 @@
       <div *ngIf="isGroupShown(i)" class="common-text" style="padding-top:2vw; padding-bottom:5vw;">{{d.description}}</div>
     </ion-item>
   </ion-card>
+  
 </ion-content>

@@ -48,4 +48,17 @@
     </div>
   </ion-card>
 
+   <ion-card class="term-card" style="margin-bottom:40px;">
+    <ion-item *ngFor="let d of diseases; let i=index" text-wrap (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}">
+      <h3 class="commom-text" style="color:darkslateblue;">
+        <ion-icon item-start [name]="isGroupShown(i) ? 'md-remove' : 'md-add'"></ion-icon>
+        <b>{{d.title}}</b>
+      </h3>
+      <div *ngIf="isGroupShown(i)" class="common-text" style="padding-top:2vw; padding-bottom:5vw;"><ion-icon name="md-calendar" style="height:5vw;width:5vw;float:left;"></ion-icon>&nbsp;&nbsp;&nbsp;{{d.date}}</div>
+      <div *ngIf="isGroupShown(i)" class="common-text" style="padding-top:2vw; padding-bottom:5vw;"><img src="assets/icon/rupee.png" style="height:4vw;width:4vw;float:left;">&nbsp;&nbsp;&nbsp;{{d.price}}
+        <button ion-button style="float:right;background-color:darkslateblue !important;" (click)="registerworkshop()">Register</button>
+      </div>
+    </ion-item>
+  </ion-card>
+
 </ion-content>

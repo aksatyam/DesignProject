@@ -2,6 +2,8 @@ import { Component,ViewChild } from '@angular/core';
 import { NavController,Slides } from 'ionic-angular';
 import { FilterlayoutPage } from '../filterlayout/filterlayout'
 import { CompanydetailPage } from '../companydetail/companydetail'
+import { WorkshopDetailPage } from '../workshop-detail/workshop-detail'
+import { NotificationPage } from '../notification/notification'
 
 @Component({
   selector: 'page-contact',
@@ -78,5 +80,12 @@ export class ContactPage {
 
   viewcourse(){
     this.navCtrl.push(CompanydetailPage);
+  }
+  workshopdetail(){
+    this.navCtrl.push(WorkshopDetailPage);
+  }
+
+   notification(){
+    this.navCtrl.push(NotificationPage);
   }
 }

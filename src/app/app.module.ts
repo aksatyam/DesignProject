@@ -1,11 +1,11 @@
-import {NgModule, ErrorHandler} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
-import {IonicApp, IonicModule, IonicErrorHandler} from 'ionic-angular';
-import {MyApp} from './app.component';
-import {CoursePage} from '../pages/course/course';
-import {QuestionPage} from "../pages/question/question";
-import {AnswerPage} from "../pages/answer/answer";
-import {AddcommentPage} from "../pages/addcomment/addcomment";
+import { NgModule, ErrorHandler} from '@angular/core';
+import { BrowserModule} from '@angular/platform-browser';
+import { IonicApp, IonicModule, IonicErrorHandler} from 'ionic-angular';
+import { MyApp} from './app.component';
+import { CoursePage} from '../pages/course/course';
+import { QuestionPage} from "../pages/question/question";
+import { AnswerPage} from "../pages/answer/answer";
+import { AddcommentPage} from "../pages/addcomment/addcomment";
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
@@ -44,6 +44,16 @@ import { NotificationPage } from '../pages/notification/notification';
 import { ReadcommentsPage } from '../pages/readcomments/readcomments';
 import { ProfilePage } from '../pages/profile/profile';
 import { Step1Page } from '../pages/step1/step1';
+import { ContributePage } from '../pages/contribute/contribute';
+import { EventRegisterformPage } from '../pages/event-registerform/event-registerform';
+import { TraningRegisterationformPage } from '../pages/traning-registerationform/traning-registerationform';
+import { WorkshopRegisterformPage } from '../pages/workshop-registerform/workshop-registerform';
+import { UpdateProfilePage } from '../pages/update-profile/update-profile';
+import { TraningHistoryPage } from '../pages/traning-history/traning-history';
+import { WorkshopHistoryPage } from '../pages/workshop-history/workshop-history';
+import { EventsHistoryPage } from '../pages/events-history/events-history';
+import { WorkshopDetailPage } from '../pages/workshop-detail/workshop-detail';
+
 
 @NgModule({
   declarations: [
@@ -82,7 +92,17 @@ import { Step1Page } from '../pages/step1/step1';
     NotificationPage,
     ReadcommentsPage,
     ProfilePage,
-    Step1Page
+    Step1Page,
+    ContributePage,
+    EventRegisterformPage,
+    TraningRegisterationformPage,
+    WorkshopRegisterformPage,
+    UpdateProfilePage,
+    TraningHistoryPage,
+    WorkshopHistoryPage,
+    EventsHistoryPage,
+    WorkshopDetailPage
+    
 
   ],
   imports: [
@@ -127,7 +147,16 @@ import { Step1Page } from '../pages/step1/step1';
     NotificationPage,
     ReadcommentsPage,
     ProfilePage,
-    Step1Page
+    Step1Page,
+    ContributePage,
+    EventRegisterformPage,
+    TraningRegisterationformPage,
+    WorkshopRegisterformPage,
+    UpdateProfilePage,
+    TraningHistoryPage,
+    WorkshopHistoryPage,
+    EventsHistoryPage,
+    WorkshopDetailPage
   ],
   providers: [
     StatusBar,

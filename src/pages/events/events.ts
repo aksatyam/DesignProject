@@ -3,6 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import { Slides } from 'ionic-angular';
 import { EventdetailPage } from '../eventdetail/eventdetail'
 import { FilterlayoutPage } from '../filterlayout/filterlayout'
+import { NotificationPage } from '../notification/notification'
 
 @Component({
   selector: 'page-events',
@@ -60,4 +61,7 @@ export class EventsPage {
     this.navCtrl.push(FilterlayoutPage,{'title':title});
   }
 
+   notification(){
+    this.navCtrl.push(NotificationPage);
+  }
 }

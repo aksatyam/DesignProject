@@ -9,70 +9,62 @@
     </ion-navbar>
 </ion-header>
 
-<ion-content class="app-background">
+<ion-content>
     <ion-slides pager style="height:200px" autoplay="3000" loop="true" speed="1000">
         <ion-slide>
-                <img src="assets/icon/unnamed.png" class="imageClass">
+            <img src="assets/icon/unnamed.png" class="imageClass">
         </ion-slide>
         <ion-slide>
-                <img src="assets/icon/unnamed.png" class="imageClass">
+            <img src="assets/icon/unnamed.png" class="imageClass">
         </ion-slide>
         <ion-slide>
-                <img src="assets/icon/unnamed.png" class="imageClass">
+            <img src="assets/icon/unnamed.png" class="imageClass">
         </ion-slide>
     </ion-slides>
     <hr>
     <ion-label class="bookTitle">Book Name, Author</ion-label>
-    <ion-item no-margin class="app-background">
+    <ion-item no-margin>
         <ion-label item-start class="Price">{{price | currency :'&#8377;'}}
             <span style="text-decoration:line-through;color:lightgray;font-size:1.8rem;">
                     {{price | currency :'&#8377;'}}
             </span>
         </ion-label>
         <ion-label item-end>
-                <button ion-button default (click)="addToCart()">ADD TO CART</button>
+            <button ion-button default (click)="addToCart()">ADD TO CART</button>
         </ion-label>
     </ion-item>
-    <hr style="margin-left:10px;margin-right:10px;">
     <div class="lineWidthRow">
 
     </div>
-    <ion-label class="heighLights">Highlights</ion-label>
-    <hr>
     <ion-row>
-        <ion-col col-3 class="Author">
-            Authur 
-        </ion-col>
-        <ion-col col-9 class="AuthorName">
-            : Ashish Kumar Satyam   
-        </ion-col>
+        <ion-item class="mypadding">
+            <h3 class="description-text heighLights" style="color:#909090 !important;" > Highlights </h3>
+        </ion-item>
     </ion-row>
     <ion-row>
-        <ion-col col-3 class="Author">
-            Edition 
-        </ion-col>
-        <ion-col col-9 class="AuthorName">
-            : 2018   
-        </ion-col>
+        <ion-item class="mypadding">
+            <h3 class="common-text" style="color:#909090 !important;"> Authur </h3>
+            <p class="description-text">Ashish Kumar Satyam</p>
+        </ion-item>
+    </ion-row>
+
+    <ion-row>
+        <ion-item class="mypadding">
+            <h3 class="common-text" style="color:#909090 !important;"> Edition </h3>
+            <p class="description-text">2018</p>
+        </ion-item>
     </ion-row>
     <ion-row>
-        <ion-col col-3 class="Author">
-            Publisher 
-        </ion-col>
-        <ion-col col-9 class="AuthorName">
-            : Pearson   
-        </ion-col>
+        <ion-item class="mypadding">
+            <h3 class="common-text" style="color:#909090 !important;"> Publisher </h3>
+            <p class="description-text">Pearson</p>
+        </ion-item>
     </ion-row>
+
     <ion-row>
-        <ion-col col-3 class="Author">
-            Seller 
-        </ion-col>
-        <ion-col col-9 class="AuthorName">
-            : Pawan Sharma   
-        </ion-col>
+        <ion-item class="mypadding">
+            <h3 class="common-text" style="color:#909090 !important;"> Seller </h3>
+            <p class="description-text">Pawan Sharma</p>
+        </ion-item>
     </ion-row>
-    <!-- <ion-item class="app-background sellerInfo">
-            <ion-label item-start style="color:white;">Seller</ion-label>
-            <ion-label item-end style="color:white;">Pawan Sharma</ion-label>
-    </ion-item> -->
 </ion-content>

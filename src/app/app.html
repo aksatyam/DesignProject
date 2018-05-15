@@ -2,44 +2,31 @@
     <ion-content>
         <div class="UserInfo">
             <div>
-                <ion-icon name="ios-contact" class="IconSize"></ion-icon>
-                <button class="btn-contribute">Contribute</button>
+                    <img src="assets/imgs/vishal.JPG" class="menu-image">
+                <button class="btn-contribute" (click)="opencontribute()"  menuClose>Contribute</button>
             </div>
             <ion-label class="nameTitle description-text">Pawan Sharma</ion-label>
-            <ion-label class="nameTitle description-text">
+            <ion-label class="nameTitle description-text" style="padding-top:3vw;">
                 <span>+91 9986953223</span>
-                <span style="float: right;padding-right:5vw;"><ion-icon name="md-more"></ion-icon></span>
+                <span style="float: right;padding-right:5vw;" (click)="openprofile()" menuClose><ion-icon name="md-more"></ion-icon></span>
             </ion-label>
         </div>
         <ion-list class="menu-list">
-            <ion-item menuClose class="navlist-item" *ngFor="let p of pages1" tappable (click)="openPage(p)" class="menuItems">
-                <ion-icon name="ios-contact-outline" item-start class="menu-icon"></ion-icon>
-                <ion-label class="common-text">{{p.title}}</ion-label>
+            <ion-item menuClose class="navlist-item" *ngFor="let p of pages" tappable (click)="openPage(p)">
+                <ion-label>
+                    <span style="vertical-align: sub"><img [src]="'assets/menu/'+p.ImageName" class="menu-icons"></span>
+                    <span class="description-text" style="color:#606060;">&nbsp;&nbsp;&nbsp;&nbsp; {{p.title}}</span>
+                </ion-label>
             </ion-item>
         </ion-list>
-        <ion-list class="menu-list">
-            <ion-item menuClose class="navlist-item" *ngFor="let p of pages2" tappable (click)="openPage(p)" class="menuItems">
-                <ion-icon name="ios-contact-outline" item-start class="menu-icon"></ion-icon>
-                <ion-label class="common-text">{{p.title}}</ion-label>
-            </ion-item>
-        </ion-list>
-        <ion-list class="menu-list">
-            <ion-item menuClose class="navlist-item" *ngFor="let p of pages3" tappable (click)="openPage(p)" class="menuItems">
-                <ion-icon name="ios-contact-outline" item-start class="menu-icon"></ion-icon>
-                <ion-label class="common-text">{{p.title}}</ion-label>
-            </ion-item>
-        </ion-list>
-        <ion-list class="menu-list">
-            <ion-item menuClose class="navlist-item" *ngFor="let p of pages4" tappable (click)="openPage(p)" class="menuItems">
-                <ion-icon name="ios-contact-outline" item-start class="menu-icon"></ion-icon>
-                <ion-label class="common-text">{{p.title}}</ion-label>
-            </ion-item>
-        </ion-list>
-    </ion-content>
-    <ion-footer>
-        <div class="btn-logout">
-            <span class="description-text">Logout</span>
+        <div class="logout-rateus">
+            <div menuClose class="rate-us">
+                <ion-icon name="md-star-half"></ion-icon> Rate Us
+            </div>
+            <div menuClose class="logout-btn" overflow-scroll="false" no-bounce has-bouncing="false">
+                <ion-icon name="ios-log-out"></ion-icon> Logout
+            </div>
         </div>
-    </ion-footer>
+    </ion-content>
 </ion-menu>
 <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

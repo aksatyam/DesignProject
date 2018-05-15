@@ -1,0 +1,48 @@
+page-update-profile {
+    .content-header{
+        padding-top:8px ;
+        width: 100%!important;
+      }
+  
+      .ion-select {
+        display: flex;
+        overflow: hidden;
+        max-width: 100% !important;
+      }
+      .select-box{
+        color: gray;
+        background: white;
+        max-width: 95% !important;
+      }
+  
+      .upper-text {
+        font-size: 13px;
+        color: #909090;
+        padding-left: 5% !important;
+      }
+      
+      .lower-text {
+        font-size: 13px;
+        color: #606060;
+      }
+  
+      .btn{
+        background-color: darkslateblue;
+        height:10vw;
+        color:white;
+      }
+
+      .btn{
+        height:10vw;
+        color:white;
+      }
+      
+      .button-md,.button-ios{
+        background-color: darkslateblue
+      }
+      .button-md:hover:not(.disable-hover),.button-ios:hover:not(.disable-hover) {
+        background-color: darkslateblue !important;
+      }
+  
+
+}

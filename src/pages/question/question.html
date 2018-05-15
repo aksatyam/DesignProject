@@ -22,8 +22,8 @@
     <ion-slide disable-scroll="false" class="scrollable">
       <ion-list>
         <ion-list-header>
-        <ion-icon name="md-bookmark" item-left class="icon-size"></ion-icon>
-        <ion-label style="color:darkslateblue;font-weight:bolder;" class="heading-text">Unit First</ion-label>
+          <ion-icon name="md-bookmark" item-left class="icon-size"></ion-icon>
+          <ion-label style="color:darkslateblue;font-weight:bolder;" class="heading-text">Unit First</ion-label>
         </ion-list-header>
         <button ion-item (click)="comment()">
                             <div class="sub-icon" item-start>
@@ -88,7 +88,7 @@
       </button>
 
       </ion-list>
-    <ion-list>
+      <ion-list>
         <ion-list-header>
           <ion-icon name="md-bookmark" item-left class="icon-size"></ion-icon>
           <ion-label style="color:darkslateblue;font-weight:bolder;" class="heading-text">Unit Second</ion-label>
@@ -104,7 +104,7 @@
                           </button>
 
 
-       
+
         <button ion-item>
                                   <div class="sub-icon" item-start>
                                     <div class="icon-aling">
@@ -136,7 +136,7 @@
                                       </div>
                                       <ion-label class="course-card-heading description-text"> Stack And Queue </ion-label>
                                       <ion-icon name="ios-arrow-forward-outline" item-end class="arrow"></ion-icon>
-                                    </button> 
+                                    </button>
 
         <button ion-item>
                                       <div class="sub-icon" item-start>
@@ -186,8 +186,8 @@
 
           </ion-card-content>
           <ion-row style="border-top:2px solid #eeeeee;">
-            <ion-col col-4 >
-              <button ion-button icon-left clear small >
+            <ion-col col-4>
+              <button ion-button icon-left clear small>
                 <ion-icon class="user-icon" name="ios-contact"></ion-icon>
               <div class="small-text">Vishal</div>
                   </button>
@@ -229,8 +229,8 @@
 
           </ion-card-content>
           <ion-row style="border-top:2px solid #eeeeee;">
-            <ion-col col-4 >
-              <button ion-button icon-left clear small >
+            <ion-col col-4>
+              <button ion-button icon-left clear small>
                 <ion-icon class="user-icon" name="ios-contact"></ion-icon>
               <div class="small-text">Vishal</div>
                   </button>
@@ -273,8 +273,8 @@
 
           </ion-card-content>
           <ion-row style="border-top:2px solid #eeeeee;">
-            <ion-col col-4 >
-              <button ion-button icon-left clear small >
+            <ion-col col-4>
+              <button ion-button icon-left clear small>
                 <ion-icon class="user-icon" name="ios-contact"></ion-icon>
               <div class="small-text">Vishal</div>
                   </button>
@@ -313,8 +313,8 @@
             </ion-row>
           </ion-card-content>
           <ion-row style="border-top:2px solid #eeeeee;">
-            <ion-col col-4 >
-              <button ion-button icon-left clear small >
+            <ion-col col-4>
+              <button ion-button icon-left clear small>
                 <ion-icon class="user-icon" name="ios-contact"></ion-icon>
               <div class="small-text">Vishal</div>
                   </button>
@@ -333,6 +333,11 @@
             </ion-col>
           </ion-row>
         </ion-card>
+        <div style="text-align:center;color:gray;margin-top:10px;" *ngIf=" data=='' || data==undefined">
+          <br>
+          <ion-icon ios="ios-alert" md="md-alert"></ion-icon>
+          <h3> No Record Found</h3>
+        </div>
       </ion-list>
 
 

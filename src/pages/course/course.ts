@@ -2,6 +2,7 @@ import { Component} from '@angular/core';
 import { NavController, NavParams} from 'ionic-angular';
 import { QuestionPage} from '../question/question';
 import { NotificationPage} from '../notification/notification';
+import { ContributePage} from '../contribute/contribute';
 
 /**
  * Generated class for the CoursePage page.
@@ -29,6 +30,10 @@ export class CoursePage {
 
   notification(){
     this.navCtrl.push(NotificationPage);
+  }
+  
+  contribute(){
+    this.navCtrl.push(ContributePage);
   }
 
 }

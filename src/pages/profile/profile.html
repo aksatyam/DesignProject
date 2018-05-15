@@ -7,12 +7,40 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>profile</ion-title>
+    <ion-title>Profile</ion-title>
   </ion-navbar>
+ <div class="centre-align" >
+        <img src="assets/imgs/vishal.JPG" class="image-icon">
+       <!-- <img *ngIf="user[0].Picture==''" src="assets/icon/LPULogo.png"  class="image-icon">--><br>
+        <span>
+          <span class="user-name description-text">Vishal Sharma</span>
+          <br>
+          <span class=" description-text user-degree">MCA[Laterial Entry]</span>
+          <br>
+          <span class=" description-text user-degree">Lovely Professional University</span>
+        </span>
+      </div>
 
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content>
+   
+      <div style="padding:4vw;">
+          <ion-label class="description-text"><span><b>Contact Number :</b> </span><span class="info">814944907</span></ion-label>
+      </div>
+      <div style="padding:4vw;">
+          <ion-label class="description-text"><span><b>College : </b></span><span class="info">Lovely Professional University</span> </ion-label>
+      </div>
+      <div style="padding:4vw;">
+          <ion-label class="description-text"><span><b>Course : </b></span><span class="info">Master Of Computer Application [Lateral Entry]</span> </ion-label>
+      </div>
+      <div style="padding:4vw;">
+          <ion-label class="description-text"><span><b>Semester : </b></span><span class="info">First Semester</span></ion-label> 
+      </div>
+      <ion-fab bottom right >
+          <button ion-fab >
+                  <ion-icon name="md-create"class="edit-icon-color" (click)="updateprofile()"></ion-icon>
+                </button>
+        </ion-fab>
 </ion-content>

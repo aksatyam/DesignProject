@@ -1,0 +1,43 @@
+page-contribute {
+
+     .ion-select {
+      display: flex;
+      overflow: hidden;
+      max-width: 100% !important;
+    }
+    .select-box{
+      color: gray;
+      background: white;
+      max-width: 100% !important;
+    }
+    .colBackground{
+     background-color: lightgray;
+     height: 40vw;
+    } 
+    
+    .bookTitles{
+     padding-top: 10vw;
+     color: darkslateblue;
+    }
+
+    .TitlesText{
+     color: darkslateblue;
+     } 
+
+   .button-md,.button-ios{
+      background-color: darkslateblue !important;
+      height:10vw;
+      color:white;
+    }
+
+    .centre-align-style{
+      width: 100%;
+      height: 50vw;
+      padding: 15vw;
+      margin-left: 0 auto;
+      text-align: center;
+   }
+
+  
+
+}

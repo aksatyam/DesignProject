@@ -15,6 +15,9 @@ page-sellUsedBooks{
         color: darkslateblue;
         font-size: 2.5rem;
     }
+     .item-ios,.item-md{
+         border-bottom:none;
+     }
     .bookTitlesText{
         color: darkslateblue;
     }
@@ -58,6 +61,14 @@ page-sellUsedBooks{
     }
     .scroll-content {
         margin-top: 50px !important;
-        margin-bottom: 50px !important;
+        margin-bottom:25vw !important;
+    }
+
+    .btnadd{
+        background:darkslateblue; 
+        width: 100%;
+        text-transform: none;
+        height:10vw;
+        color:white;
     }
 }

@@ -7,21 +7,28 @@
 </ion-header>
 
 <ion-content class="app-background">
-    <ion-card *ngFor="let i of cardArray">
-        <ion-item>
-            <div item-start>
-                <img src="assets/icon/unnamed.png" class="imageClass">
-            </div>
-            <ion-label>
-                <span class="bookName">{{i.book_name}}</span>
-                <br>
-                <span class="priceColor">MRP : {{ i.price| currency :'&#8377;'}}</span>
-                <br>
-                <span class="priceColor">SP : {{ i.selling_price| currency :'&#8377;'}}</span>
-                <br>
-                <span class="bookQuantity"><span class="priceColor">Status : </span>{{i.status}}</span>
-                <button ion-button block class="btnAddToCart">Edit Listing</button>
-            </ion-label>
-        </ion-item>
-    </ion-card>
+    <ion-list>
+        <ion-card *ngFor="let i of cardArray">
+            <ion-item>
+                <div item-start>
+                    <img src="assets/icon/unnamed.png" class="imageClass">
+                </div>
+                <ion-label>
+                    <span class="bookName">{{i.book_name}}</span>
+                    <br>
+                    <span class="priceColor">MRP : {{ i.price| currency :'&#8377;'}}</span>
+                    <br>
+                    <span class="priceColor">SP : {{ i.selling_price| currency :'&#8377;'}}</span>
+                    <br>
+                    <span class="bookQuantity"><span class="priceColor">Status : </span>{{i.status}}</span>
+                    <button ion-button block class="btnAddToCart">Edit Listing</button>
+                </ion-label>
+            </ion-item>
+        </ion-card>
+        <div style="text-align:center;color:gray;margin-top:10px;" *ngIf=" data=='' || data==undefined">
+            <br>
+            <ion-icon ios="ios-alert" md="md-alert"></ion-icon>
+            <h3> No Record Found</h3>
+        </div>
+        </ion-list>
 </ion-content>

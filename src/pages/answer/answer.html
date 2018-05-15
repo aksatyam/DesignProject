@@ -12,201 +12,83 @@
 
 </ion-header>
 <ion-content>
- <!-- <div class="question-div">
+  <!-- <div class="question-div">
    <ion-label class="common-text"  style="color:#303030 !important;">Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
             Whoa. This is heavy.</ion-label>
  </div> -->
 
- <ion-list>
+  <ion-list>
 
     <ion-card>
-        <ion-card-content (click)="readcontent()">
-            <div  class="divcontent">
-                <p class="common-text">Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
-                  Whoa. This is heavy.Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
-                  Whoa.</p>
-                  </div>
+      <ion-card-content (click)="readcontent()">
+        <div class="divcontent">
+          <p class="common-text">Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
+            Whoa. This is heavy.Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine...
+            out of a DeLorean?! Whoa.
+          </p>
+        </div>
 
-        </ion-card-content>
-        <ion-row style="border-top:2px solid #eeeeee;">
-          <ion-col col-4 >
-            <button ion-button icon-left clear small >
+      </ion-card-content>
+      <ion-row style="border-top:2px solid #eeeeee;">
+        <ion-col col-4>
+          <button ion-button icon-left clear small>
               <ion-icon class="user-icon" name="ios-contact"></ion-icon>
             <div class="small-text">Vishal</div>
                 </button>
-          </ion-col>
-          <ion-col col-4>
-              <button ion-button icon-left clear small>
+        </ion-col>
+        <ion-col col-4>
+          <button ion-button icon-left clear small>
                   <ion-icon name="thumbs-up"></ion-icon>
                    <div class="small-text">2 Like</div>
                  </button>
-          </ion-col>
-          <ion-col col-4>
-            <button ion-button icon-left clear small (click)="showRadio()"> 
+        </ion-col>
+        <ion-col col-4>
+          <button ion-button icon-left clear small (click)="showRadio()"> 
               <ion-icon name="ios-create"></ion-icon>
               <div class="small-text">Report</div>
             </button>
-          </ion-col>
-        </ion-row>
-      </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-card>
 
 
-      <ion-card>
-          <ion-card-content  (click)="readcontentimg()">
-              <div class="divcontent">
-                  <img src="assets/imgs/questioncard.jpg" />
-                   </div>
-  
-          </ion-card-content>
-          <ion-row style="border-top:2px solid #eeeeee;">
-            <ion-col col-4 >
-              <button ion-button icon-left clear small >
+    <ion-card>
+      <ion-card-content (click)="readcontentimg()">
+        <div class="divcontent">
+          <img src="assets/imgs/questioncard.jpg" />
+        </div>
+
+      </ion-card-content>
+      <ion-row style="border-top:2px solid #eeeeee;">
+        <ion-col col-4>
+          <button ion-button icon-left clear small>
                 <ion-icon class="user-icon" name="ios-contact"></ion-icon>
               <div class="small-text">Vishal</div>
                   </button>
-            </ion-col>
-            <ion-col col-4>
-                <button ion-button icon-left clear small>
+        </ion-col>
+        <ion-col col-4>
+          <button ion-button icon-left clear small>
                     <ion-icon name="thumbs-up"></ion-icon>
                      <div class="small-text">2 Like</div>
                    </button>
-            </ion-col>
-            <ion-col col-4>
-              <button ion-button icon-left clear small (click)="showRadio()"> 
+        </ion-col>
+        <ion-col col-4>
+          <button ion-button icon-left clear small (click)="showRadio()"> 
                 <ion-icon name="ios-create"></ion-icon>
                 <div class="small-text">Report</div>
               </button>
-            </ion-col>
-          </ion-row>
-        </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-card>
 
+    <div style="text-align:center;color:gray;margin-top:10px;" *ngIf=" data=='' || data==undefined">
+      <br>
+      <ion-icon ios="ios-alert" md="md-alert"></ion-icon>
+      <h3> No Record Found</h3>
+    </div>
+  </ion-list>
 
-
-
-
-
-
-   <!-- <ion-card>
-        <ion-card-content  (click)="readcontent()">
-            <div  class="divcontent">
-                <p class="common-text">Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
-                  Whoa. This is heavy.Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
-                  Whoa.</p>
-                  </div>
-        </ion-card-content>
-         <ion-row style="border-top:2px solid #eeeeee;">
-          <ion-col col-4 >
-              <button ion-button icon-left clear small style="padding-left:0px !important;">
-                <ion-icon class="user-icon" name="ios-contact"></ion-icon>
-              <div class="small-text">Vishal</div>
-                  </button>
-            </ion-col>
-          <ion-col col-4>
-            <button ion-button icon-left clear small>
-                   <ion-icon name="thumbs-up"></ion-icon>
-                    <div class="small-text">2 Like</div>
-                  </button>
-          </ion-col>
-          <ion-col col-4>
-            <button ion-button icon-left clear small (click)="showRadio()"> 
-                <ion-icon name="ios-create"></ion-icon>
-                <div class="small-text">Report</div>
-              </button>
-          </ion-col>
-        </ion-row>
-      </ion-card>
-
-      <ion-card>
-        <ion-card-content>
-            <div class="divcontent">
-         <p class="common-text"> <ion-icon name="md-help"></ion-icon>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
-            Whoa. This is heavy.Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
-            Whoa.</p>
-            </div>
-        </ion-card-content>
-        <ion-row style="border-top:2px solid #eeeeee;">
-            <ion-col col-4 >
-              <button ion-button icon-left clear small style="padding-left:0px !important;">
-                <ion-icon class="user-icon" name="ios-contact"></ion-icon>
-              <div class="small-text">Vishal</div>
-                  </button>
-            </ion-col>
-          <ion-col col-4>
-            <button ion-button icon-left clear small>
-                   <ion-icon name="thumbs-up"></ion-icon>
-                    <div class="small-text">2 Like</div>
-                  </button>
-          </ion-col>
-          <ion-col col-4>
-            <button ion-button icon-left clear small (click)="showRadio()"> 
-                <ion-icon name="ios-create"></ion-icon>
-                <div class="small-text">Report</div>
-              </button>
-          </ion-col>
-        </ion-row>
-      </ion-card>
-
-      <ion-card>
-        <ion-card-content>
-        <div class="divcontent">
-          <p class="common-text">Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
-            Whoa. This is heavy.Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
-            Whoa.</p>
-          </div>   
-        </ion-card-content>
-        <ion-row style="border-top:2px solid #eeeeee;">
-          <ion-col col-4 >
-              <button ion-button icon-left clear small style="padding-left:0px !important;">
-                <ion-icon class="user-icon" name="ios-contact"></ion-icon>
-              <div class="small-text">Vishal</div>
-                  </button>
-            </ion-col>
-          <ion-col col-4>
-            <button ion-button icon-left clear small>
-                   <ion-icon name="thumbs-up"></ion-icon>
-                    <div class="small-text">2 Like</div>
-                  </button>
-          </ion-col>
-          <ion-col col-4>
-            <button ion-button icon-left clear small (click)="showRadio()"> 
-                <ion-icon name="ios-create"></ion-icon>
-                <div class="small-text">Report</div>
-              </button>
-          </ion-col>
-        </ion-row>
-      </ion-card>
-
-
-      <ion-card>
-          <ion-card-content class="removepad" (click)="readcontentimg()">
-              <div class="divcontent">
-            <img src="assets/imgs/questioncard.jpg" />
-             </div>
-          </ion-card-content>
-           <ion-row style="border-top:2px solid #eeeeee;">
-           <ion-col col-4 >
-              <button ion-button icon-left clear small style="padding-left:0px !important;">
-                <ion-icon class="user-icon" name="ios-contact"></ion-icon>
-              <div class="small-text">Vishal</div>
-                  </button>
-            </ion-col>
-          <ion-col col-4>
-            <button ion-button icon-left clear small>
-                   <ion-icon name="thumbs-up"></ion-icon>
-                    <div class="small-text">2 Like</div>
-                  </button>
-          </ion-col>
-          <ion-col col-4>
-            <button ion-button icon-left clear small (click)="showRadio()"> 
-                <ion-icon name="ios-create"></ion-icon>
-                <div class="small-text">Report</div>
-              </button>
-          </ion-col>
-        </ion-row>
-        </ion-card> -->
-</ion-list>
-
- <ion-fab bottom right>
+  <ion-fab bottom right>
     <button ion-fab (click)="invite()">
               <ion-icon name="ios-undo-outline"class="reply-icon-color"></ion-icon>
             </button>

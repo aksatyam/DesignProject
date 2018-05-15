@@ -1,6 +1,7 @@
 import { Component,ViewChild } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { Slides } from 'ionic-angular';
+import { EventRegisterformPage } from '../event-registerform/event-registerform'
 /**
  * Generated class for the EventdetailPage page.
  *
@@ -69,6 +70,10 @@ export class EventdetailPage {
   slideChanged() {
     let currentIndex = this.slides.getActiveIndex();
     console.log('Current index is', currentIndex);
+  }
+
+  registernow(){
+    this.navCtrl.push(EventRegisterformPage);
   }
 
 }
